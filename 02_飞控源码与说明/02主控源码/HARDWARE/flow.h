@@ -27,6 +27,11 @@ extern void flow_data_sins(void);
 extern void flow_sins_rest(void);
 extern uint32_t VL53L01_high; //当前高度
 extern void flow_get_data(void);
+/* Normalized millimetres; raw data retained for module calibration. */
+extern volatile uint16_t flow_raw_height;
+extern volatile uint8_t flow_height_valid;
+extern volatile uint16_t flow_valid_samples;
+extern volatile uint32_t flow_last_valid_tick;
 typedef struct 
 {
 	int16_t vel_x;

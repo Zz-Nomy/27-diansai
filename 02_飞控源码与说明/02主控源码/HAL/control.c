@@ -14,6 +14,7 @@
 #include "pid.h"
 #include "flow.h"
 #include "kalman.h"
+#include "auto_flight.h"
 //------------------------------------------------------------------------------
 #undef NULL
 #define NULL 0
@@ -57,6 +58,11 @@ void HeightPidControl(float dt)
 		int16_t acc;       //当前你飞行器的加速度值
    	int16_t acc_error; //当前加速度减去重力加速度则为上下移动的加速度
    static int16_t acc_offset;//重力加速度值
+    if (AutoFlight_Active()) {
+        AutoFlight_HeightControl(dt);
+        status = WAITING_1;
+        return;
+    }
 	 
 	{ //获取垂直速度数据
 
@@ -68,7 +74,7 @@ void HeightPidControl(float dt)
 			}
 			acc_error = acc - acc_offset;	
 			
-			if(VL53L01_high<3500)			
+			if(flow_height_valid && VL53L01_high<3500)			
 			{//此处做一个速度与高度的互补滤波 
 					if(VL53L01_high-sins_high>50)sins_high += 50;//高度异常突变
 					else if(VL53L01_high-sins_high<-50)sins_high -= 50;//高度异常突变
@@ -184,6 +190,13 @@ void FlowPidControl(float dt)
 {
 	volatile static uint8_t status=WAITING_1;
 	static uint8_t set_pos = 0;
+    if (AutoFlight_Active() && !ALL_flag.flow_control) {
+        pidRest(&pPidObject[8], 4);
+        pidRoll.desired = pidPitch.desired = 0.0f;
+        status = WAITING_1;
+        set_pos = 1;
+        return;
+    }
 
 	//----------------------------------------------紧急终止飞行
 	if(ALL_flag.unlock == EMERGENT) //意外情况，请使用遥控紧急上锁，飞控就可以在任何情况下紧急中止飞行，锁定飞行器，退出PID控制
@@ -208,9 +221,11 @@ void FlowPidControl(float dt)
 		case PROCESS_31://进入
 			{
 				
-				if(Remote.roll>1750||Remote.roll<1250||Remote.pitch>1750||Remote.pitch<1250)
+				if((!AutoFlight_Active() || AutoFlight_HorizontalInput()) &&
+                   (Remote.roll>1750||Remote.roll<1250||Remote.pitch>1750||Remote.pitch<1250))
 				{
 						set_pos = 1;
+                        pidPosRateX.desired = pidPosRateY.desired = 0.0f;
 						if(Remote.roll>1750)
 							pidPosRateX.desired = -15;   //直接控制速度 并且关掉外环计算
 						else if(Remote.roll<1250)
@@ -295,7 +310,7 @@ void FlightPidControl(float dt)
 			break;			
 		case PROCESS_31: //正式进入控制
 			if(Angle.pitch<-50||Angle.pitch>50||Angle.roll<-50||Angle.roll>50)//倾斜检测，大角度判定为意外情况，则紧急上锁	
-					if(Remote.thr>1200)//当油门的很低时不做倾斜检测，防止在空中油门拉的太低，飞行器做自由落体，自由落体下状态未知
+					if(Remote.thr>1200 || AutoFlight_Active())//当油门的很低时不做倾斜检测，防止在空中油门拉的太低，飞行器做自由落体，自由落体下状态未知
 						ALL_flag.unlock = EMERGENT;//打入紧急情况
 					
       pidRateX.measured = MPU6050.gyroX * Gyro_G; //内环测量值 角度/秒
@@ -358,7 +373,7 @@ void MotorControl(void)
 				status = WAITING_2;
 			}
 		case WAITING_2: //解锁完成后判断使用者是否开始拨动遥杆进行飞行控制
-			if(Remote.thr>1100)
+			if(Remote.thr>1100 || AutoFlight_MotorReady())
 			{
 				status = PROCESS_31;
 			}
@@ -366,7 +381,9 @@ void MotorControl(void)
 		case PROCESS_31:
 			{
 				int16_t thr;
-				if(ALL_flag.height_lock) //定高模式下 油门遥杆作为调整高度使用
+				if (AutoFlight_Active()) {
+                    thr = (int16_t)auto_flight.throttle;
+                } else if(ALL_flag.height_lock) //定高模式下 油门遥杆作为调整高度使用
 				{		
 					thr = pidHeightRate.out+thr_hold; //输出给电机的是定高输出值
 				}

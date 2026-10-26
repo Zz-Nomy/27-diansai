@@ -9,6 +9,7 @@
 #include "stm32f10x.h"
 #include "LED.h"
 #include "ALL_DATA.h"
+#include "auto_flight.h"
 
 
 
@@ -45,8 +46,33 @@ sLED LED = {300,AllFlashLight};  //LED initial statue is off;
  * @param[out] 
  * @return     
  ***************************************************************/	
+/* Alarm indications take priority over the legacy mode lights. */
+static void auto_alarm_leds(uint8_t mask)
+{
+    uint16_t front = (mask & AUTO_BLUE_LED_MASK) ? 500U : 1000U;
+    uint16_t rear = (mask & AUTO_RED_LED_MASK) ? 500U : 1000U;
+    TIM3->CCR1 = TIM3->CCR2 = front;
+    TIM3->CCR3 = TIM3->CCR4 = rear;
+}
 void PilotLED() //flash 300MS interval
 {
+    uint8_t phase = (uint8_t)((SysTick_count / 67U) & 1U);
+    static uint8_t alarm_was_active;
+    if (auto_flight.alarm != AUTO_ALARM_NONE) {
+        uint8_t mask;
+        if (auto_flight.alarm == AUTO_ALARM_LOW)
+            mask = phase ? AUTO_RED_LED_MASK : 0U;
+        else if (auto_flight.alarm == AUTO_ALARM_HIGH)
+            mask = phase ? AUTO_BLUE_LED_MASK : 0U;
+        else mask = phase ? AUTO_RED_LED_MASK : AUTO_BLUE_LED_MASK;
+        auto_alarm_leds(mask);
+        alarm_was_active = 1;
+        return;
+    }
+    if (alarm_was_active) {
+        auto_alarm_leds(0U);
+        alarm_was_active = 0;
+    }
 	static uint32_t LastTime = 0;
 //	static u8 last_LED_status
 	if(SysTick_count - LastTime < LED.FlashTime)

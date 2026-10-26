@@ -1,4 +1,5 @@
 #include "ALL_DEFINE.h"
+#include "auto_flight.h"
 
 
 volatile uint32_t SysTick_count; //系统时间计数
@@ -63,6 +64,7 @@ void ALL_Init(void)
 	
 	
 	
+	AutoFlight_Init();
 	TIM1_Config();					//系统工作周期初始化 
 	
 

@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-25",
+  "software_status": "implemented_and_compiled",
+  "flight_validation": "not_performed",
+  "hardware_flashed": false,
+  "height_sensor_reported_damaged": true,
+  "button": "AUX3 / remote channel 7",
+  "target_height_mm": 800,
+  "target_tolerance_mm": 100,
+  "low_alarm_mm": 700,
+  "low_led": "rear red LED3/PB0 + LED4/PB1",
+  "high_alarm_mm": 900,
+  "high_led": "front blue LED1/PA6 + LED2/PA7",
+  "default_raw_height_mm_multiplier": 10,
+  "unit_basis": "supplier protocol cm; physical ruler verification still required",
+  "host_passed": 32,
+  "compiled_sources": 64,
+  "memory_bytes": {
+    "RO": 25420,
+    "RW": 3600,
+    "ROM": 25636
+  },
+  "initial_stack_pointer": "0x20000e10",
+  "reset_vector": "0x8000101",
+  "changed_sources": [
+    {
+      "file": "CONFIG\\I2C.h",
+      "before_sha256": "e14786b30ea98558c87e7cf3e7d1e91f221aa24f92102c4425ce9ca51ba11124",
+      "after_sha256": "2885a4547ad7c1bad989a02fa7c7cf945d058e9c5c33cf0f52782ba7d6db32b3"
+    },
+    {
+      "file": "HAL\\control.c",
+      "before_sha256": "49e5a1d08218b70df8523143fa618c06cd439e8508df0b66ac455c1e6da536d2",
+      "after_sha256": "cd5816b2ff6c7ed89d6e806efd4998243304aee31f9c1da8e1bbe493aa2bd9de"
+    },
+    {
+      "file": "HAL\\remote.c",
+      "before_sha256": "e1950cf7605e80a41029c16d2076dbaac1b4a86f70e01ca1f074b80011ba86dd",
+      "after_sha256": "97cda456bedf1f5f97356d69fa2b8482b05a84312189b395f4ac36e98d14cd8b"
+    },
+    {
+      "file": "HAL\\remote.h",
+      "before_sha256": "939471950a36aff9f4445815f7943ffbfab295d0e5ef1b204d27b9f149f939b0",
+      "after_sha256": "6046e6389a630836561c46dcb249b60dbfc7a0745df97f574a0995dc8bf68ee5"
+    },
+    {
+      "file": "HARDWARE\\flow.c",
+      "before_sha256": "8117f011a0869619b1a00e55d20911d48d149bc51a9ca24332680528c00d7b8d",
+      "after_sha256": "b8e357d451edd8767a024a75a8f4bfd539474409ac67213ff93bd28037ce784c"
+    },
+    {
+      "file": "HARDWARE\\flow.h",
+      "before_sha256": "3a911f25f310a01355a902c0bb1cdd5a474e1f01530c3413f5d2d66b872ac164",
+      "after_sha256": "1eda5da163c321e13753a318c5926c399b169766df36f426af15ab125f1c4620"
+    },
+    {
+      "file": "HARDWARE\\LED.c",
+      "before_sha256": "642366a00e2f6d1c7ac74c2b0f58109286ce4b00e1a43319b2de35ab2e0b6017",
+      "after_sha256": "0d78a1eef663ba9c8f7d50174ca60b6510abf7d3aa2b7b32408218f153a2ed4d"
+    },
+    {
+      "file": "mini.uvprojx",
+      "before_sha256": "31c7730dfeb647952c2343371bddf73cbdf70a5622124a7209f0ff955b7952b3",
+      "after_sha256": "eebae87e9d51db0fbd0969b669b422d4ab1db638b267d096ff2dd85ce873c790"
+    },
+    {
+      "file": "StartUp\\core_cm3.c",
+      "before_sha256": "e93a7e36349e7810f328276a3fed56701e10536779f7527a8ccd140618a556b0",
+      "after_sha256": "9496d72a3a60f914dcab2110c77faf88515e53b8ebb18fdb4f616e13de4782e9"
+    },
+    {
+      "file": "USER\\INIT.c",
+      "before_sha256": "3902e131ec7c689a7002a14c1d6c445166c8815ce2175e9216dd8be1ea780ddc",
+      "after_sha256": "10c05b54d3bba96fe64d45c2d323b6915899323ed274bc70f3570771fe9ae3f6"
+    },
+    {
+      "file": "USER\\scheduler.c",
+      "before_sha256": "cd58e6e5201c99675fa63ddc1828b70a47312e0383e6fca3552e7323e703480b",
+      "after_sha256": "406e810b969172b470ebd1eb3ba01dbf3a3591801e28c48312b12d6d1ae88c1d"
+    },
+    {
+      "file": "HAL/auto_flight.c",
+      "created": true,
+      "after_sha256": "9c7f03d62cb95cd32a5cd54a34216d2718ff8c130fa64af7cde6f68807414877"
+    },
+    {
+      "file": "HAL/auto_flight.h",
+      "created": true,
+      "after_sha256": "7e973f253c51eb63bea5df795a6869cfa0de70ef4bb9cd4019eeafa510a11027"
+    },
+    {
+      "file": "HAL/auto_flight_config.h",
+      "created": true,
+      "after_sha256": "1456e248e235aedcfa47aa37245bf5ca537d077095c13cb70e172bf56aa4a8fa"
+    }
+  ],
+  "firmware": {
+    "mini_aux3.hex": {
+      "size_bytes": 72170,
+      "sha256": "6cadefc2f8d41fa1448bc50bef6401b18f6fc972df442b6d04f21e648bdea931"
+    },
+    "mini_aux3.bin": {
+      "size_bytes": 25640,
+      "sha256": "3836c816e82651f668aebc15b67bc916509e30b81ff201cf1e2184ff4af02fb4"
+    },
+    "mini_aux3.axf": {
+      "size_bytes": 260528,
+      "sha256": "91b7cbc2619b39fde4f956cca107f17a8dd5defaf19c5dc1a4aa3c588a9a63e5"
+    }
+  }
+}

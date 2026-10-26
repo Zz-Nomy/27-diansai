@@ -1,0 +1,16 @@
+actual_sources_test.c: In function 'remote_unlock':
+actual_sources_test.c:1621:2: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+ 
+  ^       
+actual_sources_test.c: In function 'HeightPidControl':
+actual_sources_test.c:1915:2: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+         assert(auto_flight.alarm==AUTO_ALARM_NONE);
+  ^      ~
+actual_sources_test.c: In function 'FlowPidControl':
+actual_sources_test.c:2183:2: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+actual_sources_test.c: In function 'FlightPidControl':
+actual_sources_test.c:2387:2: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+actual_sources_test.c: In function 'MotorControl':
+actual_sources_test.c:2525:2: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+actual_sources_test.c:2543:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+actual_sources_test.c:2551:3: note: here
