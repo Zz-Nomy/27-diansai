@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-25",
+  "host_checks": 92,
+  "hardware_access": false,
+  "threshold_calibrated": false,
+  "arrival_delta_lux": 250,
+  "boards": [
+    {
+      "board": "flight",
+      "compiled_sources": 67,
+      "exports": [
+        {
+          "path": "C:\\Users\\28154\\Desktop\\27电赛\\04_编译与验证\\BH1750_半自动光源_20261025\\arm_build\\flight\\flight_light.hex",
+          "returncode": 0,
+          "diagnostics": "",
+          "sha256": "00175ccd34c22972ff3b4c188d7ac5fb0ccb9d88623258b52497b17c653ee010"
+        },
+        {
+          "path": "C:\\Users\\28154\\Desktop\\27电赛\\04_编译与验证\\BH1750_半自动光源_20261025\\arm_build\\flight\\flight_light.bin",
+          "returncode": 0,
+          "diagnostics": "",
+          "sha256": "196239ce9414eef857b816d8de3932769802267f32a9347752551fa5083df5f6"
+        }
+      ]
+    },
+    {
+      "board": "remote",
+      "compiled_sources": 39,
+      "exports": [
+        {
+          "path": "C:\\Users\\28154\\Desktop\\27电赛\\04_编译与验证\\BH1750_半自动光源_20261025\\arm_build\\remote\\remote_light.hex",
+          "returncode": 0,
+          "diagnostics": "",
+          "sha256": "30d85e7badaf287cac037040bf1e537c0836f6bed7693eea461782cda449d819"
+        },
+        {
+          "path": "C:\\Users\\28154\\Desktop\\27电赛\\04_编译与验证\\BH1750_半自动光源_20261025\\arm_build\\remote\\remote_light.bin",
+          "returncode": 0,
+          "diagnostics": "",
+          "sha256": "1928d953fd08e3627d70248a0fbd2236a657517c65bd3283c2c00a877320b95b"
+        }
+      ]
+    }
+  ],
+  "flight_backup_file_count": 14,
+  "remote_changed_files": [
+    "remote.uvprojx",
+    "CONFIG\\I2C.h",
+    "HAL\\remote.c",
+    "HARDWARE\\nrf24l01.c",
+    "HARDWARE\\nrf24l01.h",
+    "StartUp\\core_cm3.c",
+    "USER\\main.c",
+    "USER\\sys.c",
+    "USER\\sys.h"
+  ]
+}

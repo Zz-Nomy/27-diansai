@@ -2,6 +2,8 @@
 #include "scheduler.h"
 #include "flow.h"
 #include "auto_flight.h"
+#include "bh1750.h"
+#include "light_task.h"
 
 void TIM1_UP_IRQHandler(void)
 {
@@ -15,8 +17,11 @@ void TIM1_UP_IRQHandler(void)
             count_6ms = 0;
             GetAngle(&MPU6050, &Angle, 0.006f);
             flow_get_data(); /* Acquire before estimating/controlling height. */
+            BH1750_Tick(0.006f);
             AutoFlight_Tick(0.006f);
+            LightTask_Tick(0.006f);
             HeightPidControl(0.006f);
+            PilotLED();
         }
         if (count_24ms >= 8U) {
             count_24ms = 0;

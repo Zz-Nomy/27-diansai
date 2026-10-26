@@ -1,6 +1,7 @@
 #include "nrf24l01.h"
 #include "SPI.h"
 #include <string.h>
+#include "delay.h"
 
 #undef SUCCESS
 #define SUCCESS 0
@@ -112,11 +113,21 @@ u8 NRF24L01_Write_Buf(u8 regaddr, u8 *pBuf, u8 datalen)
 //返回值:发送完成状况
 u8 NRF24L01_TxPacket(u8 *txbuf)
 {
-	u8 state;   
+	u8 state;
+    uint32_t start_us = GetSysTime_us();
 	Clr_NRF24L01_CE;
+    NRF24L01_Write_Reg(SPI_WRITE_REG + STATUS, 0x70);
+    NRF24L01_Write_Reg(FLUSH_TX, 0xFF);
 	NRF24L01_Write_Buf(WR_TX_PLOAD,txbuf,TX_PLOAD_WIDTH);//写数据到TX BUF  32个字节
 	Set_NRF24L01_CE;                                     //启动发送	   
-	while(READ_NRF24L01_IRQ!=0);                         //等待发送完成
+    while (READ_NRF24L01_IRQ != 0) {
+        if ((uint32_t)(GetSysTime_us() - start_us) >= 2500U) {
+            Clr_NRF24L01_CE;
+            NRF24L01_Write_Reg(FLUSH_TX, 0xFF);
+            return 0xFF;
+        }
+    }
+    Clr_NRF24L01_CE;
 	state=NRF24L01_Read_Reg(STATUS);                     //读取状态寄存器的值	   
 	NRF24L01_Write_Reg(SPI_WRITE_REG+STATUS,state);      //清除TX_DS或MAX_RT中断标志
 	if(state&MAX_TX)                                     //达到最大重发次数
@@ -248,3 +259,20 @@ void NRF24L01_init(void)
 
 
 
+
+
+/* A requested 32-byte status reply, using ordinary half-duplex NRF24L01.
+ * Called from the foreground only. Always return to RX, including timeout. */
+uint8_t NRF24L01_SendReply(uint8_t *payload)
+{
+    uint8_t result;
+    uint32_t start_us = GetSysTime_us();
+    /* Allow the transmitter to finish its uplink and settle into RX. */
+    while ((uint32_t)(GetSysTime_us() - start_us) < 400U) {}
+    Clr_NRF24L01_CE;
+    NRF24L01_Write_Buf(SPI_WRITE_REG + TX_ADDR, (u8 *)TX_ADDRESS, TX_ADR_WIDTH);
+    NRF24L01_Write_Reg(SPI_WRITE_REG + NCONFIG, 0x0E);
+    result = NRF24L01_TxPacket(payload);
+    RX_Mode();
+    return result;
+}

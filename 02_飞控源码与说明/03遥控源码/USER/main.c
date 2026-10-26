@@ -16,6 +16,7 @@
 #include "stdio.h"
 #include "delay.h"
 #include "usart.h"
+#include "light_feedback.h"
 //配置系统时钟,使能各外设时钟
 void RCC_Configuration(void)
 {
@@ -128,7 +129,7 @@ int main(void)
 	
 	while(1)
 	{
-		//所有数据都在10ms中断处理，详情请见SYS.C
+		RemoteControl_Poll();
 	}
 }
 

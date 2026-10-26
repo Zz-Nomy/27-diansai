@@ -14,9 +14,10 @@
 #include "TIM.h"
 #include "eeprom.h"
 #include "remote.h"
+#include "light_feedback.h"
 #include <string.h>
 	#include "I2C.h"
-uint32_t SysTick_count = 0;
+volatile uint32_t SysTick_count = 0;
 
 
 void _g_Init_sys(void)
@@ -28,6 +29,7 @@ void _g_Init_sys(void)
 	ADC1_GPIO_Config();//ADC引脚初始化
 	ADC1_Mode_Config();//ADC DMA 初始化，开启DMA后，连续转换ADC，并DMA自动回读DAC的值，往后整个程序不再手动操作读取DAC
 
+	RemoteFeedback_Init();
 	RC_INIT();//遥控值初始化
 }
 
@@ -40,15 +42,10 @@ void _g_Init_sys(void)
 
 void SysTick_Handler(void)//滴答定时器1ms中断
 {   
-	static uint8_t Count_10ms;
-	
-	SysTick_count++;	
-	
-	if(Count_10ms++>=10)
-	{
-		Count_10ms = 0;
-		RC_Analy();//遥控数据解析
-	}
+
+    ++SysTick_count;
+    RemoteFeedback_BuzzerTick(SysTick_count);
+
 }
 
 

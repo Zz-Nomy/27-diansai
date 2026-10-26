@@ -1,0 +1,19 @@
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\remote_feedback.c: In function 'main':
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\remote_feedback.c:219:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+             if(beep_pin && !prev)++rises; prev=beep_pin; total+=beep_pin;
+             ^~
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\remote_feedback.c:219:43: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+             if(beep_pin && !prev)++rises; prev=beep_pin; total+=beep_pin;
+                                           ^~~~
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\remote_feedback.c:226:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+             if(beep_pin && !prev)++rises; prev=beep_pin;
+             ^~
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\remote_feedback.c:226:43: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+             if(beep_pin && !prev)++rises; prev=beep_pin;
+                                           ^~~~
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\remote_feedback.c:259:13: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+             if(beep_pin && !prev)++rises; prev=beep_pin; total+=beep_pin;
+             ^~
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\remote_feedback.c:259:43: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+             if(beep_pin && !prev)++rises; prev=beep_pin; total+=beep_pin;
+                                           ^~~~

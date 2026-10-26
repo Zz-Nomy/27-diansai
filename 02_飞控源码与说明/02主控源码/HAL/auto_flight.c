@@ -2,6 +2,7 @@
 #include "flow.h"
 #include "control.h"
 #include "remote.h"
+#include "light_task.h"
 #include "myMath.h"
 #include <math.h>
 #include <string.h>
@@ -77,7 +78,7 @@ uint8_t AutoFlight_Active(void)
 }
 uint8_t AutoFlight_HorizontalInput(void)
 {
-    return auto_flight.state == AUTO_HOVER;
+    return auto_flight.state == AUTO_HOVER && !LightTask_RemoteLocked();
 }
 uint8_t AutoFlight_MotorReady(void)
 {
@@ -104,7 +105,7 @@ void AutoFlight_OnRcFrame(void)
         button_tick = SysTick_count;
         button_candidate = level;
     }
-    if (aux1 != last_aux1 && AutoFlight_Active())
+    if (aux1 != last_aux1 && AutoFlight_Active() && !LightTask_RemoteLocked())
         auto_flight.takeover_pending = 1;
     last_aux1 = aux1;
 }
@@ -259,7 +260,8 @@ void AutoFlight_Tick(float dt)
         auto_flight.alarm = AUTO_ALARM_SENSOR;
     }
     manual_throttle = 200.0f + 0.45f * ((float)Remote.thr - 1000.0f);
-    if (auto_flight.takeover_pending && Remote.thr > 1150U &&
+    if ((!LightTask_RemoteLocked() || auto_flight.state != AUTO_HOVER) &&
+        auto_flight.takeover_pending && Remote.thr > 1150U &&
         absf(manual_throttle - auto_flight.throttle) <= 40.0f) {
         stop_auto();
         auto_flight.alarm = AUTO_ALARM_NONE;
@@ -279,6 +281,11 @@ void AutoFlight_Tick(float dt)
         else flow_lost_seconds += dt;
         if (flow_lost_seconds > AUTO_FLOW_LOSS_SECONDS) land(AUTO_ERROR_FLOW);
     }
+    if (LightTask_RemoteLocked()) {
+        landing_arm_seconds = landing_gesture_seconds = 0.0f;
+        landing_enabled = 0;
+        auto_flight.takeover_pending = 0;
+    } else {
     if (Remote.thr >= 1250U && Remote.thr <= 1750U) landing_arm_seconds += dt;
     else landing_arm_seconds = 0.0f;
     if (landing_arm_seconds >= 0.25f) landing_enabled = 1;
@@ -286,6 +293,7 @@ void AutoFlight_Tick(float dt)
         landing_gesture_seconds += dt;
     else landing_gesture_seconds = 0.0f;
     if (landing_gesture_seconds > 0.15f) land(AUTO_OK);
+    }
     if (auto_flight.state == AUTO_SPOOL) {
         ramp_seconds += dt;
         auto_flight.throttle = AUTO_IDLE_THROTTLE *

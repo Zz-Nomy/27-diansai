@@ -1,0 +1,3 @@
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\flight_radio.c:38:13: warning: 'TX_Mode' defined but not used [-Wunused-function]
+ static void TX_Mode(void) { config=0x0E; ce=0; }
+             ^~~~~~~

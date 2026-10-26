@@ -15,6 +15,8 @@
 #include "Remote.h"
 #include "mpu6050.h"
 #include "auto_flight.h"
+#include "light_task.h"
+#include "light_link.h"
 #include "imu.h"
 
 #define SUCCESS 0
@@ -103,17 +105,18 @@ void RC_Analy(void)
 							{
 									const float yaw_ratio =   0.5f;		//偏航角灵敏度度
 							
-									if(Remote.yaw>1820)
+									if(!LightTask_RemoteLocked() && Remote.yaw>1820)
 									{
 										pidYaw.desired -= yaw_ratio;	//符号控制偏航角方向
 									}
-									else if(Remote.yaw <1180)
+									else if(!LightTask_RemoteLocked() && Remote.yaw <1180)
 									{
 										pidYaw.desired += yaw_ratio;	//符号控制偏航角方向
 									}		
 							}							
 				}
 				remote_unlock();
+                LightLink_OnControlFrame(RC_rxData);
 			
 		}
   }

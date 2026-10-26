@@ -1,0 +1,18 @@
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\cm_latched.c: In function 'remote_unlock':
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\cm_latched.c:2111:2: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+  }
+  ^       
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\cm_latched.c: In function 'HeightPidControl':
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\cm_latched.c:2406:2: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+     channels[4] = position_hold ? 2000 : 1000;
+  ^  ~~~~~
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\cm_latched.c: In function 'FlowPidControl':
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\cm_latched.c:2704:2: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+             SysTick_count+=2;
+  ^       
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\cm_latched.c: In function 'FlightPidControl':
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\cm_latched.c:2926:2: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\cm_latched.c: In function 'MotorControl':
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\cm_latched.c:3064:2: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\cm_latched.c:3082:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\cm_latched.c:3090:3: note: here

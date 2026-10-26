@@ -38,7 +38,7 @@ int main(void)
 			ANTO_polling(); //匿名上位机发送数据
 			RC_Analy();			
 	//		Usb_Hid_Receive();//USB接收到匿名上位机的数据
-			PilotLED(); //LED刷新
+			/* LED refresh runs in the 6 ms scheduler. */ //LED刷新
 	}
 }
 

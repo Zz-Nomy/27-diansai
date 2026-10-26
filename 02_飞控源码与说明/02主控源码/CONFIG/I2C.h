@@ -46,6 +46,10 @@ extern int8_t IIC_Write_One_Byte(uint8_t addr,uint8_t reg,uint8_t data);
 extern int8_t IIC_Read_One_Byte(uint8_t addr,uint8_t reg);	 
 extern int8_t IIC_Write_Bytes(uint8_t addr,uint8_t reg,uint8_t *data,uint8_t len);
 extern int8_t IIC_read_Bytes(uint8_t addr,uint8_t reg,uint8_t *data,uint8_t len);
+/* Registerless devices. addr is an even 8-bit WRITE address (7-bit << 1).
+ * Return 0 on success, 1 on failure, as in the existing bus driver. */
+extern int8_t IIC_Send_Command(uint8_t addr, uint8_t command);
+extern int8_t IIC_Receive_Bytes(uint8_t addr, uint8_t *data, uint8_t len);
 //----------------------------------------------------------------------f
 
 

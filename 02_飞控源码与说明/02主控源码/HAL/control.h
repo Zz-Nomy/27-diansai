@@ -91,6 +91,7 @@
 #define EXIT_251 251
 #define EXIT_250 250
 extern void FlowPidControl(float dt);
+extern void FlowControl_LatchPosition(void);
 extern void HeightPidControl(float dt);
 extern void FlightPidControl(float FightControlTime);
 extern void MotorControl(void);

@@ -439,6 +439,25 @@ uint32_t __STREXW(uint32_t value, uint32_t *addr)
  *
  * Return the actual process stack pointer
  */
+#if defined(__clang__)
+/* AC6 requires naked functions to contain only basic assembly. */
+__attribute__((naked)) uint32_t __get_PSP(void)
+{
+  __asm volatile ("mrs r0, psp\n bx lr");
+}
+__attribute__((naked)) void __set_PSP(uint32_t topOfProcStack)
+{
+  __asm volatile ("msr psp, r0\n bx lr");
+}
+__attribute__((naked)) uint32_t __get_MSP(void)
+{
+  __asm volatile ("mrs r0, msp\n bx lr");
+}
+__attribute__((naked)) void __set_MSP(uint32_t topOfMainStack)
+{
+  __asm volatile ("msr msp, r0\n bx lr");
+}
+#else
 uint32_t __get_PSP(void) __attribute__( ( naked ) );
 uint32_t __get_PSP(void)
 {
@@ -498,6 +517,8 @@ void __set_MSP(uint32_t topOfMainStack)
   __ASM volatile ("MSR msp, %0\n\t"
                   "BX  lr     \n\t" : : "r" (topOfMainStack) );
 }
+
+#endif
 
 /**
  * @brief  Return the Base Priority value

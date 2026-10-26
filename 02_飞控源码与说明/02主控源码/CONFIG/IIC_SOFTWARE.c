@@ -312,3 +312,30 @@ int8_t IIC_read_Bytes(uint8_t addr,uint8_t reg,uint8_t *data,uint8_t len)
     I2c_Stop();
     return SUCCESS;
 }
+
+
+/* Raw transactions for BH1750: never send a fictitious register address. */
+int8_t IIC_Send_Command(uint8_t addr, uint8_t command)
+{
+    if (addr & 1U) return FAILED;
+    if (I2c_Start() == FAILED) { I2c_Stop(); return FAILED; }
+    I2c_SendByte(addr);
+    if (I2c_WaitAck() == FAILED) { I2c_Stop(); return FAILED; }
+    I2c_SendByte(command);
+    if (I2c_WaitAck() == FAILED) { I2c_Stop(); return FAILED; }
+    I2c_Stop();
+    return SUCCESS;
+}
+int8_t IIC_Receive_Bytes(uint8_t addr, uint8_t *data, uint8_t len)
+{
+    if ((addr & 1U) || !data || !len) return FAILED;
+    if (I2c_Start() == FAILED) { I2c_Stop(); return FAILED; }
+    I2c_SendByte(addr | 1U);
+    if (I2c_WaitAck() == FAILED) { I2c_Stop(); return FAILED; }
+    while (len) {
+        *data++ = I2c_ReadByte();
+        if (--len) I2c_Ack(); else I2c_NoAck();
+    }
+    I2c_Stop();
+    return SUCCESS;
+}

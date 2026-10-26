@@ -1,0 +1,6 @@
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\remote_radio.c:37:13: warning: 'RX_Mode' defined but not used [-Wunused-function]
+ static void RX_Mode(void) { config=0x0F; ce=1; }
+             ^~~~~~~
+C:\Users\28154\Desktop\27电赛\04_编译与验证\BH1750_半自动光源_20261025\host_tests\remote_radio.c:22:16: warning: 'TX_ADDRESS' defined but not used [-Wunused-variable]
+ static uint8_t TX_ADDRESS[5]={1,2,3,4,5};
+                ^~~~~~~~~~

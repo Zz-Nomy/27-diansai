@@ -10,6 +10,7 @@
 #include "LED.h"
 #include "ALL_DATA.h"
 #include "auto_flight.h"
+#include "light_task.h"
 
 
 
@@ -69,13 +70,19 @@ void PilotLED() //flash 300MS interval
         alarm_was_active = 1;
         return;
     }
+    if (LightTask_AlertActive()) {
+        auto_alarm_leds(LightTask_AlertLedOn() ?
+                        (AUTO_BLUE_LED_MASK | AUTO_RED_LED_MASK) : 0U);
+        alarm_was_active = 1;
+        return;
+    }
     if (alarm_was_active) {
         auto_alarm_leds(0U);
         alarm_was_active = 0;
     }
 	static uint32_t LastTime = 0;
 //	static u8 last_LED_status
-	if(SysTick_count - LastTime < LED.FlashTime)
+	if((uint32_t)(SysTick_count - LastTime) * 3U < LED.FlashTime)
 	{
 
 		return;

@@ -72,6 +72,7 @@ u8 NRF24L01_RxPacket(u8 *rxbuf);                         //接收一个包的数据
 
 
 extern void NRF24L01_init(void);
+void NRF24L01_Listen(void);
 
 
 #endif

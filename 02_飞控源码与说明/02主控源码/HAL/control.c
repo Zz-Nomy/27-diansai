@@ -186,6 +186,15 @@ void HeightPidControl(float dt)
  ***************************************************************/
 
 
+static uint8_t flow_capture_requested;
+static float flow_hold_x, flow_hold_y;
+void FlowControl_LatchPosition(void)
+{
+    flow_hold_x = flow_x_lpf_att_i;
+    flow_hold_y = flow_y_lpf_att_i;
+    flow_capture_requested = 1;
+}
+
 void FlowPidControl(float dt)
 {
 	volatile static uint8_t status=WAITING_1;
@@ -220,6 +229,14 @@ void FlowPidControl(float dt)
 			break;
 		case PROCESS_31://½øÈë
 			{
+                if (flow_capture_requested) {
+                    flow_capture_requested = 0;
+                    set_pos = 0;
+                    pidRest(&pPidObject[8], 4);
+                    pidPositionX.desired = flow_hold_x;
+                    pidPositionY.desired = flow_hold_y;
+                }
+
 				
 				if((!AutoFlight_Active() || AutoFlight_HorizontalInput()) &&
                    (Remote.roll>1750||Remote.roll<1250||Remote.pitch>1750||Remote.pitch<1250))

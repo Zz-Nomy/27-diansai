@@ -11,7 +11,8 @@
 #include "misc.h"
 #include "delay.h"
 #include "ALL_DATA.h"
-static volatile uint32_t usTicks = 0;
+/* Only TIM1 updates SysTick_count (one tick = 3 ms). */
+static volatile uint32_t systick_ms = 0;
 
 
 /**
@@ -21,7 +22,7 @@ static volatile uint32_t usTicks = 0;
   */
 void SysTick_Handler(void)
 {
-	SysTick_count++;
+	++systick_ms;
 }
 
 
@@ -40,15 +41,16 @@ void cycleCounterInit(void)
  **********************************************************************/
 uint32_t GetSysTime_us(void) //获取当前系统的运行时间 单位us
 {
-    return (SysTick_count*1000  + (72000 - SysTick->VAL) / 72); //SysTick->VAL 当前倒计数的值//72000每个ms计数的重装值//1000 ms转化成us
+    uint32_t ms, value, reload = SysTick->LOAD + 1U;
+    do { ms = systick_ms; value = SysTick->VAL; } while (ms != systick_ms);
+    return ms * 1000U + (reload - value) / (SystemCoreClock / 1000000U);
 }
 
 //    毫秒级延时函数	 
-uint32_t last_systick;
 void delay_ms(uint16_t nms)
 {
-	last_systick=SysTick_count;
-	while(SysTick_count - last_systick < nms);	  	  
+	uint32_t start_ms = systick_ms;
+	while ((uint32_t)(systick_ms - start_ms) < nms);	  	  
 }
 
 

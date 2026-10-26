@@ -1,0 +1,16 @@
+{
+  "mini.uvprojx": "eebae87e9d51db0fbd0969b669b422d4ab1db638b267d096ff2dd85ce873c790",
+  "CONFIG\\I2C.h": "2885a4547ad7c1bad989a02fa7c7cf945d058e9c5c33cf0f52782ba7d6db32b3",
+  "CONFIG\\IIC_SOFTWARE.c": "3d1637ab9ceb284b375b5c8a5af9f0e30e6a027b8d0b160a387db9c95a201a0b",
+  "HAL\\auto_flight.c": "9c7f03d62cb95cd32a5cd54a34216d2718ff8c130fa64af7cde6f68807414877",
+  "HAL\\control.c": "cd5816b2ff6c7ed89d6e806efd4998243304aee31f9c1da8e1bbe493aa2bd9de",
+  "HAL\\control.h": "523747fa069f4ff548ac4215578a491b469d4f266c7aeb2f6bfb59f614eec9be",
+  "HAL\\remote.c": "97cda456bedf1f5f97356d69fa2b8482b05a84312189b395f4ac36e98d14cd8b",
+  "HARDWARE\\LED.c": "0d78a1eef663ba9c8f7d50174ca60b6510abf7d3aa2b7b32408218f153a2ed4d",
+  "HARDWARE\\nrf24l01.c": "42b719f9f5e96679cdb2132459cebfd39c10d6471fa56bdfc63d7843bbd3eab9",
+  "HARDWARE\\nrf24l01.h": "538997e932de5ec61201d617709c4cd245ec5bb3debf71b2c2c1c6a2a4a2f796",
+  "USER\\delay.c": "d7657cd015462dc3bd61b58be12dc319b53fa3f762b5c00630d5baa11c60220d",
+  "USER\\INIT.c": "10c05b54d3bba96fe64d45c2d323b6915899323ed274bc70f3570771fe9ae3f6",
+  "USER\\main.c": "c61827702f7091612736b37c56403ccae83f3abe92ecac645202fee6b711e32b",
+  "USER\\scheduler.c": "406e810b969172b470ebd1eb3ba01dbf3a3591801e28c48312b12d6d1ae88c1d"
+}

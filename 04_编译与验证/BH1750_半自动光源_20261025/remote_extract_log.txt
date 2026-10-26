@@ -1,0 +1,22 @@
+
+7-Zip 26.01 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-04-27
+
+Scanning the drive for archives:
+1 file, 5354606 bytes (5230 KiB)
+
+Extracting archive: C:\Users\28154\xwechat_files\wxid_vp270eew66l622_8066\msg\file\2026-10\遥控程序(keil MDK打开).rar
+--
+Path = C:\Users\28154\xwechat_files\wxid_vp270eew66l622_8066\msg\file\2026-10\遥控程序(keil MDK打开).rar
+Type = Rar
+Physical Size = 5354606
+Solid = -
+Blocks = 232
+Multivolume = -
+Volumes = 1
+
+Everything is Ok
+
+Folders: 13
+Files: 219
+Size:       28919247
+Compressed: 5354606

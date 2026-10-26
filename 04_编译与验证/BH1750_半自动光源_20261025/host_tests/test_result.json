@@ -1,0 +1,810 @@
+{
+  "scope": "Actual C with mocked sensors/radio/GPIO; no physical flight or RF proof",
+  "passed": true,
+  "case_count": 112,
+  "cases": [
+    {
+      "variant": "cm_latched",
+      "case": "broken_sensor",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "button",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "hover_model",
+      "returncode": 0,
+      "stdout": "Toy plant final height 794.9 mm, speed -13.2 mm/s; passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "zero_and_fault",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "alarms",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "landing_model",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "rc_timeout",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "takeover",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "tilt",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "flow_loss",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "reject_conditions",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "manual_legacy",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "signed_and_range",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "i2c_low_line",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "alarm_boundaries",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "ground_sensor_loss",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_armed_ground_takeoff",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_armed_reject_height",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_armed_airborne_reject",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_manual_flight_alert",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_manual_no_position_hold",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_manual_mode_hold",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_manual_hold_emergency",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_manual_hold_rc_loss",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_driver",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_bus_failure",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_ground",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_spike",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_gradual",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_detection_alert",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_manual_approach",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_hold_lock",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_three_seconds",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_stability_reset",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_hold_emergency",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_hold_rc_loss",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_hold_sensor_loss",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_hold_range_loss",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_hold_dark",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_bad_reconnect",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_opt_in_reply",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "cm_latched",
+      "case": "light_fault_led_priority",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "broken_sensor",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "button",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "hover_model",
+      "returncode": 0,
+      "stdout": "Toy plant final height 796.5 mm, speed -1.2 mm/s; passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "zero_and_fault",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "alarms",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "landing_model",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "rc_timeout",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "takeover",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "tilt",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "flow_loss",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "reject_conditions",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "manual_legacy",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "signed_and_range",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "i2c_low_line",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "alarm_boundaries",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "ground_sensor_loss",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_armed_ground_takeoff",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_armed_reject_height",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_armed_airborne_reject",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_manual_flight_alert",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_manual_no_position_hold",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_manual_mode_hold",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_manual_hold_emergency",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_manual_hold_rc_loss",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_driver",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_bus_failure",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_ground",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_spike",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_gradual",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_detection_alert",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_manual_approach",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_hold_lock",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_three_seconds",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_stability_reset",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_hold_emergency",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_hold_rc_loss",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_hold_sensor_loss",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_hold_range_loss",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_hold_dark",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_bad_reconnect",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_opt_in_reply",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "mm_momentary",
+      "case": "light_fault_led_priority",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_feedback",
+      "case": "beep_three_seconds",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_feedback",
+      "case": "duplicate_no_extension",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_feedback",
+      "case": "bad_feedback",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_feedback",
+      "case": "late_feedback",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_feedback",
+      "case": "key_click_priority",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_feedback",
+      "case": "remote_poll_period",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_feedback",
+      "case": "clock_wrap",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_feedback",
+      "case": "takeoff_reject_beeps",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_feedback",
+      "case": "takeoff_success_no_reject_beep",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_feedback",
+      "case": "bad_diagnostic",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_feedback",
+      "case": "legacy_feedback_diagnostic_reset",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "i2c_raw",
+      "case": "raw_write",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "i2c_raw",
+      "case": "raw_read",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "i2c_raw",
+      "case": "command_nack",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "i2c_raw",
+      "case": "address_nack",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "i2c_raw",
+      "case": "start_failure",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "i2c_raw",
+      "case": "invalid_arguments",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "timebase",
+      "case": "separate_1ms_3ms_clocks",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_sender",
+      "case": "eight_channels_and_feedback_request",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "flight_radio",
+      "case": "success_returns_to_rx",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "flight_radio",
+      "case": "timeout_returns_to_rx",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "flight_radio",
+      "case": "max_retry_returns_to_rx",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "flight_radio",
+      "case": "spurious_irq_returns_to_rx",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_radio",
+      "case": "success_returns_to_rx",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_radio",
+      "case": "timeout_returns_to_rx",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_radio",
+      "case": "max_retry_returns_to_rx",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_radio",
+      "case": "spurious_irq_returns_to_rx",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    },
+    {
+      "variant": "remote_i2c_macros",
+      "case": "low_line_detection",
+      "returncode": 0,
+      "stdout": "passed\n",
+      "stderr": ""
+    }
+  ],
+  "source_sha256": {
+    "HARDWARE/flow.h": "1eda5da163c321e13753a318c5926c399b169766df36f426af15ab125f1c4620",
+    "HAL/control.h": "d41d871567da7c523b08a1072b1cc029501ef8cad70724a086426ac305a90247",
+    "MATH/pid.h": "1f738990bcb835c646dc28967b8724df587465730ae43ffd66bede05c0c39c5e",
+    "HARDWARE/LED.h": "228e394926ef21fac0e99a99a57ca9e3460bddac0711415a59aaad5751c4acaa",
+    "HAL/auto_flight.h": "e82ba1d00421c8685da085caf5bb2056a0a767e2665a0393161f7b5c1e3894f3",
+    "HARDWARE/bh1750.h": "2311c84ef7d27469b6ed7121b901d1ecfdcbbeec7aaa3020d928b22613407e54",
+    "HAL/light_task.h": "c07df1110cb1bc88e3f7988e96fba865a3b310ec66f0ea61e83c838e4b80e885",
+    "HAL/light_link_protocol.h": "9f996bdfe3ff35222b6f56510c73c08926e495fe5109381b3b67645063ea7681",
+    "MATH/pid.c": "549480a18fa9093f96c3089ffc868e3c2d780f504dae9547d34b792e35b4f5d1",
+    "HAL/auto_flight.c": "11c38b204a0c6a6a7b4c28ca9d0b40def3c001a3a1dbd8c0a36d815506b3780d",
+    "HARDWARE/flow.c": "b8e357d451edd8767a024a75a8f4bfd539474409ac67213ff93bd28037ce784c",
+    "HARDWARE/bh1750.c": "8c0c3f191f044f5904d903e0ac50083a241f1d279da710e06f2383c231632e4d",
+    "HAL/light_task.c": "550a786d575688c84982f2f09894f0a01a8d7e34e57437e6218a77cf8c63495f",
+    "HAL/light_link.c": "0ed6106ce18464f89d9824900b27048cdfd12a23d4fa6ec41428ddf8e657f2eb",
+    "HAL/remote.c": "8eb164c2adc450783a78416628a6a9deb218e8763193061956f8b1b7a7ee6dc9",
+    "HAL/control.c": "04614216e457602746d6e88ad18f8701a7a279b4ace27587d98d0516d86e92f6",
+    "HARDWARE/LED.c": "314952eefa3f0d69100b78a33c572f89e8ac0b7577d0e7d877ebbfeded3fa84a"
+  }
+}

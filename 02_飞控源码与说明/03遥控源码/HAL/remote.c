@@ -13,9 +13,11 @@
 #include "sys.h"
 #include "nrf24l01.h"
 #include <math.h>
+#include <string.h>
 #include "eeprom.h"
 #include "delay.h"
-__align(4) _st_Remote Remote={1000,1000,1000,1000,1000,1000,1000,1000};
+#include "light_feedback.h"
+_st_Remote Remote __attribute__((aligned(4)))={1000,1000,1000,1000,1000,1000,1000,1000};
 
 
 void key(void);
@@ -78,19 +80,23 @@ void RC_INIT(void)
 uint8_t tx_data[32] = {0xAA,0xAF,0x03,32-5};//匿名通信协议
 void NRF_SEND(void)
 {
-	for(uint8_t i=4;i<26;i+=2)
-	{
-		tx_data[i] = *((uint8_t*)&Remote+i-3);	 //高位在前
-		tx_data[31] += tx_data[i];
-		tx_data[i+1] = *((uint8_t*)&Remote+i-4);	
-		tx_data[31] += tx_data[i];
-	}
-	tx_data[31] = 0;
-		for(uint8_t i=0;i<31;i++)  //校验位
-		{
-			tx_data[31] +=  tx_data[i];
-		}
-	NRF24L01_TxPacket((uint8_t*)&tx_data); //调用NRF发射数据
+    uint8_t i;
+    uint16_t channels[8];
+    channels[0] = Remote.roll; channels[1] = Remote.pitch;
+    channels[2] = Remote.thr; channels[3] = Remote.yaw;
+    channels[4] = Remote.AUX1; channels[5] = Remote.AUX2;
+    channels[6] = Remote.AUX3; channels[7] = Remote.AUX4;
+    memset(tx_data + 4, 0, 28);
+    for (i = 0; i < 8U; ++i) {
+        tx_data[4U + i * 2U] = (uint8_t)(channels[i] >> 8);
+        tx_data[5U + i * 2U] = (uint8_t)channels[i];
+    }
+    tx_data[20] = 'L'; tx_data[21] = 'T';
+    tx_data[22] = 1; tx_data[23] = 0xA5;
+    tx_data[31] = LightLink_Checksum(tx_data);
+    TX_Mode();
+    NRF24L01_TxPacket(tx_data);
+    NRF24L01_Listen();
 }
 /******************************************************************************
 函数原型：
@@ -167,7 +173,7 @@ void key(void)
 					&& ((GPIOC->IDR & (GPIO_Pin_14|GPIO_Pin_15)) == (GPIO_Pin_14|GPIO_Pin_15))
 					)
 					status = 1;
-				BEEP_L;
+				/* Key click expiry is handled by the 1 ms buzzer task. */
 			}
 			break;
 		case 1:
@@ -227,7 +233,7 @@ void key(void)
 				}
 			}
 			status = 0;			
-			BEEP_H;
+			RemoteFeedback_KeyClick(SysTick_count);
 			temp = SysTick_count;
 			break;
 		}			

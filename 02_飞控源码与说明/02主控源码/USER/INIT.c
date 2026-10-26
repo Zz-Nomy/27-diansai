@@ -1,5 +1,7 @@
 #include "ALL_DEFINE.h"
 #include "auto_flight.h"
+#include "bh1750.h"
+#include "light_task.h"
 
 
 volatile uint32_t SysTick_count; //系统时间计数
@@ -65,6 +67,8 @@ void ALL_Init(void)
 	
 	
 	AutoFlight_Init();
+	BH1750_Init();
+	LightTask_Init();
 	TIM1_Config();					//系统工作周期初始化 
 	
 
