@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "source": "C:\\Users\\28154\\Desktop\\27电赛\\资料精简版\\02主控源码\\HARDWARE\\flow.c",
+  "source_sha256": "8117f011a0869619b1a00e55d20911d48d149bc51a9ca24332680528c00d7b8d",
+  "compiler": "C:\\mingw64\\bin\\gcc.exe",
+  "build_returncode": 0,
+  "run_returncode": 0,
+  "output": "OBSERVATION 1: address/register/length and signed-byte parsing confirmed\nOBSERVATION 2: 20 successful zero-height frames retain old 800 reading and enabled modes\nOBSERVATION 3: consecutive bus failures disable modes on call 11\nOBSERVATION 4: success clears error counter without automatically reenabling modes\n",
+  "environment_fix": "Compiler bin prepended to child-process PATH; ASCII relative build arguments",
+  "scope": "Unchanged supplier function with mocked I2C; not an STM32 build or flight test"
+}

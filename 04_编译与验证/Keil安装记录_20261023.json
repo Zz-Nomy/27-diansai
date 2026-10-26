@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-23",
+  "archive": "C:\\Software\\Installers\\Keil_MDK_5.42\\Keil5 MDK5.42.7z",
+  "setup": "C:\\Software\\Installers\\Keil_MDK_5.42\\OriginalSetup\\Setup.exe",
+  "setup_sha256": "d428fa2d4e3d22e9e78ec162b0f9839bdfd3c4546ebae01050fc02eb7f188369",
+  "signature_status": "Valid",
+  "signer": "Arm Limited",
+  "wizard_version": "MDK-ARM V5.42a",
+  "status": "installed_uv4_started_armclang_smoke_passed",
+  "suggested_install_directory": "C:\\Keil_v5",
+  "reason": "User completed installation; verified registry, valid Arm UV4 signature, visible IDE and Cortex-M3 compilation",
+  "license_tools_executed": false,
+  "install_directory": "C:\\Users\\28154\\AppData\\Local\\Keil_v5",
+  "observed_process_path": "C:\\Users\\28154\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Keil_v5\\UV4\\UV4.exe",
+  "uv4_version": "5.42.0.0",
+  "compiler_version": "Arm Compiler for Embedded 6.23",
+  "cortex_m3_smoke_exit": 0,
+  "original_project_full_build_passed": false,
+  "missing_project_components": [
+    "Arm Compiler 5",
+    "Keil.STM32F1xx_DFP.2.4.1"
+  ]
+}

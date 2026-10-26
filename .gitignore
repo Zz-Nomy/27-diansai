@@ -1,0 +1,23 @@
+# 本地发布准备文件（不上传）
+.publish-local/
+.env
+.env.*
+!.env.example
+
+# 编译缓存与临时文件；保留 HEX/BIN/AXF、源码包和验证记录
+__pycache__/
+*.pyc
+*.o
+*.d
+*.crf
+*.dep
+*.lnp
+*.tra
+*.tmp
+*.TMP
+*.exe
+*.pack
+*.uvguix.*
+*.uvgui.*
+.DS_Store
+Thumbs.db
