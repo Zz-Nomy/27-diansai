@@ -19,20 +19,25 @@ static uint8_t light_fresh(void)
 }
 static uint8_t light_position_valid(void)
 {
-    return ALL_flag.unlock && auto_flight.state == AUTO_HOVER &&
+    return ALL_flag.unlock &&
+        (auto_flight.state == AUTO_HOVER || auto_flight.state == AUTO_IDLE) &&
         ALL_flag.height_lock && ALL_flag.flow_control && flow_height_valid &&
         (uint32_t)(SysTick_count - flow_last_valid_tick) <= 4U &&
         flow_data.squal > 30U;
 }
 static uint8_t light_pose_stable(void)
 {
-    return light_position_valid() &&
+    /* Detect light after either manual or automatic takeoff. Detection does
+     * not enable any flight controller or claim position-hold capability. */
+    return ALL_flag.unlock && flow_height_valid &&
+        (uint32_t)(SysTick_count - flow_last_valid_tick) <= 4U &&
         light_abs(auto_flight.height_mm - AUTO_TARGET_HEIGHT_MM) <= AUTO_HEIGHT_TOLERANCE_MM &&
         light_abs(auto_flight.velocity_mm_s) <= 80.0f &&
         light_abs(Angle.roll) <= LIGHT_MAX_TILT_DEG &&
         light_abs(Angle.pitch) <= LIGHT_MAX_TILT_DEG &&
-        light_abs(flow_x_vel_lpf_i) <= LIGHT_STABLE_FLOW_SPEED &&
-        light_abs(flow_y_vel_lpf_i) <= LIGHT_STABLE_FLOW_SPEED;
+        (flow_data.squal <= 30U ||
+         (light_abs(flow_x_vel_lpf_i) <= LIGHT_STABLE_FLOW_SPEED &&
+          light_abs(flow_y_vel_lpf_i) <= LIGHT_STABLE_FLOW_SPEED));
 }
 static void light_reset_baseline(void)
 {
@@ -81,7 +86,7 @@ void LightTask_Tick(float dt)
     light_task.sensor_fault = !light_fresh();
     new_sample = bh1750.sample_id != last_sample_id;
     last_sample_id = bh1750.sample_id;
-    if (!AutoFlight_Active() || !ALL_flag.unlock) {
+    if (!ALL_flag.unlock) {
         flight_seen = alert_running = 0;
         light_task.state = LIGHT_WAIT_FLIGHT;
         light_task.source_detected = 0;
@@ -104,7 +109,7 @@ void LightTask_Tick(float dt)
             if (stable) light_task.stable_seconds += dt;
             else light_task.stable_seconds = 0.0f;
         }
-        if (auto_flight.state != AUTO_HOVER ||
+        if ((AutoFlight_Active() && auto_flight.state != AUTO_HOVER) ||
             bad_sensor_seconds >= LIGHT_SENSOR_GRACE_SECONDS ||
             hold_seconds >= LIGHT_HOLD_TIMEOUT_SECONDS) {
             light_task.state = LIGHT_ABORTED;
@@ -116,11 +121,12 @@ void LightTask_Tick(float dt)
         return;
     }
     if (light_task.state == LIGHT_COMPLETE || light_task.state == LIGHT_ABORTED) return;
-    if (auto_flight.state != AUTO_HOVER) {
+    if (AutoFlight_Active() && auto_flight.state != AUTO_HOVER) {
         if (flight_seen) light_task.state = LIGHT_ABORTED;
         return;
     }
     if (!flight_seen) {
+        if (!light_pose_stable()) return;
         light_reset_baseline();
         light_task.source_detected = 0;
         flight_seen = 1;
@@ -188,6 +194,7 @@ void LightTask_Tick(float dt)
         if (arrival_count >= LIGHT_ARRIVAL_CONFIRM_SAMPLES) {
             light_task.hold_x = flow_x_lpf_att_i;
             light_task.hold_y = flow_y_lpf_att_i;
+            light_task.hold_height_mm = auto_flight.height_mm;
             light_task.stable_seconds = hold_seconds = bad_sensor_seconds = 0.0f;
             light_task.state = LIGHT_HOLD;
             FlowControl_LatchPosition();

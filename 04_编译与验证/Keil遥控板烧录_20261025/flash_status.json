@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-25",
+  "completed_at_local": "2026-10-25T19:59:37+08:00",
+  "target": "STM32F103C8 remote controller",
+  "user_confirmed_remote_connected_and_powered": true,
+  "flashed": true,
+  "verified": true,
+  "flight_board_reflashed_in_this_step": false,
+  "project": "C:\\Users\\28154\\Desktop\\27电赛\\02_飞控源码与说明\\03遥控源码\\remote.uvprojx",
+  "programmed_file": "C:\\Users\\28154\\Desktop\\27电赛\\02_飞控源码与说明\\03遥控源码\\Objects\\remote.axf",
+  "probe": "J-Link ARM-OB STM32",
+  "probe_serial": "20090928",
+  "swd_idcode": "0x1BA01477",
+  "swd_clock_hz": 1000000,
+  "flash_options_observed": {
+    "erase": "sectors",
+    "program": true,
+    "verify": true,
+    "reset_and_run": false,
+    "algorithm": "STM32F10x Med-density Flash"
+  },
+  "ide_result_observed": [
+    "Programming Done.",
+    "Verify OK.",
+    "Flash Load finished at 19:59:37"
+  ],
+  "hex_sha256": "b17e580e58f3278f0b3e4722f2c1a3876ff62ef18914d38c72e6640d37ed2fef",
+  "axf_sha256": "330ac307472e5ed3007ee8fe6fd4b1f1770fc2ab7087a6b99713188e59c844f7",
+  "image_start": "0x08000000",
+  "image_end_exclusive": "0x08001AB8",
+  "build_errors": 0,
+  "build_warnings": 10,
+  "runtime_radio_and_buzzer_test_performed": false,
+  "explicit_reset_and_run_performed": false
+}

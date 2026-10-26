@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-25",
+  "scope": "Code, mocked C regression and full ARM compilation only; no connected hardware",
+  "flashed": false,
+  "hardware_tested": false,
+  "regression_passed": true,
+  "regression_case_count": 112,
+  "changed_files": [
+    {
+      "board": "02主控源码",
+      "file": "HAL\\auto_flight.c",
+      "sha256": "11c38b204a0c6a6a7b4c28ca9d0b40def3c001a3a1dbd8c0a36d815506b3780d"
+    },
+    {
+      "board": "02主控源码",
+      "file": "HAL\\auto_flight.h",
+      "sha256": "e82ba1d00421c8685da085caf5bb2056a0a767e2665a0393161f7b5c1e3894f3"
+    },
+    {
+      "board": "02主控源码",
+      "file": "HAL\\control.c",
+      "sha256": "04614216e457602746d6e88ad18f8701a7a279b4ace27587d98d0516d86e92f6"
+    },
+    {
+      "board": "02主控源码",
+      "file": "HAL\\light_link.c",
+      "sha256": "0ed6106ce18464f89d9824900b27048cdfd12a23d4fa6ec41428ddf8e657f2eb"
+    },
+    {
+      "board": "02主控源码",
+      "file": "HAL\\light_link_protocol.h",
+      "sha256": "9f996bdfe3ff35222b6f56510c73c08926e495fe5109381b3b67645063ea7681"
+    },
+    {
+      "board": "02主控源码",
+      "file": "HAL\\light_task.c",
+      "sha256": "550a786d575688c84982f2f09894f0a01a8d7e34e57437e6218a77cf8c63495f"
+    },
+    {
+      "board": "02主控源码",
+      "file": "HAL\\light_task.h",
+      "sha256": "c07df1110cb1bc88e3f7988e96fba865a3b310ec66f0ea61e83c838e4b80e885"
+    },
+    {
+      "board": "02主控源码",
+      "file": "HAL\\remote.c",
+      "sha256": "8eb164c2adc450783a78416628a6a9deb218e8763193061956f8b1b7a7ee6dc9"
+    },
+    {
+      "board": "03遥控源码",
+      "file": "HAL\\light_feedback.c",
+      "sha256": "690f1ab835934ec3b0ca731c70f8192b511498ae7d2d036ec75c09eb54623521"
+    },
+    {
+      "board": "03遥控源码",
+      "file": "HAL\\light_link_protocol.h",
+      "sha256": "9f996bdfe3ff35222b6f56510c73c08926e495fe5109381b3b67645063ea7681"
+    }
+  ],
+  "boards": {
+    "flight": {
+      "build_passed": true,
+      "source_count": 67,
+      "hex": "C:\\Users\\28154\\Desktop\\27电赛\\04_编译与验证\\起飞与光感入口修复_20261025\\待烧录固件\\flight\\flight_light.hex",
+      "hex_sha256": "f3237e30ee1d21c877f51bf9671b7c85e2da793956ce2c0db953d2934dcb465f"
+    },
+    "remote": {
+      "build_passed": true,
+      "source_count": 39,
+      "hex": "C:\\Users\\28154\\Desktop\\27电赛\\04_编译与验证\\起飞与光感入口修复_20261025\\待烧录固件\\remote\\remote_light.hex",
+      "hex_sha256": "1344239c2d65c8a3713d0884504fb1f83a5a6e42be2ac7bc4d9f0a04a89c453e"
+    }
+  }
+}

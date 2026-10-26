@@ -15,6 +15,7 @@
 #include "flow.h"
 #include "kalman.h"
 #include "auto_flight.h"
+#include "light_task.h"
 //------------------------------------------------------------------------------
 #undef NULL
 #define NULL 0
@@ -119,7 +120,13 @@ void HeightPidControl(float dt)
 		
 		case PROCESS_31://进入定高	
 		
-			 if(Remote.thr<1750 && Remote.thr>1150) //如果油门已回中，不调高度
+			 if (LightTask_RemoteLocked()) {
+                 pidHeightHigh.desired = light_task.hold_height_mm;
+                 set_high = 1;
+                 pidUpdate(&pidHeightHigh,dt);
+                 pidHeightRate.desired = pidHeightHigh.out;
+             }
+             else if(Remote.thr<1750 && Remote.thr>1150) //如果油门已回中，不调高度
 			 {
 						if(set_high == 0) //如果刚退出调高，记录当前位置为定高位置
 						{
@@ -238,7 +245,8 @@ void FlowPidControl(float dt)
                 }
 
 				
-				if((!AutoFlight_Active() || AutoFlight_HorizontalInput()) &&
+				if(!LightTask_RemoteLocked() &&
+                   (!AutoFlight_Active() || AutoFlight_HorizontalInput()) &&
                    (Remote.roll>1750||Remote.roll<1250||Remote.pitch>1750||Remote.pitch<1250))
 				{
 						set_pos = 1;

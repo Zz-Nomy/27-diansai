@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-25",
+  "completed_at_local": "2026-10-25T19:47:50+08:00",
+  "target": "STM32F103C8 flight controller only",
+  "flashed": true,
+  "erase_or_program_started": true,
+  "verified": true,
+  "remote_board_touched": false,
+  "keil_project": "C:\\Users\\28154\\Desktop\\27电赛\\02_飞控源码与说明\\02主控源码\\mini.uvprojx",
+  "selected_compiler": "AC6.23",
+  "selected_optimization": "Oz",
+  "swd_clock_hz": 1000000,
+  "probe": "J-Link ARM-OB STM32",
+  "probe_serial": "20090928",
+  "swd_idcode": "0x2BA01477",
+  "flash_options_observed": {
+    "erase": "sectors",
+    "program": true,
+    "verify": true,
+    "reset_and_run": false,
+    "algorithm_missing": false,
+    "algorithm": "STM32F10x Med-density Flash (STM32F10x_128.FLM)"
+  },
+  "ide_result_observed": [
+    "Erase Done.",
+    "Programming Done.",
+    "Verify OK.",
+    "Flash Load finished at 19:47:50"
+  ],
+  "blocking_conditions": [],
+  "calibration_storage_address": "0x08007C00",
+  "image_start": "0x08000000",
+  "image_end_exclusive": "0x08006E98",
+  "calibration_note": "Image excludes calibration page and Erase Sectors selected; no independent before/after readback of calibration page.",
+  "verified_firmware_hex_sha256": "16b32a811f021ed43d0f621838475d054817db66299f28f76d8ec120f84eb07f",
+  "programmed_axf_sha256": "4672983e4b199979d699873407a35b2685451e148e5a314b9bbebe487e15b015",
+  "flight_test_performed": false,
+  "explicit_reset_and_run_performed": false
+}

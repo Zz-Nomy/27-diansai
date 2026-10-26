@@ -139,6 +139,7 @@ static void update_estimator(float dt)
 static void start(void)
 {
     float h = auto_flight.height_mm;
+    ++auto_flight.start_request_id;
     auto_flight.error = AUTO_OK;
     auto_flight.alarm = AUTO_ALARM_NONE;
     if (!rc_seen || (uint32_t)(SysTick_count - last_rc_tick) > AUTO_RC_START_TICKS) {
@@ -229,7 +230,9 @@ void AutoFlight_Tick(float dt)
             ground_reference = auto_flight.height_mm;
             ground_tick = SysTick_count;
         }
-        if (button_event && !ALL_flag.unlock) start();
+        /* Ground/range/stick checks in start() also apply after manual arming.
+         * Never restart from the air or interrupt a light-source hold. */
+        if (button_event && !LightTask_RemoteLocked()) start();
         return;
     }
     if (!ALL_flag.unlock) {

@@ -1,0 +1,336 @@
+--- before/02主控源码/HAL\auto_flight.c
++++ after/02主控源码/HAL\auto_flight.c
+@@ -139,6 +139,7 @@
+ static void start(void)
+ {
+     float h = auto_flight.height_mm;
++    ++auto_flight.start_request_id;
+     auto_flight.error = AUTO_OK;
+     auto_flight.alarm = AUTO_ALARM_NONE;
+     if (!rc_seen || (uint32_t)(SysTick_count - last_rc_tick) > AUTO_RC_START_TICKS) {
+@@ -229,7 +230,9 @@
+             ground_reference = auto_flight.height_mm;
+             ground_tick = SysTick_count;
+         }
+-        if (button_event && !ALL_flag.unlock) start();
++        /* Ground/range/stick checks in start() also apply after manual arming.
++         * Never restart from the air or interrupt a light-source hold. */
++        if (button_event && !LightTask_RemoteLocked()) start();
+         return;
+     }
+     if (!ALL_flag.unlock) {
+--- before/02主控源码/HAL\auto_flight.h
++++ after/02主控源码/HAL\auto_flight.h
+@@ -26,6 +26,7 @@
+     AutoFlightAlarm alarm;
+     float height_mm, velocity_mm_s, setpoint_mm, throttle;
+     float stable_seconds;
++    uint16_t start_request_id;
+     uint8_t takeover_pending;
+ } AutoFlightStatus;
+ 
+--- before/02主控源码/HAL\control.c
++++ after/02主控源码/HAL\control.c
+@@ -15,6 +15,7 @@
+ #include "flow.h"
+ #include "kalman.h"
+ #include "auto_flight.h"
++#include "light_task.h"
+ //------------------------------------------------------------------------------
+ #undef NULL
+ #define NULL 0
+@@ -119,7 +120,13 @@
+ 		
+ 		case PROCESS_31://进入定高	
+ 		
+-			 if(Remote.thr<1750 && Remote.thr>1150) //如果油门已回中，不调高度
++			 if (LightTask_RemoteLocked()) {
++                 pidHeightHigh.desired = light_task.hold_height_mm;
++                 set_high = 1;
++                 pidUpdate(&pidHeightHigh,dt);
++                 pidHeightRate.desired = pidHeightHigh.out;
++             }
++             else if(Remote.thr<1750 && Remote.thr>1150) //如果油门已回中，不调高度
+ 			 {
+ 						if(set_high == 0) //如果刚退出调高，记录当前位置为定高位置
+ 						{
+@@ -238,7 +245,8 @@
+                 }
+ 
+ 				
+-				if((!AutoFlight_Active() || AutoFlight_HorizontalInput()) &&
++				if(!LightTask_RemoteLocked() &&
++                   (!AutoFlight_Active() || AutoFlight_HorizontalInput()) &&
+                    (Remote.roll>1750||Remote.roll<1250||Remote.pitch>1750||Remote.pitch<1250))
+ 				{
+ 						set_pos = 1;
+--- before/02主控源码/HAL\light_link.c
++++ after/02主控源码/HAL\light_link.c
+@@ -3,6 +3,8 @@
+ #include "light_task.h"
+ #include "bh1750.h"
+ #include "light_link_protocol.h"
++#include "auto_flight.h"
++#include "flow.h"
+ 
+ void LightLink_OnControlFrame(const uint8_t *frame)
+ {
+@@ -23,6 +25,15 @@
+     status.lux = (uint16_t)bh1750.lux;
+     status.ambient_lux = (uint16_t)light_task.ambient_lux;
+     status.arrival_lux = (uint16_t)light_task.arrival_lux;
++    status.diagnostic_valid = 1;
++    status.auto_state = (uint8_t)auto_flight.state;
++    status.auto_error = (uint8_t)auto_flight.error;
++    status.start_request_id = auto_flight.start_request_id;
++    status.range_raw = flow_raw_height;
++    status.height_mm = (uint16_t)auto_flight.height_mm;
++    status.sensor_flags = (flow_height_valid ? 1U : 0U) |
++        (bh1750.valid ? 2U : 0U) | (flow_data.squal > 30U ? 4U : 0U);
++    status.aux3 = Remote.AUX3;
+     __set_PRIMASK(mask);
+     LightLink_Encode(packet, &status);
+     /* Foreground only; interrupts and the motor scheduler keep running. */
+--- before/02主控源码/HAL\light_link_protocol.h
++++ after/02主控源码/HAL\light_link_protocol.h
+@@ -15,6 +15,9 @@
+     uint32_t event_id;
+     uint16_t alert_elapsed_ms, lux, ambient_lux, arrival_lux;
+     uint8_t state, flags;
++    /* Optional diagnostic extension in previously unused payload bytes. */
++    uint8_t diagnostic_valid, auto_state, auto_error, sensor_flags;
++    uint16_t start_request_id, range_raw, height_mm, aux3;
+ } LightLinkStatus;
+ 
+ static __inline uint8_t LightLink_Checksum(const uint8_t *data)
+@@ -49,6 +52,15 @@
+     LightLink_Put16(out + 12, s->lux);
+     LightLink_Put16(out + 14, s->ambient_lux);
+     LightLink_Put16(out + 16, s->arrival_lux);
++    if (s->diagnostic_valid) {
++        out[18] = 0xD1;
++        out[19] = s->auto_state; out[20] = s->auto_error;
++        LightLink_Put16(out + 22, s->start_request_id);
++        LightLink_Put16(out + 24, s->range_raw);
++        LightLink_Put16(out + 26, s->height_mm);
++        out[28] = s->sensor_flags;
++        LightLink_Put16(out + 29, s->aux3);
++    }
+     out[31] = LightLink_Checksum(out);
+ }
+ static __inline uint8_t LightLink_Decode(const uint8_t *in, LightLinkStatus *s)
+@@ -63,6 +75,16 @@
+     s->lux = LightLink_Get16(in + 12);
+     s->ambient_lux = LightLink_Get16(in + 14);
+     s->arrival_lux = LightLink_Get16(in + 16);
++    s->diagnostic_valid = in[18] == 0xD1;
++    s->auto_state = s->diagnostic_valid ? in[19] : 0;
++    s->auto_error = s->diagnostic_valid ? in[20] : 0;
++    s->start_request_id = s->diagnostic_valid ? LightLink_Get16(in + 22) : 0;
++    s->range_raw = s->diagnostic_valid ? LightLink_Get16(in + 24) : 0;
++    s->height_mm = s->diagnostic_valid ? LightLink_Get16(in + 26) : 0;
++    s->sensor_flags = s->diagnostic_valid ? in[28] : 0;
++    s->aux3 = s->diagnostic_valid ? LightLink_Get16(in + 29) : 0;
++    if (s->diagnostic_valid && (s->auto_state > 5U || s->auto_error > 10U ||
++        (s->sensor_flags & 0xF8U))) return 0;
+     return 1;
+ }
+ #endif
+--- before/02主控源码/HAL\light_task.c
++++ after/02主控源码/HAL\light_task.c
+@@ -19,20 +19,25 @@
+ }
+ static uint8_t light_position_valid(void)
+ {
+-    return ALL_flag.unlock && auto_flight.state == AUTO_HOVER &&
++    return ALL_flag.unlock &&
++        (auto_flight.state == AUTO_HOVER || auto_flight.state == AUTO_IDLE) &&
+         ALL_flag.height_lock && ALL_flag.flow_control && flow_height_valid &&
+         (uint32_t)(SysTick_count - flow_last_valid_tick) <= 4U &&
+         flow_data.squal > 30U;
+ }
+ static uint8_t light_pose_stable(void)
+ {
+-    return light_position_valid() &&
++    /* Detect light after either manual or automatic takeoff. Detection does
++     * not enable any flight controller or claim position-hold capability. */
++    return ALL_flag.unlock && flow_height_valid &&
++        (uint32_t)(SysTick_count - flow_last_valid_tick) <= 4U &&
+         light_abs(auto_flight.height_mm - AUTO_TARGET_HEIGHT_MM) <= AUTO_HEIGHT_TOLERANCE_MM &&
+         light_abs(auto_flight.velocity_mm_s) <= 80.0f &&
+         light_abs(Angle.roll) <= LIGHT_MAX_TILT_DEG &&
+         light_abs(Angle.pitch) <= LIGHT_MAX_TILT_DEG &&
+-        light_abs(flow_x_vel_lpf_i) <= LIGHT_STABLE_FLOW_SPEED &&
+-        light_abs(flow_y_vel_lpf_i) <= LIGHT_STABLE_FLOW_SPEED;
++        (flow_data.squal <= 30U ||
++         (light_abs(flow_x_vel_lpf_i) <= LIGHT_STABLE_FLOW_SPEED &&
++          light_abs(flow_y_vel_lpf_i) <= LIGHT_STABLE_FLOW_SPEED));
+ }
+ static void light_reset_baseline(void)
+ {
+@@ -81,7 +86,7 @@
+     light_task.sensor_fault = !light_fresh();
+     new_sample = bh1750.sample_id != last_sample_id;
+     last_sample_id = bh1750.sample_id;
+-    if (!AutoFlight_Active() || !ALL_flag.unlock) {
++    if (!ALL_flag.unlock) {
+         flight_seen = alert_running = 0;
+         light_task.state = LIGHT_WAIT_FLIGHT;
+         light_task.source_detected = 0;
+@@ -104,7 +109,7 @@
+             if (stable) light_task.stable_seconds += dt;
+             else light_task.stable_seconds = 0.0f;
+         }
+-        if (auto_flight.state != AUTO_HOVER ||
++        if ((AutoFlight_Active() && auto_flight.state != AUTO_HOVER) ||
+             bad_sensor_seconds >= LIGHT_SENSOR_GRACE_SECONDS ||
+             hold_seconds >= LIGHT_HOLD_TIMEOUT_SECONDS) {
+             light_task.state = LIGHT_ABORTED;
+@@ -116,11 +121,12 @@
+         return;
+     }
+     if (light_task.state == LIGHT_COMPLETE || light_task.state == LIGHT_ABORTED) return;
+-    if (auto_flight.state != AUTO_HOVER) {
++    if (AutoFlight_Active() && auto_flight.state != AUTO_HOVER) {
+         if (flight_seen) light_task.state = LIGHT_ABORTED;
+         return;
+     }
+     if (!flight_seen) {
++        if (!light_pose_stable()) return;
+         light_reset_baseline();
+         light_task.source_detected = 0;
+         flight_seen = 1;
+@@ -188,6 +194,7 @@
+         if (arrival_count >= LIGHT_ARRIVAL_CONFIRM_SAMPLES) {
+             light_task.hold_x = flow_x_lpf_att_i;
+             light_task.hold_y = flow_y_lpf_att_i;
++            light_task.hold_height_mm = auto_flight.height_mm;
+             light_task.stable_seconds = hold_seconds = bad_sensor_seconds = 0.0f;
+             light_task.state = LIGHT_HOLD;
+             FlowControl_LatchPosition();
+--- before/02主控源码/HAL\light_task.h
++++ after/02主控源码/HAL\light_task.h
+@@ -11,7 +11,7 @@
+ typedef struct {
+     LightTaskState state;
+     float ambient_lux, arrival_lux, delta_lux;
+-    float hold_x, hold_y, stable_seconds;
++    float hold_x, hold_y, hold_height_mm, stable_seconds;
+     uint32_t event_id;
+     uint8_t source_detected, sensor_fault, threshold_calibrated;
+ } LightTaskStatus;
+--- before/02主控源码/HAL\remote.c
++++ after/02主控源码/HAL\remote.c
+@@ -86,7 +86,7 @@
+                 __set_PRIMASK(previous_mask);		
+ 
+ 							//通道5作为定高控制 每按一下就会在1000和2000之间切换 
+-							if(Remote.AUX1!=last_Remote_AUX1 && !AutoFlight_Active()) //如果大于1700 则进入定高模式
++							if(Remote.AUX1!=last_Remote_AUX1 && !AutoFlight_Active() && !LightTask_RemoteLocked()) //如果大于1700 则进入定高模式
+ 							{
+ 								last_Remote_AUX1=Remote.AUX1;
+ 								ALL_flag.height_lock = ALL_flag.flow_control ^= 1;//取反
+@@ -115,6 +115,8 @@
+ 									}		
+ 							}							
+ 				}
++                /* Consume mode transitions during a hold; do not queue them. */
++                if (LightTask_RemoteLocked()) last_Remote_AUX1 = Remote.AUX1;
+ 				remote_unlock();
+                 LightLink_OnControlFrame(RC_rxData);
+ 			
+--- before/03遥控源码/HAL\light_feedback.c
++++ after/03遥控源码/HAL\light_feedback.c
+@@ -9,11 +9,16 @@
+ static volatile uint8_t alert_seen, alert_active, click_active;
+ static uint32_t last_send_ms;
+ static uint8_t control_ready;
++static volatile uint32_t reject_start_ms;
++static volatile uint8_t reject_active, reject_beeps;
++static uint16_t last_request_id;
+ 
+ void RemoteFeedback_Init(void)
+ {
+     memset((void *)&remote_light_status, 0, sizeof(remote_light_status));
+     alert_seen = alert_active = click_active = control_ready = 0;
++    reject_active = reject_beeps = 0;
++    last_request_id = 0;
+     last_send_ms = SysTick_count;
+ }
+ uint8_t RemoteFeedback_Accept(const uint8_t *packet, uint32_t now_ms)
+@@ -30,6 +35,16 @@
+         alert_seen = alert_active = 1;
+     }
+     if (!(s.flags & LIGHT_LINK_ALERT)) alert_active = 0;
++    if (s.diagnostic_valid && s.start_request_id != last_request_id) {
++        last_request_id = s.start_request_id;
++        /* One rejection notification per AUX3 attempt; repeats never extend it.
++         * Runtime flight faults are not counted as a rejected takeoff. */
++        if (s.auto_state == 0U && s.auto_error >= 1U && s.auto_error <= 5U) {
++            reject_start_ms = now_ms;
++            reject_beeps = s.auto_error;
++            reject_active = 1;
++        } else reject_active = 0;
++    }
+     remote_light_status = s;
+     __set_PRIMASK(mask);
+     return 1;
+@@ -48,7 +63,12 @@
+         if (elapsed >= 3000U) alert_active = 0;
+         else on = (elapsed % 1000U) < 150U;
+     }
+-    if (!alert_active && click_active) {
++    if (!alert_active && reject_active) {
++        elapsed = (uint32_t)(now_ms - reject_start_ms);
++        if (elapsed >= (uint32_t)reject_beeps * 350U) reject_active = 0;
++        else on = (elapsed % 350U) < 120U;
++    }
++    if (!alert_active && !reject_active && click_active) {
+         if ((uint32_t)(now_ms - click_start_ms) < 30U) on = 1;
+         else click_active = 0;
+     }
+--- before/03遥控源码/HAL\light_link_protocol.h
++++ after/03遥控源码/HAL\light_link_protocol.h
+@@ -15,6 +15,9 @@
+     uint32_t event_id;
+     uint16_t alert_elapsed_ms, lux, ambient_lux, arrival_lux;
+     uint8_t state, flags;
++    /* Optional diagnostic extension in previously unused payload bytes. */
++    uint8_t diagnostic_valid, auto_state, auto_error, sensor_flags;
++    uint16_t start_request_id, range_raw, height_mm, aux3;
+ } LightLinkStatus;
+ 
+ static __inline uint8_t LightLink_Checksum(const uint8_t *data)
+@@ -49,6 +52,15 @@
+     LightLink_Put16(out + 12, s->lux);
+     LightLink_Put16(out + 14, s->ambient_lux);
+     LightLink_Put16(out + 16, s->arrival_lux);
++    if (s->diagnostic_valid) {
++        out[18] = 0xD1;
++        out[19] = s->auto_state; out[20] = s->auto_error;
++        LightLink_Put16(out + 22, s->start_request_id);
++        LightLink_Put16(out + 24, s->range_raw);
++        LightLink_Put16(out + 26, s->height_mm);
++        out[28] = s->sensor_flags;
++        LightLink_Put16(out + 29, s->aux3);
++    }
+     out[31] = LightLink_Checksum(out);
+ }
+ static __inline uint8_t LightLink_Decode(const uint8_t *in, LightLinkStatus *s)
+@@ -63,6 +75,16 @@
+     s->lux = LightLink_Get16(in + 12);
+     s->ambient_lux = LightLink_Get16(in + 14);
+     s->arrival_lux = LightLink_Get16(in + 16);
++    s->diagnostic_valid = in[18] == 0xD1;
++    s->auto_state = s->diagnostic_valid ? in[19] : 0;
++    s->auto_error = s->diagnostic_valid ? in[20] : 0;
++    s->start_request_id = s->diagnostic_valid ? LightLink_Get16(in + 22) : 0;
++    s->range_raw = s->diagnostic_valid ? LightLink_Get16(in + 24) : 0;
++    s->height_mm = s->diagnostic_valid ? LightLink_Get16(in + 26) : 0;
++    s->sensor_flags = s->diagnostic_valid ? in[28] : 0;
++    s->aux3 = s->diagnostic_valid ? LightLink_Get16(in + 29) : 0;
++    if (s->diagnostic_valid && (s->auto_state > 5U || s->auto_error > 10U ||
++        (s->sensor_flags & 0xF8U))) return 0;
+     return 1;
+ }
+ #endif

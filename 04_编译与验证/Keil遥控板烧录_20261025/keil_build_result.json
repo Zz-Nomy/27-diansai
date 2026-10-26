@@ -1,0 +1,19 @@
+{
+  "board": "remote",
+  "ide_build_passed": true,
+  "errors": 0,
+  "warnings": 10,
+  "warning_types": [
+    "9 header filename case warnings",
+    "1 unused SetSysClock function"
+  ],
+  "source_count": 39,
+  "compiler": "AC6.23",
+  "optimization": "Oz",
+  "microlib": true,
+  "image_start": "0x08000000",
+  "image_end_exclusive": "0x08001AB8",
+  "data_bytes": 6840,
+  "hex_sha256": "b17e580e58f3278f0b3e4722f2c1a3876ff62ef18914d38c72e6640d37ed2fef",
+  "axf_sha256": "330ac307472e5ed3007ee8fe6fd4b1f1770fc2ab7087a6b99713188e59c844f7"
+}

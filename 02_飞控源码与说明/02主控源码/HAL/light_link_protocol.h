@@ -15,6 +15,9 @@ typedef struct {
     uint32_t event_id;
     uint16_t alert_elapsed_ms, lux, ambient_lux, arrival_lux;
     uint8_t state, flags;
+    /* Optional diagnostic extension in previously unused payload bytes. */
+    uint8_t diagnostic_valid, auto_state, auto_error, sensor_flags;
+    uint16_t start_request_id, range_raw, height_mm, aux3;
 } LightLinkStatus;
 
 static __inline uint8_t LightLink_Checksum(const uint8_t *data)
@@ -49,6 +52,15 @@ static __inline void LightLink_Encode(uint8_t *out, const LightLinkStatus *s)
     LightLink_Put16(out + 12, s->lux);
     LightLink_Put16(out + 14, s->ambient_lux);
     LightLink_Put16(out + 16, s->arrival_lux);
+    if (s->diagnostic_valid) {
+        out[18] = 0xD1;
+        out[19] = s->auto_state; out[20] = s->auto_error;
+        LightLink_Put16(out + 22, s->start_request_id);
+        LightLink_Put16(out + 24, s->range_raw);
+        LightLink_Put16(out + 26, s->height_mm);
+        out[28] = s->sensor_flags;
+        LightLink_Put16(out + 29, s->aux3);
+    }
     out[31] = LightLink_Checksum(out);
 }
 static __inline uint8_t LightLink_Decode(const uint8_t *in, LightLinkStatus *s)
@@ -63,6 +75,16 @@ static __inline uint8_t LightLink_Decode(const uint8_t *in, LightLinkStatus *s)
     s->lux = LightLink_Get16(in + 12);
     s->ambient_lux = LightLink_Get16(in + 14);
     s->arrival_lux = LightLink_Get16(in + 16);
+    s->diagnostic_valid = in[18] == 0xD1;
+    s->auto_state = s->diagnostic_valid ? in[19] : 0;
+    s->auto_error = s->diagnostic_valid ? in[20] : 0;
+    s->start_request_id = s->diagnostic_valid ? LightLink_Get16(in + 22) : 0;
+    s->range_raw = s->diagnostic_valid ? LightLink_Get16(in + 24) : 0;
+    s->height_mm = s->diagnostic_valid ? LightLink_Get16(in + 26) : 0;
+    s->sensor_flags = s->diagnostic_valid ? in[28] : 0;
+    s->aux3 = s->diagnostic_valid ? LightLink_Get16(in + 29) : 0;
+    if (s->diagnostic_valid && (s->auto_state > 5U || s->auto_error > 10U ||
+        (s->sensor_flags & 0xF8U))) return 0;
     return 1;
 }
 #endif

@@ -1,0 +1,14 @@
+{
+  "source": "https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack",
+  "bytes": 50237740,
+  "sha256": "807ea15da5b172b916bbc47b2b87f1e621240ad208d38e82a417a2ef8191e9d1",
+  "target": [
+    {
+      "Dname": "STM32F103C8"
+    }
+  ],
+  "flash_algorithms": [
+    "Flash/STM32F10x_128.FLM"
+  ],
+  "installed": true
+}

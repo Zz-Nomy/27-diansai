@@ -86,7 +86,7 @@ void RC_Analy(void)
                 __set_PRIMASK(previous_mask);		
 
 							//通道5作为定高控制 每按一下就会在1000和2000之间切换 
-							if(Remote.AUX1!=last_Remote_AUX1 && !AutoFlight_Active()) //如果大于1700 则进入定高模式
+							if(Remote.AUX1!=last_Remote_AUX1 && !AutoFlight_Active() && !LightTask_RemoteLocked()) //如果大于1700 则进入定高模式
 							{
 								last_Remote_AUX1=Remote.AUX1;
 								ALL_flag.height_lock = ALL_flag.flow_control ^= 1;//取反
@@ -115,6 +115,8 @@ void RC_Analy(void)
 									}		
 							}							
 				}
+                /* Consume mode transitions during a hold; do not queue them. */
+                if (LightTask_RemoteLocked()) last_Remote_AUX1 = Remote.AUX1;
 				remote_unlock();
                 LightLink_OnControlFrame(RC_rxData);
 			

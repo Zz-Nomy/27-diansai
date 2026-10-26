@@ -1,0 +1,12 @@
+{
+  "ide_build_passed": true,
+  "errors": 0,
+  "warnings": 1,
+  "image_start": "0x8000000",
+  "image_end_exclusive": "0x8006e98",
+  "data_bytes": 28312,
+  "calibration_start": "0x08007C00",
+  "firmware": "C:\\Users\\28154\\Desktop\\27电赛\\02_飞控源码与说明\\02主控源码\\Output\\mini.hex",
+  "hex_sha256": "16b32a811f021ed43d0f621838475d054817db66299f28f76d8ec120f84eb07f",
+  "axf_sha256": "4672983e4b199979d699873407a35b2685451e148e5a314b9bbebe487e15b015"
+}

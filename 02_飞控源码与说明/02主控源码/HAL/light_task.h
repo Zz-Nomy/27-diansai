@@ -11,7 +11,7 @@ typedef enum {
 typedef struct {
     LightTaskState state;
     float ambient_lux, arrival_lux, delta_lux;
-    float hold_x, hold_y, stable_seconds;
+    float hold_x, hold_y, hold_height_mm, stable_seconds;
     uint32_t event_id;
     uint8_t source_detected, sensor_fault, threshold_calibrated;
 } LightTaskStatus;

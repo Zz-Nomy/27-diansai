@@ -3,6 +3,8 @@
 #include "light_task.h"
 #include "bh1750.h"
 #include "light_link_protocol.h"
+#include "auto_flight.h"
+#include "flow.h"
 
 void LightLink_OnControlFrame(const uint8_t *frame)
 {
@@ -23,6 +25,15 @@ void LightLink_OnControlFrame(const uint8_t *frame)
     status.lux = (uint16_t)bh1750.lux;
     status.ambient_lux = (uint16_t)light_task.ambient_lux;
     status.arrival_lux = (uint16_t)light_task.arrival_lux;
+    status.diagnostic_valid = 1;
+    status.auto_state = (uint8_t)auto_flight.state;
+    status.auto_error = (uint8_t)auto_flight.error;
+    status.start_request_id = auto_flight.start_request_id;
+    status.range_raw = flow_raw_height;
+    status.height_mm = (uint16_t)auto_flight.height_mm;
+    status.sensor_flags = (flow_height_valid ? 1U : 0U) |
+        (bh1750.valid ? 2U : 0U) | (flow_data.squal > 30U ? 4U : 0U);
+    status.aux3 = Remote.AUX3;
     __set_PRIMASK(mask);
     LightLink_Encode(packet, &status);
     /* Foreground only; interrupts and the motor scheduler keep running. */

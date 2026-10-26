@@ -26,6 +26,7 @@ typedef struct {
     AutoFlightAlarm alarm;
     float height_mm, velocity_mm_s, setpoint_mm, throttle;
     float stable_seconds;
+    uint16_t start_request_id;
     uint8_t takeover_pending;
 } AutoFlightStatus;
 
