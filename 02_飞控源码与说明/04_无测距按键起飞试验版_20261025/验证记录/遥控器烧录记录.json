@@ -1,0 +1,31 @@
+{
+  "target": "STM32F103C8 remote controller",
+  "version": "无测距按键起飞试验版_20261025",
+  "completed_at_local": "2026-10-25T20:48:58+08:00",
+  "flashed": true,
+  "verified": true,
+  "project": "C:\\Users\\28154\\Desktop\\27电赛\\02_飞控源码与说明\\04_无测距按键起飞试验版_20261025\\遥控器\\remote.uvprojx",
+  "file": "C:\\Users\\28154\\Desktop\\27电赛\\02_飞控源码与说明\\04_无测距按键起飞试验版_20261025\\遥控器\\Objects\\remote.axf",
+  "probe_serial": "20090928",
+  "swd_idcode": "0x1BA01477",
+  "swd_clock_hz": 1000000,
+  "erase": "sectors",
+  "program": true,
+  "verify": true,
+  "reset_and_run": false,
+  "ide_errors": 0,
+  "ide_warnings": 10,
+  "image_start": "0x8000000",
+  "image_end_exclusive": "0x8001c48",
+  "data_bytes": 7240,
+  "observed_result": [
+    "Programming Done.",
+    "Verify OK.",
+    "Flash Load finished at 20:48:58"
+  ],
+  "flight_test_performed": false,
+  "radio_and_button_hardware_test_performed": false,
+  "remote.axf_sha256": "664f56cf07c832d2b5fa1cace30ef5a37cf3c6df9f052329acf7cc9208c226e0",
+  "remote.hex_sha256": "f75bcf2b93f7f219d4e212e898c8f83afe4da526c415633923cce83f2f3c61b4",
+  "remote.build_log.htm_sha256": "54dcbc53c00e9dae23978279a8bbaf4d8b264fba2e221981cbfd20ff9d901134"
+}

@@ -1,0 +1,31 @@
+{
+  "project": "C:\\Users\\28154\\Desktop\\27电赛\\02_飞控源码与说明\\04_无测距按键起飞试验版_20261025\\飞控\\mini.uvprojx",
+  "ide_errors": 0,
+  "ide_warnings": 1,
+  "image_start": "0x8000000",
+  "image_end_exclusive": "0x8005138",
+  "data_bytes": 20792,
+  "flashed": true,
+  "remote_flashed": false,
+  "reset_and_run": false,
+  "erase": "sectors",
+  "program": true,
+  "verify": true,
+  "mini.axf_sha256": "6dff2cf15dec8536beb01475febcaf6b2cbfb7ed93a9c1e27b80c63c1aa2b225",
+  "mini.hex_sha256": "12286a85dc2e1b6b976f5f196a667bff012c0201304aef32330736c57475f87d",
+  "mini.build_log.htm_sha256": "fa92a21db638a5845d377670ee4400031712f79db75a5c3343472f6fb3c8b993",
+  "verified": true,
+  "completed_at_local": "2026-10-25T20:42:19+08:00",
+  "probe": "J-Link ARM-OB STM32",
+  "probe_serial": "20090928",
+  "swd_idcode": "0x2BA01477",
+  "swd_clock_hz": 1000000,
+  "flight_test_performed": false,
+  "reset_and_run_performed": false,
+  "observed_result": [
+    "Erase Done.",
+    "Programming Done.",
+    "Verify OK.",
+    "Flash Load finished at 20:42:19"
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "scope": "Actual C with hardware mocks; no flight, lift or altitude proof",
+  "passed": true,
+  "case_count": 26,
+  "original_versions_unchanged": true,
+  "scheduler_has_no_range_or_position_calls": true,
+  "cases": [
+    {
+      "case": "startup_high_no_arm",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "no_range_required",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "prearmed_zero_start",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "ramp_limited",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "reject_throttle",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "reject_tilt",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "stop_immediate_on_frame",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "stop_wins_simultaneous_start",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "stop_latched_no_restart",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "fresh_press_after_stop",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "takeover_requires_match",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "early_takeover_match",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "lost_rc_stops",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "bad_packets_no_keepalive",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "tilt_stops",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "emergency_stick",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "repeat_three_no_restart",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "aux1_cannot_enable_range_mode",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "legacy_sticks_cannot_unlock",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "invalid_channel_rejected",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "takeover_wait_notice",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "notice_expiry_keeps_key_click",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "manual_feedback_ends_notice",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "stop_feedback_ends_notice",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "rejection_notice",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    },
+    {
+      "case": "malformed_feedback",
+      "returncode": 0,
+      "diagnostics": "passed\n"
+    }
+  ],
+  "source_sha256": {
+    "HAL/open_takeoff_config.h": "7f5d6d91d77c256ed5010a775212cf25287a9cf12cc4f3b3d2bd4dfea9e23207",
+    "HAL/control.h": "d41d871567da7c523b08a1072b1cc029501ef8cad70724a086426ac305a90247",
+    "MATH/pid.h": "1f738990bcb835c646dc28967b8724df587465730ae43ffd66bede05c0c39c5e",
+    "HARDWARE/LED.h": "228e394926ef21fac0e99a99a57ca9e3460bddac0711415a59aaad5751c4acaa",
+    "HARDWARE/flow.h": "1eda5da163c321e13753a318c5926c399b169766df36f426af15ab125f1c4620",
+    "HARDWARE/bh1750.h": "2311c84ef7d27469b6ed7121b901d1ecfdcbbeec7aaa3020d928b22613407e54",
+    "HAL/light_task.h": "c07df1110cb1bc88e3f7988e96fba865a3b310ec66f0ea61e83c838e4b80e885",
+    "HAL/light_link_protocol.h": "9f996bdfe3ff35222b6f56510c73c08926e495fe5109381b3b67645063ea7681",
+    "HAL/auto_flight.h": "4e8367d5e235b8c7fd361e13cf2e7ee48dc399074a976f580903de0c54242000",
+    "MATH/pid.c": "549480a18fa9093f96c3089ffc868e3c2d780f504dae9547d34b792e35b4f5d1",
+    "HAL/light_task.c": "83729eb941d53f1323530141f9287117f2156de59d96cdc619105d4bf2796aca",
+    "HAL/auto_flight.c": "87d513dceb9dc34baa56da0f8f665c1c7afca09c3ae23d42f14064698f44c931",
+    "HARDWARE/flow.c": "b8e357d451edd8767a024a75a8f4bfd539474409ac67213ff93bd28037ce784c",
+    "HAL/light_link.c": "0ed6106ce18464f89d9824900b27048cdfd12a23d4fa6ec41428ddf8e657f2eb",
+    "HAL/remote.c": "55cbdea03122cb76812b4fa92bcfbcb160ccff7ffa79366d0132073f279a9c60",
+    "HAL/control.c": "e8197b1ebe8bb7bbea48a509dd6243c14d72aa5b18d1be0cc42d22052e564651",
+    "HARDWARE/LED.c": "314952eefa3f0d69100b78a33c572f89e8ac0b7577d0e7d877ebbfeded3fa84a"
+  }
+}

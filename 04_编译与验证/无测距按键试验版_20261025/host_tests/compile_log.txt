@@ -1,0 +1,6 @@
+C:\Users\28154\Desktop\27电赛\04_编译与验证\无测距按键试验版_20261025\host_tests\actual_open_takeoff.c: In function 'HeightPidControl':
+C:\Users\28154\Desktop\27电赛\04_编译与验证\无测距按键试验版_20261025\host_tests\actual_open_takeoff.c:1637:2: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+C:\Users\28154\Desktop\27电赛\04_编译与验证\无测距按键试验版_20261025\host_tests\actual_open_takeoff.c: In function 'FlowPidControl':
+C:\Users\28154\Desktop\27电赛\04_编译与验证\无测距按键试验版_20261025\host_tests\actual_open_takeoff.c:1935:2: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+C:\Users\28154\Desktop\27电赛\04_编译与验证\无测距按键试验版_20261025\host_tests\actual_open_takeoff.c: In function 'FlightPidControl':
+C:\Users\28154\Desktop\27电赛\04_编译与验证\无测距按键试验版_20261025\host_tests\actual_open_takeoff.c:2157:2: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]

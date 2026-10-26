@@ -1,0 +1,257 @@
+Component: Arm Compiler for Embedded 6.23 Tool: armlink [5f102400]
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x08000101
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001c88, Max: 0x00010000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00001c58, Max: 0x00010000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x000000ec   Data   RO           92    RESET               StartUp_startup_stm32f10x_md.s.o
+    0x080000ec   0x00000000   Code   RO         1488  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x080000ec   0x00000004   Code   RO         1501    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x080000f0   0x00000004   Code   RO         1504    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x080000f4   0x00000000   Code   RO         1506    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x080000f4   0x00000000   Code   RO         1508    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x080000f4   0x00000008   Code   RO         1509    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x080000fc   0x00000000   Code   RO         1511    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x080000fc   0x00000000   Code   RO         1513    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x080000fc   0x00000004   Code   RO         1502    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000100   0x00000024   Code   RO           93  * .text               StartUp_startup_stm32f10x_md.s.o
+    0x08000124   0x00000024   Code   RO         1491    .text               mc_w.l(memseta.o)
+    0x08000148   0x000000b0   Code   RO         1493    .text               mf_w.l(fadd.o)
+    0x080001f8   0x00000064   Code   RO         1495    .text               mf_w.l(fmul.o)
+    0x0800025c   0x0000000a   Code   RO         1497    .text               mf_w.l(ffltui.o)
+    0x08000266   0x00000032   Code   RO         1499    .text               mf_w.l(ffixi.o)
+    0x08000298   0x00000000   Code   RO         1515    .text               mc_w.l(iusefp.o)
+    0x08000298   0x0000006e   Code   RO         1516    .text               mf_w.l(fepilogue.o)
+    0x08000306   0x00000002   PAD
+    0x08000308   0x00000030   Code   RO         1518    .text               mc_w.l(init.o)
+    0x08000338   0x00000028   Code   RO         1319    .text.ADC1_GPIO_Config  CONFIG_ADC_DMA_Config.c.o
+    0x08000360   0x000000ec   Code   RO         1321    .text.ADC1_Mode_Config  CONFIG_ADC_DMA_Config.c.o
+    0x0800044c   0x00000010   Code   RO          167    .text.ADC_Cmd       Lib_src_stm32f10x_adc.c.o
+    0x0800045c   0x00000012   Code   RO          169    .text.ADC_DMACmd    Lib_src_stm32f10x_adc.c.o
+    0x0800046e   0x00000008   Code   RO          179    .text.ADC_GetCalibrationStatus  Lib_src_stm32f10x_adc.c.o
+    0x08000476   0x00000008   Code   RO          175    .text.ADC_GetResetCalibrationStatus  Lib_src_stm32f10x_adc.c.o
+    0x0800047e   0x00000002   PAD
+    0x08000480   0x00000044   Code   RO          163    .text.ADC_Init      Lib_src_stm32f10x_adc.c.o
+    0x080004c4   0x00000056   Code   RO          189    .text.ADC_RegularChannelConfig  Lib_src_stm32f10x_adc.c.o
+    0x0800051a   0x0000000a   Code   RO          173    .text.ADC_ResetCalibration  Lib_src_stm32f10x_adc.c.o
+    0x08000524   0x00000012   Code   RO          181    .text.ADC_SoftwareStartConvCmd  Lib_src_stm32f10x_adc.c.o
+    0x08000536   0x0000000a   Code   RO          177    .text.ADC_StartCalibration  Lib_src_stm32f10x_adc.c.o
+    0x08000540   0x0000002c   Code   RO          100    .text.BEEP_INIT     USER_main.c.o
+    0x0800056c   0x00000002   Code   RO           60    .text.BusFault_Handler  StartUp_stm32f10x_it.c.o
+    0x0800056e   0x00000018   Code   RO          441    .text.DMA_Cmd       Lib_src_stm32f10x_dma.c.o
+    0x08000586   0x00000002   PAD
+    0x08000588   0x000000d4   Code   RO          435    .text.DMA_DeInit    Lib_src_stm32f10x_dma.c.o
+    0x0800065c   0x00000046   Code   RO          437    .text.DMA_Init      Lib_src_stm32f10x_dma.c.o
+    0x080006a2   0x00000002   Code   RO           66    .text.DebugMon_Handler  StartUp_stm32f10x_it.c.o
+    0x080006a4   0x0000000c   Code   RO          495    .text.FLASH_PrefetchBufferCmd  Lib_src_stm32f10x_flash.c.o
+    0x080006b0   0x00000014   Code   RO          491    .text.FLASH_SetLatency  Lib_src_stm32f10x_flash.c.o
+    0x080006c4   0x000000c0   Code   RO          617    .text.GPIO_Init     Lib_src_stm32f10x_gpio.c.o
+    0x08000784   0x00000004   Code   RO          629    .text.GPIO_SetBits  Lib_src_stm32f10x_gpio.c.o
+    0x08000788   0x00000034   Code   RO          116    .text.GetSysTime_us  USER_delay.c.o
+    0x080007bc   0x00000002   Code   RO           56    .text.HardFault_Handler  StartUp_stm32f10x_it.c.o
+    0x080007be   0x00000002   PAD
+    0x080007c0   0x000000a4   Code   RO         1367    .text.I2c_NoAck     CONFIG_IIC_SOFTWARE.c.o
+    0x08000864   0x0000008c   Code   RO         1365    .text.I2c_ReadByte  CONFIG_IIC_SOFTWARE.c.o
+    0x080008f0   0x0000008c   Code   RO         1357    .text.I2c_SendByte  CONFIG_IIC_SOFTWARE.c.o
+    0x0800097c   0x00000068   Code   RO         1355    .text.I2c_Start     CONFIG_IIC_SOFTWARE.c.o
+    0x080009e4   0x00000080   Code   RO         1361    .text.I2c_Stop      CONFIG_IIC_SOFTWARE.c.o
+    0x08000a64   0x00000088   Code   RO         1359    .text.I2c_WaitAck   CONFIG_IIC_SOFTWARE.c.o
+    0x08000aec   0x00000038   Code   RO         1351    .text.IIC_Init      CONFIG_IIC_SOFTWARE.c.o
+    0x08000b24   0x00000052   Code   RO         1363    .text.IIC_Read_One_Byte  CONFIG_IIC_SOFTWARE.c.o
+    0x08000b76   0x0000004c   Code   RO         1353    .text.IIC_Write_Bytes  CONFIG_IIC_SOFTWARE.c.o
+    0x08000bc2   0x00000040   Code   RO         1369    .text.IIC_Write_One_Byte  CONFIG_IIC_SOFTWARE.c.o
+    0x08000c02   0x00000002   PAD
+    0x08000c04   0x00000114   Code   RO         1371    .text.IIC_read_Bytes  CONFIG_IIC_SOFTWARE.c.o
+    0x08000d18   0x00000002   Code   RO           58    .text.MemManage_Handler  StartUp_stm32f10x_it.c.o
+    0x08000d1a   0x00000002   Code   RO           54    .text.NMI_Handler   StartUp_stm32f10x_it.c.o
+    0x08000d1c   0x0000003c   Code   RO         1398    .text.NRF24L01_Check  HARDWARE_nrf24l01.c.o
+    0x08000d58   0x0000008c   Code   RO         1396    .text.NRF24L01_Configuration  HARDWARE_nrf24l01.c.o
+    0x08000de4   0x0000001c   Code   RO         1416    .text.NRF24L01_Listen  HARDWARE_nrf24l01.c.o
+    0x08000e00   0x00000030   Code   RO         1402    .text.NRF24L01_Read_Buf  HARDWARE_nrf24l01.c.o
+    0x08000e30   0x00000018   Code   RO         1406    .text.NRF24L01_Read_Reg  HARDWARE_nrf24l01.c.o
+    0x08000e48   0x00000032   Code   RO         1410    .text.NRF24L01_RxPacket  HARDWARE_nrf24l01.c.o
+    0x08000e7a   0x00000002   PAD
+    0x08000e7c   0x00000090   Code   RO         1408    .text.NRF24L01_TxPacket  HARDWARE_nrf24l01.c.o
+    0x08000f0c   0x00000038   Code   RO         1400    .text.NRF24L01_Write_Buf  HARDWARE_nrf24l01.c.o
+    0x08000f44   0x00000024   Code   RO         1404    .text.NRF24L01_Write_Reg  HARDWARE_nrf24l01.c.o
+    0x08000f68   0x00000016   Code   RO         1414    .text.NRF24L01_init  HARDWARE_nrf24l01.c.o
+    0x08000f7e   0x00000002   PAD
+    0x08000f80   0x00000090   Code   RO         1465    .text.NRF_SEND      HAL_remote.c.o
+    0x08001010   0x0000002e   Code   RO           98    .text.NVIC_Configuration  USER_main.c.o
+    0x0800103e   0x00000002   PAD
+    0x08001040   0x00000050   Code   RO          145    .text.NVIC_Init     Lib_src_misc.c.o
+    0x08001090   0x00000014   Code   RO          143    .text.NVIC_PriorityGroupConfig  Lib_src_misc.c.o
+    0x080010a4   0x0000000a   Code   RO          104    .text.OUTLINED_FUNCTION_0  USER_main.c.o
+    0x080010ae   0x0000000e   Code   RO          233    .text.OUTLINED_FUNCTION_0  Lib_src_stm32f10x_adc.c.o
+    0x080010bc   0x00000006   Code   RO          843    .text.OUTLINED_FUNCTION_0  Lib_src_stm32f10x_rcc.c.o
+    0x080010c2   0x00000008   Code   RO         1471    .text.OUTLINED_FUNCTION_0  HAL_remote.c.o
+    0x080010ca   0x00000008   Code   RO         1473    .text.OUTLINED_FUNCTION_1  HAL_remote.c.o
+    0x080010d2   0x0000000e   Code   RO         1475    .text.OUTLINED_FUNCTION_2  HAL_remote.c.o
+    0x080010e0   0x0000000e   Code   RO         1477    .text.OUTLINED_FUNCTION_3  HAL_remote.c.o
+    0x080010ee   0x0000000a   Code   RO          557    .text.OUTLINED_FUNCTION_5  Lib_src_stm32f10x_flash.c.o
+    0x080010f8   0x00000002   Code   RO           68    .text.PendSV_Handler  StartUp_stm32f10x_it.c.o
+    0x080010fa   0x00000002   PAD
+    0x080010fc   0x0000000c   Code   RO          809    .text.RCC_ADCCLKConfig  Lib_src_stm32f10x_rcc.c.o
+    0x08001108   0x00000018   Code   RO          821    .text.RCC_AHBPeriphClockCmd  Lib_src_stm32f10x_rcc.c.o
+    0x08001120   0x00000018   Code   RO          825    .text.RCC_APB1PeriphClockCmd  Lib_src_stm32f10x_rcc.c.o
+    0x08001138   0x00000018   Code   RO          823    .text.RCC_APB2PeriphClockCmd  Lib_src_stm32f10x_rcc.c.o
+    0x08001150   0x00000078   Code   RO           96    .text.RCC_Configuration  USER_main.c.o
+    0x080011c8   0x0000003c   Code   RO          779    .text.RCC_DeInit    Lib_src_stm32f10x_rcc.c.o
+    0x08001204   0x00000074   Code   RO          819    .text.RCC_GetClocksFreq  Lib_src_stm32f10x_rcc.c.o
+    0x08001278   0x00000024   Code   RO          785    .text.RCC_GetFlagStatus  Lib_src_stm32f10x_rcc.c.o
+    0x0800129c   0x0000000c   Code   RO          797    .text.RCC_GetSYSCLKSource  Lib_src_stm32f10x_rcc.c.o
+    0x080012a8   0x0000000c   Code   RO          799    .text.RCC_HCLKConfig  Lib_src_stm32f10x_rcc.c.o
+    0x080012b4   0x0000000c   Code   RO          789    .text.RCC_HSICmd    Lib_src_stm32f10x_rcc.c.o
+    0x080012c0   0x0000000c   Code   RO          801    .text.RCC_PCLK1Config  Lib_src_stm32f10x_rcc.c.o
+    0x080012cc   0x00000010   Code   RO          803    .text.RCC_PCLK2Config  Lib_src_stm32f10x_rcc.c.o
+    0x080012dc   0x0000000c   Code   RO          793    .text.RCC_PLLCmd    Lib_src_stm32f10x_rcc.c.o
+    0x080012e8   0x00000010   Code   RO          791    .text.RCC_PLLConfig  Lib_src_stm32f10x_rcc.c.o
+    0x080012f8   0x00000010   Code   RO          795    .text.RCC_SYSCLKConfig  Lib_src_stm32f10x_rcc.c.o
+    0x08001308   0x000001bc   Code   RO         1467    .text.RC_Analy      HAL_remote.c.o
+    0x080014c4   0x00000020   Code   RO         1463    .text.RC_INIT       HAL_remote.c.o
+    0x080014e4   0x0000003c   Code   RO         1450    .text.RemoteControl_Poll  HAL_light_feedback.c.o
+    0x08001520   0x00000200   Code   RO         1444    .text.RemoteFeedback_Accept  HAL_light_feedback.c.o
+    0x08001720   0x000000d0   Code   RO         1448    .text.RemoteFeedback_BuzzerTick  HAL_light_feedback.c.o
+    0x080017f0   0x00000030   Code   RO         1442    .text.RemoteFeedback_Init  HAL_light_feedback.c.o
+    0x08001820   0x00000010   Code   RO         1446    .text.RemoteFeedback_KeyClick  HAL_light_feedback.c.o
+    0x08001830   0x00000060   Code   RO         1339    .text.SPI_Config    CONFIG_Spi.c.o
+    0x08001890   0x00000044   Code   RO         1341    .text.SPI_RW        CONFIG_Spi.c.o
+    0x080018d4   0x00000002   Code   RO           64    .text.SVC_Handler   StartUp_stm32f10x_it.c.o
+    0x080018d6   0x00000002   PAD
+    0x080018d8   0x00000010   Code   RO          133    .text.SysTick_Handler  USER_sys.c.o
+    0x080018e8   0x00000010   Code   RO           77    .text.SystemInit    StartUp_system_stm32f10x.c.o
+    0x080018f8   0x00000058   Code   RO         1412    .text.TX_Mode       HARDWARE_nrf24l01.c.o
+    0x08001950   0x0000000c   Code   RO         1385    .text.USART1_IRQHandler  CONFIG_USART.c.o
+    0x0800195c   0x00000002   Code   RO           62    .text.UsageFault_Handler  StartUp_stm32f10x_it.c.o
+    0x0800195e   0x00000006   Code   RO           14    .text.__get_PRIMASK  StartUp_core_cm3.c.o
+    0x08001964   0x00000006   Code   RO           16    .text.__set_PRIMASK  StartUp_core_cm3.c.o
+    0x0800196a   0x00000026   Code   RO          131    .text._g_Init_sys   USER_sys.c.o
+    0x08001990   0x00000020   Code   RO          114    .text.cycleCounterInit  USER_delay.c.o
+    0x080019b0   0x0000001c   Code   RO          118    .text.delay_ms      USER_delay.c.o
+    0x080019cc   0x00000134   Code   RO         1469    .text.key           HAL_remote.c.o
+    0x08001b00   0x0000005c   Code   RO         1461    .text.key_init      HAL_remote.c.o
+    0x08001b5c   0x00000044   Code   RO          102    .text.main          USER_main.c.o
+    0x08001ba0   0x00000016   Code   RO         1428    .text.read_AT24C02  CONFIG_EEPROM.c.o
+    0x08001bb6   0x00000028   Code   RO         1432    .text.test_AT24C02  CONFIG_EEPROM.c.o
+    0x08001bde   0x0000001e   Code   RO         1430    .text.write_AT24C02  CONFIG_EEPROM.c.o
+    0x08001bfc   0x0000000e   Code   RO         1522    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08001c0a   0x00000002   Code   RO         1523    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08001c0c   0x0000000e   Code   RO         1524    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08001c1a   0x00000004   Data   RO          846    .rodata.ADCPrescTable  Lib_src_stm32f10x_rcc.c.o
+    0x08001c1e   0x00000010   Data   RO          845    .rodata.APBAHBPrescTable  Lib_src_stm32f10x_rcc.c.o
+    0x08001c2e   0x00000005   Data   RO         1419    .rodata.RX_ADDRESS  HARDWARE_nrf24l01.c.o
+    0x08001c33   0x00000005   Data   RO         1418    .rodata.TX_ADDRESS  HARDWARE_nrf24l01.c.o
+    0x08001c38   0x00000020   Data   RO         1521    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000498, Max: 0x00005000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000030   Data   RW         1479    .data..L_MergedGlobals  HAL_remote.c.o
+    0x20000030   0x0000003c   Zero   RW         1452    .bss..L_MergedGlobals  HAL_light_feedback.c.o
+    0x2000006c   0x0000001a   Zero   RW         1480    .bss..L_MergedGlobals.1  HAL_remote.c.o
+    0x20000086   0x00000008   Zero   RW         1323    .bss.ADC_ConvertedValue  CONFIG_ADC_DMA_Config.c.o
+    0x2000008e   0x00000002   PAD
+    0x20000090   0x00000004   Zero   RW          135    .bss.SysTick_count  USER_sys.c.o
+    0x20000094   0x00000004   Zero   RW          122    .bss.usTicks        USER_delay.c.o
+    0x20000098   0x00000400   Zero   RW           90    STACK               StartUp_startup_stm32f10x_md.s.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       276         12          0          0          8       3139   CONFIG_ADC_DMA_Config.c.o
+        92          0          0          0          0       1211   CONFIG_EEPROM.c.o
+      1366         16          0          0          0       6903   CONFIG_IIC_SOFTWARE.c.o
+       164          8          0          0          0       2012   CONFIG_Spi.c.o
+        12          4          0          0          0       4142   CONFIG_USART.c.o
+       844          8          0          0         60       5347   HAL_light_feedback.c.o
+      1064         52          0         48         26       4310   HAL_remote.c.o
+       696         44         10          0          0       4391   HARDWARE_nrf24l01.c.o
+       100         12          0          0          0       3305   Lib_src_misc.c.o
+       256          8          0          0          0       9678   Lib_src_stm32f10x_adc.c.o
+       306         52          0          0          0       3964   Lib_src_stm32f10x_dma.c.o
+        42          4          0          0          0       8381   Lib_src_stm32f10x_flash.c.o
+       196          0          0          0          0       6041   Lib_src_stm32f10x_gpio.c.o
+       410         52         20          0          0       8439   Lib_src_stm32f10x_rcc.c.o
+        12          0          0          0          0       4014   StartUp_core_cm3.c.o
+        36          8        236          0       1024        228   StartUp_startup_stm32f10x_md.s.o
+        16          0          0          0          0        977   StartUp_stm32f10x_it.c.o
+        16          4          0          0          0       1633   StartUp_system_stm32f10x.c.o
+       112         20          0          0          4       1818   USER_delay.c.o
+       288         20          0          0          0       4855   USER_main.c.o
+        54          0          0          0          4        948   USER_sys.c.o
+
+    ----------------------------------------------------------------------
+      6376        324        298         48       1128      85736   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        18          0          0          0          2          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        48         10          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
+        36          0          0          0          0        108   memseta.o
+       176          0          0          0          0        140   fadd.o
+       110          0          0          0          0        168   fepilogue.o
+        50          0          0          0          0         68   ffixi.o
+        10          0          0          0          0         68   ffltui.o
+       100          0          0          0          0         76   fmul.o
+
+    ----------------------------------------------------------------------
+       582         18          0          0          0        696   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       134         18          0          0          0        176   mc_w.l
+       446          0          0          0          0        520   mf_w.l
+
+    ----------------------------------------------------------------------
+       582         18          0          0          0        696   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      6958        342        298         48       1128      86048   Grand Totals
+      6958        342        298         48       1128      86048   ELF Image Totals
+      6958        342        298         48          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 7256 (   7.09kB)
+    Total RW  Size (RW Data + ZI Data)              1176 (   1.15kB)
+    Total ROM Size (Code + RO Data + RW Data)       7304 (   7.13kB)
+
+==============================================================================
+

@@ -1,0 +1,4517 @@
+﻿{
+  "date": "2026-10-25",
+  "workspace": "C:\\Users\\28154\\Desktop\\27电赛",
+  "operation": "categorize useful files and archive unrelated/redundant files without deletion",
+  "original_files": 708,
+  "original_bytes": 265662148,
+  "all_original_file_contents_preserved": true,
+  "unpreserved_original_files": [],
+  "active_files_excluding_receipt": 162,
+  "archived_files": 559,
+  "project_references": 65,
+  "missing_project_files": [],
+  "supplier_source_files": 134,
+  "supplier_source_hash_mismatches": [],
+  "simulation_script_syntax_and_new_source_path": "passed",
+  "broken_local_markdown_links": [],
+  "flight_source_changed": false,
+  "tests_or_builds_run_during_organization": false,
+  "moves": [
+    {
+      "from": "资料精简版",
+      "to": "02_飞控源码与说明",
+      "reason": "保留工程内部目录和依赖，按用途归类"
+    },
+    {
+      "from": "2026年电子电赛试题.docx",
+      "to": "01_赛题与验收/2026年电子电赛试题.docx",
+      "reason": "赛题、验收要求与待填写实测模板"
+    },
+    {
+      "from": "J题基本要求实施与验收清单.md",
+      "to": "01_赛题与验收/J题基本要求实施与验收清单.md",
+      "reason": "赛题、验收要求与待填写实测模板"
+    },
+    {
+      "from": "地面测距与功能记录模板.md",
+      "to": "01_赛题与验收/地面测距与功能记录模板.md",
+      "reason": "赛题、验收要求与待填写实测模板"
+    },
+    {
+      "from": "J题源码修改定位报告.md",
+      "to": "03_源码分析/J题源码修改定位报告.md",
+      "reason": "实际源码定位与修改建议"
+    },
+    {
+      "from": "更新说明与编译环境.md",
+      "to": "04_编译与验证/更新说明与编译环境.md",
+      "reason": "保留含2026-10-23安装更新的环境记录"
+    },
+    {
+      "from": "报名与提交材料清单.md",
+      "to": "05_任务与交接/报名与提交材料清单.md",
+      "reason": "提交待办与资料来源"
+    },
+    {
+      "from": "资料目录与来源.md",
+      "to": "05_任务与交接/资料目录与来源.md",
+      "reason": "提交待办与资料来源"
+    },
+    {
+      "from": "大概是全部.bin",
+      "to": "06_原始附件备份/大概是全部.bin",
+      "reason": "保留来源固件；对应版本尚未确认"
+    },
+    {
+      "from": "2024外扩激光光流附加资料包等2个项目/2024外扩激光光流附加资料包.zip/2024外扩激光光流附加资料包/外扩激光光流模块/主控程序(keil MDK打开)+外扩激光+光流20261001.rar",
+      "to": "06_原始附件备份/主控程序(keil MDK打开)+外扩激光+光流20261001.rar",
+      "reason": "唯一原始主控RAR，保留用于恢复和追溯"
+    },
+    {
+      "from": "27电赛_J题成果更新_20261021.zip",
+      "to": "无用/旧成果压缩包/27电赛_J题成果更新_20261021.zip",
+      "reason": "旧版重复成果，内容已展开且部分状态过时"
+    },
+    {
+      "from": "27电赛_J题精简资料与源码定位.zip",
+      "to": "无用/旧成果压缩包/27电赛_J题精简资料与源码定位.zip",
+      "reason": "旧版重复成果，内容已展开且部分状态过时"
+    },
+    {
+      "from": "成果更新说明.txt",
+      "to": "无用/过时或重复说明/成果更新说明.txt",
+      "reason": "旧任务记录或初步定位，已有较新的总览与详细报告"
+    },
+    {
+      "from": "基本要求与代码修改核对表.md",
+      "to": "无用/过时或重复说明/基本要求与代码修改核对表.md",
+      "reason": "旧任务记录或初步定位，已有较新的总览与详细报告"
+    },
+    {
+      "from": "聊天梳理与当前任务.md",
+      "to": "无用/过时或重复说明/聊天梳理与当前任务.md",
+      "reason": "旧任务记录或初步定位，已有较新的总览与详细报告"
+    },
+    {
+      "from": "孙莹庞交办任务完成说明.md",
+      "to": "无用/过时或重复说明/孙莹庞交办任务完成说明.md",
+      "reason": "旧任务记录或初步定位，已有较新的总览与详细报告"
+    },
+    {
+      "from": "源码原件",
+      "to": "无用/重复源码原件",
+      "reason": "重复解压工程，含供应商旧输出；原始RAR和精简工程已保留"
+    },
+    {
+      "from": "工具安装包",
+      "to": "无用/安装器",
+      "reason": "迅雷安装器，与当前阅读和修改飞控无直接关系"
+    },
+    {
+      "from": "2024外扩激光光流附加资料包等2个项目",
+      "to": "无用/未完成下载与附件缓存",
+      "reason": "未完成的大包临时文件及重复附件缓存"
+    },
+    {
+      "from": "工作记录",
+      "to": "无用/原工作记录",
+      "reason": "先归档历史目录，再取回有用验证文件"
+    },
+    {
+      "from": "无用/原工作记录/verify_flow_reader.py",
+      "to": "04_编译与验证/verify_flow_reader.py",
+      "reason": "保留可复现模拟测试入口"
+    },
+    {
+      "from": "无用/原工作记录/Keil安装记录_20261023.json",
+      "to": "04_编译与验证/Keil安装记录_20261023.json",
+      "reason": "保留较新的实际安装及编译器验证记录"
+    },
+    {
+      "from": "无用/原工作记录/Keil安装验证_20261023/compiler_smoke.c",
+      "to": "04_编译与验证/Keil安装验证_20261023/compiler_smoke.c",
+      "reason": "保留编译器最小验证源码"
+    },
+    {
+      "from": "无用/原工作记录/flow_reader_host_test.c",
+      "to": "04_编译与验证/历史验证记录/flow_reader_host_test.c",
+      "reason": "历史主机测试和完整性证据，保留原始记录"
+    },
+    {
+      "from": "无用/原工作记录/flow_reader_host_test_result.json",
+      "to": "04_编译与验证/历史验证记录/flow_reader_host_test_result.json",
+      "reason": "历史主机测试和完整性证据，保留原始记录"
+    },
+    {
+      "from": "无用/原工作记录/资料完整性核对.json",
+      "to": "04_编译与验证/历史验证记录/资料完整性核对.json",
+      "reason": "历史主机测试和完整性证据，保留原始记录"
+    },
+    {
+      "from": "02_飞控源码与说明/01说明文档/回购加装激光光流模块的请更新本代码.txt",
+      "to": "无用/空白说明/回购加装激光光流模块的请更新本代码.txt",
+      "reason": "零字节说明无正文；工程中的空头文件仍保留"
+    },
+    {
+      "from": "整理资料_20261025.py",
+      "to": "无用/整理脚本/整理资料_20261025.py",
+      "reason": "本次整理过程留档，防止误重复执行"
+    }
+  ],
+  "original_manifest": [
+    {
+      "path": "2024外扩激光光流附加资料包等2个项目/2024四轴飞行器.zip.tmp",
+      "bytes": 20971520,
+      "sha256": "db358362b463bbfc018187eb671b54f2f4788efd8c51fa1c5008c3fa4b55faa0"
+    },
+    {
+      "path": "2024外扩激光光流附加资料包等2个项目/2024外扩激光光流附加资料包.zip/2024外扩激光光流附加资料包/0.使用手册包/0.飞行操作使用手册/0.飞行控制说明书（必看）-外扩激光光流.pdf",
+      "bytes": 638703,
+      "sha256": "a22b34c6cb73c3c8321ba406942b73b19cb84cfbc03b0dc5f14345277eba3de0"
+    },
+    {
+      "path": "2024外扩激光光流附加资料包等2个项目/2024外扩激光光流附加资料包.zip/2024外扩激光光流附加资料包/0.使用手册包/0.飞行操作使用手册/店家特别吩咐注意事项（必看）(1).txt",
+      "bytes": 456,
+      "sha256": "c7b6f16baf2c20694cc542c5175d724b41129c71a107cb37b820123b793c390e"
+    },
+    {
+      "path": "2024外扩激光光流附加资料包等2个项目/2024外扩激光光流附加资料包.zip/2024外扩激光光流附加资料包/外扩激光光流模块/13.激光光流模块的安装方法.pdf",
+      "bytes": 114389,
+      "sha256": "710a8b523f78f1aff19719d1cd5580d3a75b3305bf16726744728a1244b0c575"
+    },
+    {
+      "path": "2024外扩激光光流附加资料包等2个项目/2024外扩激光光流附加资料包.zip/2024外扩激光光流附加资料包/外扩激光光流模块/14.关于激光定高的实现.pdf",
+      "bytes": 226827,
+      "sha256": "b720c8610ddbf5c229a655082b4b8201c8295634dcfee25085df9dfeae98eec6"
+    },
+    {
+      "path": "2024外扩激光光流附加资料包等2个项目/2024外扩激光光流附加资料包.zip/2024外扩激光光流附加资料包/外扩激光光流模块/15.关于光流定点的实现.pdf",
+      "bytes": 257114,
+      "sha256": "ae43afb923e5adcf58fd50efdc513adab33d0b2d37e1a21066676d29ae41a9e5"
+    },
+    {
+      "path": "2024外扩激光光流附加资料包等2个项目/2024外扩激光光流附加资料包.zip/2024外扩激光光流附加资料包/外扩激光光流模块/主控程序(keil MDK打开)+外扩激光+光流20261001.rar",
+      "bytes": 11870171,
+      "sha256": "1554e510c14f5f0789f9898200f68bc9b17d1d351847e7ba9f222fb4eb4f257f"
+    },
+    {
+      "path": "2024外扩激光光流附加资料包等2个项目/2024外扩激光光流附加资料包.zip/2024外扩激光光流附加资料包/外扩激光光流模块/回购加装激光光流模块的请更新本代码.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "2024外扩激光光流附加资料包等2个项目/2024外扩激光光流附加资料包.zip/2024外扩激光光流附加资料包/外扩激光光流模块/外扩模块I2C通信协议.png",
+      "bytes": 71993,
+      "sha256": "5e76aa4709ef428b0c2910cb0017eb5df3dbde1de8955bc1cb9b14884a41cad8"
+    },
+    {
+      "path": "2024外扩激光光流附加资料包等2个项目/2024外扩激光光流附加资料包.zip.tmp",
+      "bytes": 136314880,
+      "sha256": "b843a247a62de9e494832930b3e20b21333a7d893803978bec2e88db8f7c2489"
+    },
+    {
+      "path": "2026年电子电赛试题.docx",
+      "bytes": 1907910,
+      "sha256": "65d47622485287f858b3f43da768a9a3f456b2b188d486db69600f93dc5050b1"
+    },
+    {
+      "path": "27电赛_J题成果更新_20261021.zip",
+      "bytes": 3518936,
+      "sha256": "b68de2e6416727a6b015bd8ce06c0e18557c5fe4136ca6e7df173c7c82db2e14"
+    },
+    {
+      "path": "27电赛_J题精简资料与源码定位.zip",
+      "bytes": 1623148,
+      "sha256": "60065bd80186a88693d6c7e0ad28aab0051df780827150cebbd5171d4d3f761e"
+    },
+    {
+      "path": "J题基本要求实施与验收清单.md",
+      "bytes": 8553,
+      "sha256": "2a95d97ddd24be2a18dceee0149b377d1ab98c28ea6e1374ba7c0a349e6f54f2"
+    },
+    {
+      "path": "J题源码修改定位报告.md",
+      "bytes": 12223,
+      "sha256": "57b149e24cfd2a7e2b330027be1098aca3c846d1f6fcd796c618b18656f4b1c6"
+    },
+    {
+      "path": "地面测距与功能记录模板.md",
+      "bytes": 2215,
+      "sha256": "fb0fc528fc2160c9aab13d9604d65bcfd4b2b20de4e8d77221e8c298fd657563"
+    },
+    {
+      "path": "基本要求与代码修改核对表.md",
+      "bytes": 5446,
+      "sha256": "8191ab9d51b87eca57550bd4a18de7efda812682fbaf819df8fe20ec81876941"
+    },
+    {
+      "path": "大概是全部.bin",
+      "bytes": 131072,
+      "sha256": "24e457561f4e54c769ba82bb9a3674be684083c68514267a5c3717a6c725bb09"
+    },
+    {
+      "path": "孙莹庞交办任务完成说明.md",
+      "bytes": 3042,
+      "sha256": "8b7e550da1f0cd1754fe0017b86eb541212b197f4fe67a888667f1fa6b0aacc4"
+    },
+    {
+      "path": "工作记录/build_delivery.py",
+      "bytes": 6271,
+      "sha256": "cc19a977a55bf5e61b21d3521d9e21745e124a91f86bffcc4efbbda8d2e6d970"
+    },
+    {
+      "path": "工作记录/check_keil_download.py",
+      "bytes": 1963,
+      "sha256": "07f5fbdbc42553e2e5fc42b689d8df60210b82cf51fb03b0afde83fd5362ce0d"
+    },
+    {
+      "path": "工作记录/flow_reader_host_test.c",
+      "bytes": 3322,
+      "sha256": "c20acbc972b3a0b20c227418f0d38d5a83a28f9a730bb9555aa073e14bd9622e"
+    },
+    {
+      "path": "工作记录/flow_reader_host_test.exe",
+      "bytes": 60779,
+      "sha256": "1377ef3f4ca0834a5425e76ebd7d94af0595bcfa9f03cf4e8846c4d89c0e8081"
+    },
+    {
+      "path": "工作记录/flow_reader_host_test_result.json",
+      "bytes": 838,
+      "sha256": "0448c09fa51c813a38c09b78f2df9a81c887996fd583dcd2a0be8394439fc64d"
+    },
+    {
+      "path": "工作记录/Keil下载校验结果.json",
+      "bytes": 922,
+      "sha256": "8b3d4392122093546f00aebdf90f30ca1e8d87caa8872350940afd2f8db64836"
+    },
+    {
+      "path": "工作记录/Keil安装记录_20261023.json",
+      "bytes": 1118,
+      "sha256": "97c12660ca70eac9c7fdbd378c6dcdbfb36eeb35be3ef42e497021f587a50b92"
+    },
+    {
+      "path": "工作记录/Keil安装验证_20261023/compiler_smoke.c",
+      "bytes": 54,
+      "sha256": "4ce4f49efa9350e60532efb677be8bba19691a15ce564a51901d9e18e3b00046"
+    },
+    {
+      "path": "工作记录/Keil安装验证_20261023/compiler_smoke.o",
+      "bytes": 1020,
+      "sha256": "df64701bf6780c6cd83c19876d725b15a3645769db81443111d8aff411aa6d53"
+    },
+    {
+      "path": "工作记录/PDF预览/13.激光光流模块的安装方法-1.png",
+      "bytes": 577006,
+      "sha256": "ae828979810946a9da4c7b7026dc3ab52f13b975f10374ebfa575e4d763e2581"
+    },
+    {
+      "path": "工作记录/PDF预览/13.激光光流模块的安装方法-2.png",
+      "bytes": 369469,
+      "sha256": "1b5fe69559dffbff1d2fb049c687c1b648e5bde1ffc85164b738e8e6c474b494"
+    },
+    {
+      "path": "工作记录/PDF预览/14.关于激光定高的实现-1.png",
+      "bytes": 322045,
+      "sha256": "e11fcfb00319397c1eb1c9a15520d904e22117f2d1e205f0ad53279d8a9f63c7"
+    },
+    {
+      "path": "工作记录/PDF预览/14.关于激光定高的实现-2.png",
+      "bytes": 114660,
+      "sha256": "1c1787931bad58b08a8fc4cf92d27898e76cd35e9368d019fbcc5bef1e30ec8d"
+    },
+    {
+      "path": "工作记录/PDF预览/14.关于激光定高的实现-3.png",
+      "bytes": 239711,
+      "sha256": "72e13513d308259e7d870cce163e570c763f7225e0deea20be07f5ffef366901"
+    },
+    {
+      "path": "工作记录/PDF预览/14.关于激光定高的实现-4.png",
+      "bytes": 139012,
+      "sha256": "4ad31a52d0343dd6499786105290ab201b87817388cfccb6d8855812d860041b"
+    },
+    {
+      "path": "工作记录/PDF预览/14.关于激光定高的实现-5.png",
+      "bytes": 270272,
+      "sha256": "6fb57739136321459cf24ed217fb201d2bfb0460e47d5cc3e7694e171e44cbc7"
+    },
+    {
+      "path": "工作记录/PDF预览/14.关于激光定高的实现-6.png",
+      "bytes": 54826,
+      "sha256": "76530c9e7b35c953ada6c447969aa5b760250dc26784eabb1b325d976d5d32be"
+    },
+    {
+      "path": "工作记录/PDF预览/15.关于光流定点的实现-1.png",
+      "bytes": 335041,
+      "sha256": "b3bf7584421f49733f151199a377f17cc336717f3469b1769412639ddd7d715c"
+    },
+    {
+      "path": "工作记录/PDF预览/15.关于光流定点的实现-2.png",
+      "bytes": 206200,
+      "sha256": "03c50a1fe7668ac6e58a25ddd80d066985b8b461dc5d378de15ad64f87e99398"
+    },
+    {
+      "path": "工作记录/PDF预览/15.关于光流定点的实现-3.png",
+      "bytes": 271584,
+      "sha256": "ee0283c39431b38a53954651da4963fa5047689d3ad7edf6ade074535314af14"
+    },
+    {
+      "path": "工作记录/PDF预览/15.关于光流定点的实现-4.png",
+      "bytes": 247762,
+      "sha256": "27a837f1627371b70dd49d473eb443e8fc2dcf48c9c24bb1601aad6c09bec70e"
+    },
+    {
+      "path": "工作记录/PDF预览/15.关于光流定点的实现-5.png",
+      "bytes": 123641,
+      "sha256": "178c0c1bd08b478b0e921984b1758f7b202a358492f67ed25e09b25667b85f9c"
+    },
+    {
+      "path": "工作记录/PDF预览/操作手册-3.png",
+      "bytes": 252286,
+      "sha256": "064bd46a0dab5e0cc6b2ef7916f0a30ba2af645c3f289199048575aea29e0b29"
+    },
+    {
+      "path": "工作记录/PDF预览/操作手册-4.png",
+      "bytes": 703353,
+      "sha256": "6f1d5a47d1620083be1ae4f31ba6669329eef07977d2b8d21963ef8835cdeb42"
+    },
+    {
+      "path": "工作记录/PDF预览/操作手册-5.png",
+      "bytes": 324606,
+      "sha256": "fe32f9515435459429a0f919d2337ea24e67458bed636ebf8eb654c3e493731f"
+    },
+    {
+      "path": "工作记录/PDF预览/操作手册-6.png",
+      "bytes": 281146,
+      "sha256": "84fe9bea9b399d8c83e44c2e3b923a51764fd1fdf6ab159d88b62d311da090fe"
+    },
+    {
+      "path": "工作记录/PDF预览/操作手册-7.png",
+      "bytes": 552273,
+      "sha256": "8cfc7594beb2cca5994a3e81c1cad1d5b5f9ce0b349de824c127e1ed8df84e04"
+    },
+    {
+      "path": "工作记录/PDF预览/操作手册-8.png",
+      "bytes": 432811,
+      "sha256": "d0ed7f9568c0864a0d15101f95ace22c5106064196523ffef3fb8378ab25e65a"
+    },
+    {
+      "path": "工作记录/verify_flow_reader.py",
+      "bytes": 5845,
+      "sha256": "f083698975b4f54300d28acf0b0675cd719ab3f097945c1b55f58e20629b393c"
+    },
+    {
+      "path": "工作记录/微信交付记录_20261021.md",
+      "bytes": 832,
+      "sha256": "7d24fd9a1bc750e97235261898452f84763270b1d286b5c7b72488e53faf61b9"
+    },
+    {
+      "path": "工作记录/成果包校验结果.json",
+      "bytes": 363,
+      "sha256": "a4fb7543c3359046f800512d7c568a117bfaa49516ce37aa27d511440c4e93b8"
+    },
+    {
+      "path": "工作记录/最终资料核验.json",
+      "bytes": 253,
+      "sha256": "7a45ac93be2669a12056139d1e90b81fc101496569bec42f1f20e1734795ee89"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/ADC.c",
+      "bytes": 2802,
+      "sha256": "f1726d8ec7793d139ae64493d49067d5fe9f548ee783336620606886cc7e28ee"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/ADC.h",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/adc_dma.h",
+      "bytes": 237,
+      "sha256": "003a01b3716acf35639d66001072338e9e892d058f724dcdf42fa300315935f7"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/FLASH.c",
+      "bytes": 1644,
+      "sha256": "b57823815e760a0a3fd374808a7703dae7261deafcd2f9f9360ffa3aee4de5ce"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/FLASH.h",
+      "bytes": 430,
+      "sha256": "346ba4c0971763543ca07aa99e0f68eb87d894d09c1420bbb40e5d5bf31f428d"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/GPIO.c",
+      "bytes": 41,
+      "sha256": "7d291803f02412095c12bdb7c57e86c9e9ada4b6759e053c64975d23d11f0b31"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/GPIO.h",
+      "bytes": 1524,
+      "sha256": "d392507f99041f9c5a6e22fbbbc59ee5b60be1ef4eb3638b32e65bd1883cdf5a"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/I2C.h",
+      "bytes": 2165,
+      "sha256": "edccae1494659f5b2146008568f9512d5ffd5ad806ad966f7c241fc58c5fec52"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/IIC_SOFTWARE.c",
+      "bytes": 7846,
+      "sha256": "0faca9d244001bfd6a2dac75957d989e9cede57d845c5a606dbaa4a425a5a2aa"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/Spi.c",
+      "bytes": 2099,
+      "sha256": "3af771ad785d8cc5431da207e2472b8a14d73f6ae8dd700f3f40c52cddaf9fa3"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/Spi.h",
+      "bytes": 107,
+      "sha256": "27fec1975b931839bdfcbeeb7560cffaccabe52bc6d3dd07fb9cae80e094d96d"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/TIM.c",
+      "bytes": 5729,
+      "sha256": "5b2737e1925d7c3b6bd33faaaaf16f401903dfcd8224e97f7e67aa5ea97323a5"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/TIM.h",
+      "bytes": 150,
+      "sha256": "aa1497949db11dab3a2ab1e47dbe91f2c32a0dda2013d723dcda676b4fbad578"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/USART.c",
+      "bytes": 6951,
+      "sha256": "ce26f8ac3ed8a2d346e5000434f12606a8909a3f1e0485269a02618307eac2df"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/USART.h",
+      "bytes": 263,
+      "sha256": "db6dd57e5dd230ebd93d3b3fbe52792715c56e0476d1f3f636fae87b7611a083"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/USB_HID.c",
+      "bytes": 4227,
+      "sha256": "37ed7aab3624f8b65e285b77501edc2092bb0537adb5b4b5f11b7abaaf2638a8"
+    },
+    {
+      "path": "工作记录/源码阅读版/CONFIG/USB_HID.h",
+      "bytes": 467,
+      "sha256": "8613d240be307a1fd99593f52d3a86fed5826bfafdc6e996fc6cd919f41b6e47"
+    },
+    {
+      "path": "工作记录/源码阅读版/HAL/ANO_DT.c",
+      "bytes": 11342,
+      "sha256": "a0cf52fb584e698db34403d94d431719fe7d92b462bf86cd9de001fbef44f177"
+    },
+    {
+      "path": "工作记录/源码阅读版/HAL/ANO_DT.h",
+      "bytes": 793,
+      "sha256": "7c631f8f7b35840e4a91f3c0c54a9b1d671eb7d8a73ce89853e160a120a05c55"
+    },
+    {
+      "path": "工作记录/源码阅读版/HAL/control.c",
+      "bytes": 13879,
+      "sha256": "c04413451080feb4008c4bcaa61ac67fec49b9acd60c6a1b743cc4950b877b11"
+    },
+    {
+      "path": "工作记录/源码阅读版/HAL/control.h",
+      "bytes": 1990,
+      "sha256": "39cdddb527394287201cac3d35dd6804f819c1da476124dd32b0c05213faefdc"
+    },
+    {
+      "path": "工作记录/源码阅读版/HAL/remote.c",
+      "bytes": 6525,
+      "sha256": "b6d5a988493cdca08b909a94a716160888637ef338cf0a8607bd369e49923711"
+    },
+    {
+      "path": "工作记录/源码阅读版/HAL/remote.h",
+      "bytes": 74,
+      "sha256": "dfb04865a76f1c7ff3186671d83bc9804fafc81eeeb735e6b5472f559ed6f42f"
+    },
+    {
+      "path": "工作记录/源码阅读版/HARDWARE/flow.c",
+      "bytes": 3056,
+      "sha256": "921b167a23a3a43a8a904bc5cfc31f9d8455cd7bd7b23882d8416f9542977146"
+    },
+    {
+      "path": "工作记录/源码阅读版/HARDWARE/flow.h",
+      "bytes": 1145,
+      "sha256": "1f888b236cb1d3c5ce3484d52798f59128b1f0e82d44876d10067e4d47e67df2"
+    },
+    {
+      "path": "工作记录/源码阅读版/HARDWARE/LED.c",
+      "bytes": 2833,
+      "sha256": "bb6393c15d038fc39ee52573adf23d4503ae8ea5be25434e2972b6c7c34edbbf"
+    },
+    {
+      "path": "工作记录/源码阅读版/HARDWARE/LED.h",
+      "bytes": 1744,
+      "sha256": "136431856eb21de140e7ae60269732c9ff48be2941c3113a16c3775be33bfedc"
+    },
+    {
+      "path": "工作记录/源码阅读版/HARDWARE/mpu6050.c",
+      "bytes": 6401,
+      "sha256": "7a9c748cad497c88197462393a171e5a76e8246efa576b1a44594af14f378ed0"
+    },
+    {
+      "path": "工作记录/源码阅读版/HARDWARE/mpu6050.h",
+      "bytes": 253,
+      "sha256": "af9fafcf81301932650ae9c965dc00536b8db6e9bd543f53985c480b1e197ecc"
+    },
+    {
+      "path": "工作记录/源码阅读版/HARDWARE/nrf24l01.c",
+      "bytes": 8600,
+      "sha256": "536cf18a1863894bcf78c633a45ac976bfdc2efae8833fdb67b3b3a491fb6457"
+    },
+    {
+      "path": "工作记录/源码阅读版/HARDWARE/nrf24l01.h",
+      "bytes": 5449,
+      "sha256": "269e93c59556ea01060634a7ae17b7a17e1f2c11179e407867ca60827df2b2f1"
+    },
+    {
+      "path": "工作记录/源码阅读版/MATH/filter.c",
+      "bytes": 13268,
+      "sha256": "573fd43176709ae5886e4f22719063bccc05478a04fb9b3dbfc61950b4178f2d"
+    },
+    {
+      "path": "工作记录/源码阅读版/MATH/filter.h",
+      "bytes": 1241,
+      "sha256": "7accab250abf4923250908729bdb135be7ceb5f30e97c39f6da0fab82d39eccc"
+    },
+    {
+      "path": "工作记录/源码阅读版/MATH/imu.c",
+      "bytes": 4778,
+      "sha256": "bb58c003bbefcea6e79751a091bc365847c490363fd401dac30ba575a786935c"
+    },
+    {
+      "path": "工作记录/源码阅读版/MATH/imu.h",
+      "bytes": 194,
+      "sha256": "cb7a11cbc4f64c57935a488b5e454000efc7188c90989772551d1fda28679304"
+    },
+    {
+      "path": "工作记录/源码阅读版/MATH/kalman.c",
+      "bytes": 15588,
+      "sha256": "043bb69dd01b6e130d0293b8d4288ea730b630d258ab07a12d91e07b33ddecfd"
+    },
+    {
+      "path": "工作记录/源码阅读版/MATH/kalman.h",
+      "bytes": 291,
+      "sha256": "5edd91c2155d38c71226dc36138345094c0cd09ad2c39b59b47f171b7485a9e1"
+    },
+    {
+      "path": "工作记录/源码阅读版/MATH/myMath.c",
+      "bytes": 8527,
+      "sha256": "c0988673a2269a635aecfb7250473eea2645d4ef96d966fc5e7fafc8f46a713a"
+    },
+    {
+      "path": "工作记录/源码阅读版/MATH/myMath.h",
+      "bytes": 832,
+      "sha256": "6d63c398bc21ed6991be8516f9cf42cc3483ccc7fc8ef26671fcd612a30289d1"
+    },
+    {
+      "path": "工作记录/源码阅读版/MATH/pid.c",
+      "bytes": 2430,
+      "sha256": "1dc4d5c20705a11bfaa4775ab175cf5962b20ad7894138eda61443f142e730d5"
+    },
+    {
+      "path": "工作记录/源码阅读版/MATH/pid.h",
+      "bytes": 722,
+      "sha256": "4004a0d51f37d1881a5da49bb2a700fd49d5c499174dfe1cd07e27a4dd0903bf"
+    },
+    {
+      "path": "工作记录/源码阅读版/mini.uvprojx",
+      "bytes": 27716,
+      "sha256": "31c7730dfeb647952c2343371bddf73cbdf70a5622124a7209f0ff955b7952b3"
+    },
+    {
+      "path": "工作记录/源码阅读版/StartUp/AppIncludes.h",
+      "bytes": 993,
+      "sha256": "e42b32615b7464f19fbd47d4f94aa7846c7bcc2865121592d74a74d7481bbe92"
+    },
+    {
+      "path": "工作记录/源码阅读版/StartUp/core_cm3.c",
+      "bytes": 16489,
+      "sha256": "fe4f12a502736ceb3d6da0412cbbf8292fc9a5f380a09783d2f91989c884c566"
+    },
+    {
+      "path": "工作记录/源码阅读版/StartUp/core_cm3.h",
+      "bytes": 83896,
+      "sha256": "4136ac10b288b55f1c13337faafeb323d1da4ddc93da09ee81bf29584941fafd"
+    },
+    {
+      "path": "工作记录/源码阅读版/StartUp/startup_stm32f10x_md.s",
+      "bytes": 12456,
+      "sha256": "f7e072dbc99e097dd4e4b7e57e4acab357e950833134c7e2972b2baaf5103166"
+    },
+    {
+      "path": "工作记录/源码阅读版/StartUp/stm32f10x.h",
+      "bytes": 625656,
+      "sha256": "17423ede3d39a4281b5affe2cc7e8272fe7b3319cb90ab34833efbcda3577274"
+    },
+    {
+      "path": "工作记录/源码阅读版/StartUp/stm32f10x_conf.h",
+      "bytes": 3177,
+      "sha256": "36d3f32c22a1b913ac431d471625aca6134a00330d81a48246b1b8487075cfb9"
+    },
+    {
+      "path": "工作记录/源码阅读版/StartUp/stm32f10x_it.c",
+      "bytes": 4986,
+      "sha256": "d2992cea74d6914c4bc7799a2cd8661929640471a7411d053855e30ed07cd6b5"
+    },
+    {
+      "path": "工作记录/源码阅读版/StartUp/stm32f10x_it.h",
+      "bytes": 1943,
+      "sha256": "3b91c229d63fdd2d308776aefe74edec6e75d197d61e697c394e91fc8bc0ec1e"
+    },
+    {
+      "path": "工作记录/源码阅读版/StartUp/system_stm32f10x.c",
+      "bytes": 35463,
+      "sha256": "232408ba7322342af375d60822027d369148ec0e43f4d344634db0a6f383d7c8"
+    },
+    {
+      "path": "工作记录/源码阅读版/StartUp/system_stm32f10x.h",
+      "bytes": 1987,
+      "sha256": "bf3a85d4a7044b8ec73af05869a5ba06fbea659b1537f4eb76d5c7083c90fb41"
+    },
+    {
+      "path": "工作记录/源码阅读版/USER/ALL_DATA.h",
+      "bytes": 2055,
+      "sha256": "44de42ecf2517ef25b834034e3a9a6caa8dc5804c50bccd4f2277314844b8346"
+    },
+    {
+      "path": "工作记录/源码阅读版/USER/ALL_DEFINE.h",
+      "bytes": 457,
+      "sha256": "2315e125eb3771534d6e8945a9dc0f64bd538104299d055f98266782fc7ae4d2"
+    },
+    {
+      "path": "工作记录/源码阅读版/USER/delay.c",
+      "bytes": 1471,
+      "sha256": "4236aca63fa00ad2d8d1a026c89af243eb0a0b2eba721b48a1e2d77dc7bdff27"
+    },
+    {
+      "path": "工作记录/源码阅读版/USER/delay.h",
+      "bytes": 445,
+      "sha256": "ad81482ee3a78f2d01ea766bf9aa25ab4a123e2aa337e79dd983051d8f9aca14"
+    },
+    {
+      "path": "工作记录/源码阅读版/USER/INIT.c",
+      "bytes": 2674,
+      "sha256": "ddeec03890103c56e05e73f79a43be67f4d2ef6a23f029a58d1b129fb04c79d2"
+    },
+    {
+      "path": "工作记录/源码阅读版/USER/INIT.h",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "工作记录/源码阅读版/USER/main.c",
+      "bytes": 1502,
+      "sha256": "77f4f552c2303fc75bca4b6083ad10fd696867c42092b3707fc7b84bcbe27ddd"
+    },
+    {
+      "path": "工作记录/源码阅读版/USER/scheduler.c",
+      "bytes": 979,
+      "sha256": "a33666d20802d0fe62fff6fb9ededb60e2970f92f3e9c453ae6e5ef6e74585da"
+    },
+    {
+      "path": "工作记录/源码阅读版/USER/scheduler.h",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "工作记录/源码阅读版/USER/sys.c",
+      "bytes": 1248,
+      "sha256": "b6e3cea66fcccae5aebaeab9b06b8b83a073d55b81d95198f0d6b4cb4f73da0a"
+    },
+    {
+      "path": "工作记录/源码阅读版/USER/sys.h",
+      "bytes": 290,
+      "sha256": "509f2271565b2fda645aa8f06f6e0a4bc0a6cd6c421ec9366d67cc3bb95ed0a6"
+    },
+    {
+      "path": "工作记录/资料完整性核对.json",
+      "bytes": 32501,
+      "sha256": "5cebb62931c5792d8b3700c7cb9bd0082cd23474c977fb67d259855c3cc907c8"
+    },
+    {
+      "path": "工作记录/资料精简清单.json",
+      "bytes": 23590,
+      "sha256": "4262ae36128055405fed404e180aec4f3fcf2f3e7c4811151cc2e72fe74b6e11"
+    },
+    {
+      "path": "工作记录/迅雷下载需要客户端.png",
+      "bytes": 35709,
+      "sha256": "a5f3869202e917f107326669a3ed784725869ee5f66a8dc5e45dc1233f42541f"
+    },
+    {
+      "path": "工作记录/迅雷安装与下载记录_20261023.md",
+      "bytes": 1991,
+      "sha256": "3131e0b5414965f4b1c780f93108ec427102bae170387abfcfc78cd245e79535"
+    },
+    {
+      "path": "工具安装包/XunLeiWebSetup_pan.exe",
+      "bytes": 14027424,
+      "sha256": "7b06e67689dcf054f5f4b5170a66d8ffa83b5a20301a6807280246ce91d7244a"
+    },
+    {
+      "path": "成果更新说明.txt",
+      "bytes": 1612,
+      "sha256": "eb4c91c8ddfb813449628faa3859a94afd3e2d8cf6bf1c8ab09a80468d9f9e54"
+    },
+    {
+      "path": "报名与提交材料清单.md",
+      "bytes": 1876,
+      "sha256": "6b0045bd6389008e45817c5fb96a81c311363af88ec4717be9bd41be528b5798"
+    },
+    {
+      "path": "整理资料_20261025.py",
+      "bytes": 23858,
+      "sha256": "bf639cae0a3e99b66d35202653895c38b038851d9ea5ba153c870dc15462bd0b"
+    },
+    {
+      "path": "更新说明与编译环境.md",
+      "bytes": 4363,
+      "sha256": "c9423e8e32652c8ea8b98c675d032d533ea618f09568f419718c3efdf9212667"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/ADC.c",
+      "bytes": 2883,
+      "sha256": "d2fcfd76561a46d22badb46cbdfc6bb82a43d2f7172afc8ab3c8fbabe6410272"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/ADC.h",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/adc_dma.h",
+      "bytes": 250,
+      "sha256": "956bb2d3f5320c555f49624b8920d61bc72615339b0c8b72d5ec31bc7040a5c9"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/FLASH.c",
+      "bytes": 1649,
+      "sha256": "99e513d1b8ba32e80224ed0ff467fb673fc22b489dce7c44643cb3c98ff12993"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/FLASH.h",
+      "bytes": 417,
+      "sha256": "7b8ce5b7fa47dde354dd6242139eaad8d043bd050cbef1dfbbef859a8da1ce1f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/GPIO.c",
+      "bytes": 65,
+      "sha256": "d256e1d64adce9741fd8467aa864e50d4c87aec35cce32bbbb22e70caecf40ea"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/GPIO.h",
+      "bytes": 1552,
+      "sha256": "54e7b269b12795752eae1570d8af8f812140dd051beee4329cc4830f392d8c97"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/I2C.h",
+      "bytes": 2213,
+      "sha256": "e14786b30ea98558c87e7cf3e7d1e91f221aa24f92102c4425ce9ca51ba11124"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/IIC_SOFTWARE.c",
+      "bytes": 7868,
+      "sha256": "3d1637ab9ceb284b375b5c8a5af9f0e30e6a027b8d0b160a387db9c95a201a0b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/Spi.c",
+      "bytes": 2083,
+      "sha256": "98a7d0ba1367944c5585e161f6779c8870435b6f8d99b1cd43917be2409ce4cc"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/Spi.h",
+      "bytes": 116,
+      "sha256": "31bdda565f896dff90fb0fd507a66784e12688f8b1c04f0d71551883b209f2bd"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/TIM.c",
+      "bytes": 5437,
+      "sha256": "c4a273191931be6bfaac397468ce00c56e99ca0b20073b93c5daf4205ab34bf9"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/TIM.h",
+      "bytes": 164,
+      "sha256": "38819b778ca190e2b73c1117a6fd3ba107eb4a11beb4aea5ce725e3e120cc0f3"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/USART.c",
+      "bytes": 6708,
+      "sha256": "192a74187ac2bab2c25e7907e7fa8ccd0725ccc51ea67b8add1a40be5dbf4886"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/USART.h",
+      "bytes": 278,
+      "sha256": "9f5dc2eead22e9d7f1e5e6c57cbe44b6b4f0b0ab80f8902e9bbfa8f44daf9871"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/USB_HID.c",
+      "bytes": 4204,
+      "sha256": "285c471a192f8799944ce04ffd045ed9d99a55ed8b59e3be90bb4dd6d9261380"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/CONFIG/USB_HID.h",
+      "bytes": 479,
+      "sha256": "b8a60f89d8e6149db25620baf491f15d407083195973077427c3d42d3ae7d8a0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/DebugConfig/Target_1_STM32F103C8.dbgconf",
+      "bytes": 6956,
+      "sha256": "c4495cbdb25b80794d6e183091fe25c669df4d0e5b3f5466e822fe608d2f82d1"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/DebugConfig/Target_1_STM32F103C8_1.0.0.dbgconf",
+      "bytes": 2403,
+      "sha256": "e8e0a727328839728e29631f7bc97913f0dc214e1415960551216e89cb9d77b6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HAL/ANO_DT.c",
+      "bytes": 11212,
+      "sha256": "c756511c8f3a0e0fcc9daef610b8e8925aee3ea0b1e3b3ae7a96b85c045a88bf"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HAL/ANO_DT.h",
+      "bytes": 804,
+      "sha256": "3dce00b4187ef9db9bb3431f5f48da9f3dddd09f39993f6d01d73d000f0a713d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HAL/control.c",
+      "bytes": 12981,
+      "sha256": "49e5a1d08218b70df8523143fa618c06cd439e8508df0b66ac455c1e6da536d2"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HAL/control.h",
+      "bytes": 2083,
+      "sha256": "523747fa069f4ff548ac4215578a491b469d4f266c7aeb2f6bfb59f614eec9be"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HAL/remote.c",
+      "bytes": 6329,
+      "sha256": "e1950cf7605e80a41029c16d2076dbaac1b4a86f70e01ca1f074b80011ba86dd"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HAL/remote.h",
+      "bytes": 81,
+      "sha256": "939471950a36aff9f4445815f7943ffbfab295d0e5ef1b204d27b9f149f939b0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HARDWARE/flow.c",
+      "bytes": 3072,
+      "sha256": "8117f011a0869619b1a00e55d20911d48d149bc51a9ca24332680528c00d7b8d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HARDWARE/flow.h",
+      "bytes": 1100,
+      "sha256": "3a911f25f310a01355a902c0bb1cdd5a474e1f01530c3413f5d2d66b872ac164"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HARDWARE/LED.c",
+      "bytes": 2842,
+      "sha256": "642366a00e2f6d1c7ac74c2b0f58109286ce4b00e1a43319b2de35ab2e0b6017"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HARDWARE/LED.h",
+      "bytes": 1795,
+      "sha256": "228e394926ef21fac0e99a99a57ca9e3460bddac0711415a59aaad5751c4acaa"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HARDWARE/mpu6050.c",
+      "bytes": 6274,
+      "sha256": "46e28afb1eb0402a30f0bc044fc41c92dfb654ee104be4b1291e3602db98ade5"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HARDWARE/mpu6050.h",
+      "bytes": 271,
+      "sha256": "8f3e9676c51d17322f38633eaffd16eefb34855232b6889a09bb9a9dc687b636"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HARDWARE/nrf24l01.c",
+      "bytes": 8095,
+      "sha256": "42b719f9f5e96679cdb2132459cebfd39c10d6471fa56bdfc63d7843bbd3eab9"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/HARDWARE/nrf24l01.h",
+      "bytes": 4792,
+      "sha256": "538997e932de5ec61201d617709c4cd245ec5bb3debf71b2c2c1c6a2a4a2f796"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/JLinkLog.txt",
+      "bytes": 228203,
+      "sha256": "2d0f8a94e9bd7d7d64f0553662ec6ccc0bad7b36393b6efbc9b03e5419d2b889"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/JLinkSettings.ini",
+      "bytes": 755,
+      "sha256": "b90fe11f71a29981b94d52058bdaa103586ad0f2c628f84d03ae760ddefcb8b8"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/misc.h",
+      "bytes": 8982,
+      "sha256": "40c918f726035dfa67a7bfadefac8e922196d7918f915a7f2db1e652625c7e41"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_adc.h",
+      "bytes": 21690,
+      "sha256": "005a122259e9657bd6b3171dd0e478c143c2a70f8e364b505b84f3fd0a8b1b9f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_bkp.h",
+      "bytes": 7555,
+      "sha256": "bd3ae6fe6a6e617216d60a11a7437be97dca2ea02f3ad78afe889850473fdb16"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_can.h",
+      "bytes": 27559,
+      "sha256": "df4e1602f2b208b335fa22890908ff518de18c6e27ffb94b92cd498e8212b248"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_cec.h",
+      "bytes": 6573,
+      "sha256": "620485eb06b33c96a5a8de3fb1116db876162a44da15441883f0cc675e890059"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_crc.h",
+      "bytes": 2162,
+      "sha256": "98e5537eb5e8837de2170472b774d9f9559f14b60dfcb09d9f839611bc18cb66"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_dac.h",
+      "bytes": 15233,
+      "sha256": "446107ab9e933ccc284be0cd8f0c32edc3e96ba6f990dea8bd1f1cf080d35ef6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_dbgmcu.h",
+      "bytes": 3818,
+      "sha256": "998751256df8a0423dc73be45e489fc04cb2b124a6f04a6ad65e4d53e59f45ba"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_dma.h",
+      "bytes": 20754,
+      "sha256": "2ba038050d07735a42645f2508e62078c217dc750878097f7f113660e0d58ffb"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_exti.h",
+      "bytes": 6824,
+      "sha256": "661b039483459137a58bfdea7522528b9b6e923d61966d4c7c8a5035bd375f5f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_flash.h",
+      "bytes": 25445,
+      "sha256": "952ca72ee4d01e49d392d55af2b146bd9f15763230660334e78ac2cad8cb8982"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_fsmc.h",
+      "bytes": 27016,
+      "sha256": "b2e640d05f6dd11e1fe70bfa0db8aa53cb0a918eef412d6a35630b1357dc5ff6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_gpio.h",
+      "bytes": 20175,
+      "sha256": "ef945fe7b2e4a8f3bf8fa22d44274085444dec80424f91606a1467ea4e69626f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_gpio.h~RF179c597.TMP",
+      "bytes": 20175,
+      "sha256": "ef945fe7b2e4a8f3bf8fa22d44274085444dec80424f91606a1467ea4e69626f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_i2c.h",
+      "bytes": 30029,
+      "sha256": "08b14d416090815765a02e6fecf78cbdd3de4ad330d3bc04b2133f8f4f3f2daa"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_iwdg.h",
+      "bytes": 3828,
+      "sha256": "4a0e65ceebeb69dee10923ab5478938ec7af1357849fbf862d45d19dbb01091a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_pwr.h",
+      "bytes": 4383,
+      "sha256": "b7b31d2bfb3d56e763d70e9db4eecfc996664619916ac4bee9d9928430ffac79"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_rcc.h",
+      "bytes": 30452,
+      "sha256": "894e140a70b0cdc94e4e96c5011def9dca5a103752783c3bb7cab538fc426f9e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_rtc.h",
+      "bytes": 3857,
+      "sha256": "4a0ef73054c3f7f7ad325c6ef0268edb3c5e8987978bdac8a695dc548e13b94c"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_sdio.h",
+      "bytes": 21863,
+      "sha256": "35f5d75421ab3c76d1d76e2c26d0910864161966cc16b74f8327c173ae123deb"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_spi.h",
+      "bytes": 17725,
+      "sha256": "e5dce165ef95fd872a8802cc4f9205b389e4ecdd28a0d74f8aa6c9c3d1ea4225"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_tim.h",
+      "bytes": 52427,
+      "sha256": "dddf89f9b7134a2f15ed9cc2521589ee9a2e18c0553a6017c71b5d5b394524e5"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_usart.h",
+      "bytes": 16548,
+      "sha256": "9d4c2067e54defd64b000076e6561726d758c872d354bed6eea66a6767c08bce"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/inc/stm32f10x_wwdg.h",
+      "bytes": 2966,
+      "sha256": "eb1a01bbaa33babc416d8ecdb40b5a97a21522eb5c7952ba1bec09924580790e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/misc.c",
+      "bytes": 7046,
+      "sha256": "152c632e56151b2564121c56ff359d0f041621f0da6ed101d7fd376a139a5c75"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_adc.c",
+      "bytes": 47201,
+      "sha256": "d269b826f617c7b1426155cdfc8a220d05aee74580b80b92f86bf33ea9d8be98"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_bkp.c",
+      "bytes": 8463,
+      "sha256": "f78d5077029cfec54da52ea4f9d8796dabdf1da5dc6cc29e3395e0f6923645a0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_can.c",
+      "bytes": 45103,
+      "sha256": "bf9d3bec0785b8f28d9eb046bc67181071586e10014d4f595ba0e582257f31ad"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_cec.c",
+      "bytes": 11656,
+      "sha256": "5cf689d7a2ecc3244b18099ae254dc6b0bff023406c898a82dbbd42a29b86e7c"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_crc.c",
+      "bytes": 3347,
+      "sha256": "962aa1381467118ee7e9bea68ad01b3ca3f9fbbd749242211e2d340bf896d0d4"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_dac.c",
+      "bytes": 19087,
+      "sha256": "789a92c1dbb0dc74688fff8e415a93da816956a7a44882488d25af7ac055cbc7"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_dbgmcu.c",
+      "bytes": 5149,
+      "sha256": "9bfb6f964cd3b06a04c67772e52f31814e5a3d39a951a27bf9f2ef352237e23d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_dma.c",
+      "bytes": 29607,
+      "sha256": "b0ac759af150deaa84d8a337a8873a2fbc03e36b1db6623175ab2443efa45d6f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_exti.c",
+      "bytes": 6959,
+      "sha256": "5783d10d46275d8baee9f2861cf434b5c12a4bc8f42ed4af9e503c1818941ebe"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_flash.c",
+      "bytes": 62551,
+      "sha256": "a04fcf26499252a6b02de1cefd33c26b8802d5ff1f9bef920bbddeefdd602f43"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_fsmc.c",
+      "bytes": 35484,
+      "sha256": "1b623840bba04095a150fcf051fd2a3df4838799b96ae2e36f28675e92c23e44"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_gpio.c",
+      "bytes": 23221,
+      "sha256": "8255650b583b2bab2c320e0974309a6ccf26f661e7ad1b54282c0f0e2b9a1acf"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_i2c.c",
+      "bytes": 45785,
+      "sha256": "67523617c4f5fb60aab36eb37b6cb348ffb0b148ac2144821614c30a8196bcd4"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_iwdg.c",
+      "bytes": 4916,
+      "sha256": "bdae6086ce189dac8d464d10bb2ab58a957bbd8f89834e1cc7716faf3e34c9ce"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_pwr.c",
+      "bytes": 8759,
+      "sha256": "3f8c77033caad162a69fe9780d7be2ab973f02be0e736e37c2e633f4a4e2bd28"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_rcc.c",
+      "bytes": 51271,
+      "sha256": "f23bbc9b83e44e69f5dc34f072867f0087a3eb0452034ab09c363088d2354cd9"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_rtc.c",
+      "bytes": 8598,
+      "sha256": "59bc07137d60efbbf69703b88e72bb2153c2e97beee16a1d262a7050686fb00b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_sdio.c",
+      "bytes": 28933,
+      "sha256": "d042b43fbfd5431719a7310ebe2d38c861a663d07e0c0735e466785e07fc1d97"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_spi.c",
+      "bytes": 30224,
+      "sha256": "0214f213058353f2fd9d3a4036ccabbea0b73b60aae0652acf36df539adbb9c6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_tim.c",
+      "bytes": 109159,
+      "sha256": "bd12bf18b03b8585ac2ba6bd0e80ec39d8fd0c89307eb54f5a7be38a46894d03"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_usart.c",
+      "bytes": 38308,
+      "sha256": "6d7af47017b01eb260fb7699f5c483e0a8576b4c780069a99975b7c6443030dd"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Lib/src/stm32f10x_wwdg.c",
+      "bytes": 5735,
+      "sha256": "1d51fbbe3da7731b2303408f00693b51dbf62226590b1264cbbf35be01aa90ea"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/List/Aircraft.map",
+      "bytes": 187284,
+      "sha256": "bc4d53ac4008aa9e739e61118cfbedf2d70505f32e84423de3502d717aaf850a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/List/IMU_AHRS.map",
+      "bytes": 185604,
+      "sha256": "822458544e47df82b4ad8feb693f330e6303192d207e9873bd870232aaff575e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/List/mini.map",
+      "bytes": 224231,
+      "sha256": "ee14a8489b943d7ee1e68c6f088d8bd94310b448e5b7e4ac588648a554f8da24"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/List/startup_stm32f10x_md.lst",
+      "bytes": 40994,
+      "sha256": "deacd1efd465520e2b6ab4f2729ca652dd3743432e00d06aa826e5e0fe747aa6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/MATH/filter.c",
+      "bytes": 13401,
+      "sha256": "94b36254598a14c8bdd46b690de353bcb348625113a681c1cc6f591022eb0a46"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/MATH/filter.h",
+      "bytes": 1281,
+      "sha256": "c9b2ca6c2ec5577e727c83582d64e2769ea52f4b30e270ebd91798c02238ef56"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/MATH/imu.c",
+      "bytes": 4648,
+      "sha256": "81b36ae0d6df5ee597a564611445276f22ba1d4dbcbb2fab320310c6ac6443e7"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/MATH/imu.h",
+      "bytes": 205,
+      "sha256": "bb5cdba65748c74d8ba9aa220cb4987d9adda16771115854b39445a456afb284"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/MATH/kalman.c",
+      "bytes": 15523,
+      "sha256": "2fcfe1b3eb5c1de557f25f3beb3ee8d53537ba7051b0064d285b0225109c34ec"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/MATH/kalman.h",
+      "bytes": 303,
+      "sha256": "395210326e80d8771c9b2ae5d1c6b019163a5de75266e473b5b156c72d8a8a0e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/MATH/myMath.c",
+      "bytes": 8470,
+      "sha256": "54d30d4c8931f7233946e2f6695bff6dcf9897b094ad7bd3fca96d60c4778011"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/MATH/myMath.h",
+      "bytes": 857,
+      "sha256": "4782ad85db8a99ad73c4ae5d923356d9656f4242493e85f4ef9bcfefd621eb53"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/MATH/pid.c",
+      "bytes": 2393,
+      "sha256": "549480a18fa9093f96c3089ffc868e3c2d780f504dae9547d34b792e35b4f5d1"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/MATH/pid.h",
+      "bytes": 691,
+      "sha256": "1f738990bcb835c646dc28967b8724df587465730ae43ffd66bede05c0c39c5e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/mini.uvguix.Administrator",
+      "bytes": 142640,
+      "sha256": "5c5abda00f50ba7ff911658fc33f769ecea40717bd1c88738059c42d4d698df2"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/mini.uvguix.zengdebin",
+      "bytes": 148024,
+      "sha256": "5a7ace696eed347328eeec761eb8caca2299ed1b8e671150ac95af09d2b2dbe3"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/mini.uvoptx",
+      "bytes": 39465,
+      "sha256": "921dd1b9699100f0b5750a7173d55bdf3940458602908a0ba88e0d94233f208d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/mini.uvprojx",
+      "bytes": 27716,
+      "sha256": "31c7730dfeb647952c2343371bddf73cbdf70a5622124a7209f0ff955b7952b3"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/adc.crf",
+      "bytes": 318710,
+      "sha256": "199738c6bd35a196eae9750830b185d26577a84104235dd653bb02b5d7ac49ed"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/adc.d",
+      "bytes": 993,
+      "sha256": "a98c25b2623efb6af9846cf32d458ca405f15181d31a737b8de68d3761f5ff75"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/adc.o",
+      "bytes": 346568,
+      "sha256": "9da8f6a3b16e4790d37c1aeb8a2bd6078fa9b488a5d4b60e88f58da896aa1149"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/Aircraft.axf",
+      "bytes": 386540,
+      "sha256": "106807ea03c163f38f3d9fd3b937475f0414745bcc0b4afa568519f6715c15c6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/Aircraft.hex",
+      "bytes": 72800,
+      "sha256": "d7ffa1b774dea14d8c6abd9dd278f180274eaed65a9cd8d4fc94b39e14cd9b12"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/Aircraft.htm",
+      "bytes": 110847,
+      "sha256": "40a76c8fe83151c1f5ac88d829696fe4df9095459d4f87a634005fce71fba924"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/Aircraft.lnp",
+      "bytes": 797,
+      "sha256": "75317f711cbebf632ac6fca2dde1c664edbf86aedf850c4288b85ed7e9d8729d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/Aircraft.plg",
+      "bytes": 2310,
+      "sha256": "f24fabf4a04eaf01ef9c0650a7d1e61c7c271e2c60a221eac36bbe4c3dad7e65"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/Aircraft.tra",
+      "bytes": 2511,
+      "sha256": "dab18c88e11d16efb7e46b9d7285e64575fc25c4d6135fe0bb2481bff2c026a0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/ak8963.crf",
+      "bytes": 333637,
+      "sha256": "345f778e3e83dacd220b6ee3d78566ad7b7f378c928028bc33f3e142134b732f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/ak8963.d",
+      "bytes": 1535,
+      "sha256": "ead1cf6c05dd99e5756b72fdc2161be6d00146b03b7c6946ef2489a5235ffb33"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/all_data.crf",
+      "bytes": 1814,
+      "sha256": "2f45a4794a385ee2045d0f75e32a2d5a270a935e08c927d315935144f15ca341"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/all_data.d",
+      "bytes": 76,
+      "sha256": "2dd537c375b117a98b163b7c91c23a25df5b9579d18f4b355ebfd60272fa2763"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/all_data.o",
+      "bytes": 7056,
+      "sha256": "eaa662ca8f8475c6f2abd34266f41cad2032fad4ea5f6b847cfa438259137b2b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/altitude.crf",
+      "bytes": 334088,
+      "sha256": "0af0fa9dfb9d63581202f0cdd5f5c6080cc0e02d8ae0163f643fdb6b20d90d6e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/altitude.d",
+      "bytes": 1733,
+      "sha256": "48b89e1f9a66f64a947af2aa9d91cbbe0601672358069e8b86abe8ef1c273397"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/altitude.o",
+      "bytes": 373316,
+      "sha256": "25d240e75b0e5d2e09245589c8a177aaae09675ceee153e654e640e2466a5b20"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/ano_dt.crf",
+      "bytes": 345395,
+      "sha256": "387e7a70a2942b8bf57754636aa07b9523fa7b9ab8aba5099bac26a3a1789c27"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/ano_dt.d",
+      "bytes": 2013,
+      "sha256": "e0de9a083b90a30ff14d8630421898366153e6690e82591c5cd3ffeb2d2774f5"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/ano_dt.o",
+      "bytes": 382596,
+      "sha256": "6a33c1bbd58a16b1a29122648b4e445c800c77b18094089e054120baaff30f14"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/attitude.__i",
+      "bytes": 369,
+      "sha256": "c764fe043b7604959bf7ff014fa3dbd2c4b03951f357d15a32fe78462f2905c0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/attitude.crf",
+      "bytes": 349592,
+      "sha256": "3653d14ef17a3f9a4568728ea2f21d48d0c1be3f03b6ebc74160118e6b44f224"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/attitude.d",
+      "bytes": 1363,
+      "sha256": "15f693825ccf19133ed4efb8faf38ea4440ba1c379da87e08f80bdf0e2ad4034"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/attitude.o",
+      "bytes": 369716,
+      "sha256": "800ed1bf88c3a797158f835f39df5b4039680235644dd53505239c9e596cc538"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/bmp280.crf",
+      "bytes": 328239,
+      "sha256": "be0e99b5eefb703db9f2d6a65d6bbb5622f5987e0dd83970f8f1c62a23829658"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/bmp280.d",
+      "bytes": 1247,
+      "sha256": "7675d5e2c73b2a7127358e37e9f2193480cef03d70252966b157760ad7bcbf03"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/bmp280.o",
+      "bytes": 367136,
+      "sha256": "3dd506d2731142c21a38b4a7bee92dc0b42ef0dd54ca4e12151bb10a2cd8ffcb"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/bsp.crf",
+      "bytes": 327540,
+      "sha256": "eb626c12391fa19c5b70e5d32e48d8cb3d45d1ecc73e04ac97dbe2d7ec80f660"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/bsp.d",
+      "bytes": 1142,
+      "sha256": "78c9e062c71ae6861beab453389e637a57e29e9a625558657d2b49955048cfd0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/bsp.o",
+      "bytes": 347512,
+      "sha256": "34dd2d2b14e4c227336f4cea2ecc0ec6591c6ab9482bdcb4513861a3608cd77d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/calc.__i",
+      "bytes": 353,
+      "sha256": "ca6f8b160a191f57855f53de7949b4939389bebaec1d8322d2192c9b27e4f13e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/calc.crf",
+      "bytes": 14391,
+      "sha256": "25889489bc3d33f395fcc3ca5057bc912bc7bdb8db650df2ebf0c37f2e0e66c3"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/calc.d",
+      "bytes": 152,
+      "sha256": "0a833f1971c7b67036a550e2118c8142ffb529ba0df9b14df52b285c846c4fba"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/calc.o",
+      "bytes": 21908,
+      "sha256": "9737247050850b81960ee60f7edca2662920e2dedce20b68123d12fc8ec47d02"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/control.crf",
+      "bytes": 339991,
+      "sha256": "bf6a7eb58d7d6a1ae111bc8cd5047e33bf25680e15fafa1e700b1f39c5f1aab3"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/control.d",
+      "bytes": 1974,
+      "sha256": "e8446b58c5682f21712241629d9a032ab0a4e0ab6abaa44533d68ecdc7e10fbd"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/control.o",
+      "bytes": 383844,
+      "sha256": "49880f9d8d217f61df9d0fdd7959fc0af61b440105bae174d8409fecd6b98446"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/core_cm3.crf",
+      "bytes": 3940,
+      "sha256": "7a633b6cdab62c5144ee96977c1bccba11cf31cf155bc59d1041b1e330501f85"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/core_cm3.d",
+      "bytes": 107,
+      "sha256": "03d4fdb36260ae7761327b89365cdbd908f913d07876e7a656a5381f824297cc"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/core_cm3.o",
+      "bytes": 11436,
+      "sha256": "766e36ea19467c98d74fe0536e9dfb479b3c8ffdba19ee0de89c037ce1cc192a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/delay.crf",
+      "bytes": 319940,
+      "sha256": "3163b079db71cb1a0914249accd904ecc21b3b3f2672b32478db237ed4d3076d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/delay.d",
+      "bytes": 1006,
+      "sha256": "6f0c664070c3866cca81c4c8012dd73019f30f52d9386dcc6c9254fb77a8d6cc"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/delay.o",
+      "bytes": 350804,
+      "sha256": "5b10e6a17777e6cd29fd7696877801d7175a5183aae927b33fcccebbeff17240"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/dx_bt05_a.crf",
+      "bytes": 332328,
+      "sha256": "bcc16186bca73e946d0b055572c41ec8c9e3a787f3f6efcefc66cde9b419b8df"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/dx_bt05_a.d",
+      "bytes": 1566,
+      "sha256": "31b0271cde35b65edbb54b4a34b17dddd07e90b3f6aff9a1cba91e3028dd32de"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/dx_bt05_a.o",
+      "bytes": 370876,
+      "sha256": "7896e295984211353f668a13a40bb1637881aa7aa563c1626b0cf805491023d0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/eeprom.crf",
+      "bytes": 321973,
+      "sha256": "4ffab44634b0ca2034265585e3d9007007360cd4cac6bc340dcba2a6c2035742"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/eeprom.d",
+      "bytes": 1003,
+      "sha256": "6daf4fe64a0ccea1a49a45aeb4a6ebfca5b428c16d899d47f0a2ff1b19013706"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/eeprom.o",
+      "bytes": 353688,
+      "sha256": "f6678257d15af0e2715d7aff4545c0c29128d94fc498c69631b2c23d0b3d151b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/ExtDll.iex",
+      "bytes": 19,
+      "sha256": "93ef77447acafaed3fb015af57b4c066b48dd9194a52d477177c90a5742a973e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/filter.crf",
+      "bytes": 349523,
+      "sha256": "cebfeffe6f27de926e81296014b465678ab08fb1d36e529f8e0a460b8d9786a6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/filter.d",
+      "bytes": 2014,
+      "sha256": "6f2d1d6b0ce65a893173d8eec393aab9e78d61e99c016af40398160acb9a7dcb"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/filter.o",
+      "bytes": 388400,
+      "sha256": "add38e434e4abee40c881596031df0765739ce99857e4ef3685d434efb03aac0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/flash.crf",
+      "bytes": 317942,
+      "sha256": "dadd0108d3a986e29ed2e665d20bdbb152221f7f611866b2db11db19d5784cf5"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/flash.d",
+      "bytes": 975,
+      "sha256": "f9586fad2a5091405119d7a4458688f7b28097ac4ac1e1163fd824b0ab30fc0b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/flash.o",
+      "bytes": 344448,
+      "sha256": "bf7a5ebe487947f84d37f8e5cf58438d260207b59157c05e5060cf21ec2de404"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/flow.crf",
+      "bytes": 345413,
+      "sha256": "c63561823ea96967c0ac239d8b08b68c2c713be3aac3292d9fd177a3ff5dd875"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/flow.d",
+      "bytes": 1862,
+      "sha256": "6c6ab2b4bea1ba2e9281b29aef374dbfd03f128db85d30bbc68060a4ab4b83ab"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/flow.o",
+      "bytes": 381440,
+      "sha256": "891b31aacac2ed6966bd42592f965f8dbb9dd1ddfb375d87c36639676ce2d15e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/fmb.crf",
+      "bytes": 329007,
+      "sha256": "a6c090eb8411ed132ffb7368d689ce9b2aaff04e5fa42b0687d7a8c4372747b8"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/fmb.d",
+      "bytes": 1225,
+      "sha256": "178e22c096dc8aeeb5e35a26e55f429ccacd6c168a2c4c6b05b41d58ba46eae3"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/globle_variable.crf",
+      "bytes": 90,
+      "sha256": "7f690e0ef1187f12da6b61360bca30db212170e611c352d8b8ae0fdcddf577a4"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/globle_variable.d",
+      "bytes": 104,
+      "sha256": "53ee6bdadc3add4fe0068c73560270519df508af5e30fabf5a5bbea7068cd1e8"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/gpio.crf",
+      "bytes": 318359,
+      "sha256": "645a2650f2857071113b08d4848a1a3aaadc912d848c92e3270e4fda29f50e22"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/gpio.d",
+      "bytes": 1015,
+      "sha256": "c70673c8a6025720b9287466cdde8de8fe05c5c4be3ce14fd0fa46ca585d1555"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/gpio.o",
+      "bytes": 342880,
+      "sha256": "78bafdfe2a1d5133aa85c78c6e1e416f52eb72c2076f540a50ccb6dd0af3623f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/gps.crf",
+      "bytes": 79,
+      "sha256": "1ea2fb53c3306cb0ba78063381b428999895f04f2b09498154aeb52ad2e0cc6c"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/gps.d",
+      "bytes": 64,
+      "sha256": "f232d8b9497a6531bbe0aa87877f5beec767686279502a5db2160d00cc053a48"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/gps.o",
+      "bytes": 5396,
+      "sha256": "40d557b2e12bfbc36a63a1f474c85a370265c10aec3a037e3a35bde95d77e3b5"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/hmc5883.crf",
+      "bytes": 329172,
+      "sha256": "f969622cdcfaddc9f6d3179ec6d7cc32f5afc8e2cdaea9cfc99621377def49c0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/hmc5883.d",
+      "bytes": 1463,
+      "sha256": "df97801e9accda3f6c1110c4eebd1f46cc450d2d204cdde191f2c79baa7f1743"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/hmc5883.o",
+      "bytes": 357232,
+      "sha256": "54a9c6d121357c03f323218d1c809f6875256f233f36f58c86a82b803191b7d3"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/hmc5883l.__i",
+      "bytes": 369,
+      "sha256": "01c33b9f6c1561bacbed472b78265f88634f16bd15e4f0b6435e6758b04e146c"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/hmc5883l.crf",
+      "bytes": 323740,
+      "sha256": "fdbd29d2260a54ae327841d029dfc2c881fb6f0f6ebdc56c469407284662dec2"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/hmc5883l.d",
+      "bytes": 1128,
+      "sha256": "14ebb965288c9bb5e8fc1748894849a91f58b81d45faa42b65580ce697716484"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/hmc5883l.o",
+      "bytes": 368708,
+      "sha256": "a3f722e64e6888c9e36a6c50695d5ea718783fbd93e5e18e5e3b8a83d2068273"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/i2c.crf",
+      "bytes": 18,
+      "sha256": "302d2bb00299341282a0f29aea6f5463c89b9a43bf5e1b0678cdd7cc42021358"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/i2c.d",
+      "bytes": 60,
+      "sha256": "4e5e19f27b3911f460f1942d927cc7cd02f7ced6a13aa92d394b865e3221fa13"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/i2c.o",
+      "bytes": 5324,
+      "sha256": "2c2fe0f98c1265133b7287029d0832a8174c6cf5990ed6437f83abdad6e65960"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/i2c_io.crf",
+      "bytes": 327187,
+      "sha256": "72b05be62d2d1518d6602b6fba8e9b820f124c603f6529efc953993ff98d3003"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/i2c_io.d",
+      "bytes": 1322,
+      "sha256": "d193dd778c774816986b6a373795904364c27f6dc09699c991cc67cb5ececb25"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/i2c_io.o",
+      "bytes": 368604,
+      "sha256": "3e182050223095c9b276928cd220bba7b173b254cd2a5b474d7f5c4640276d93"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/iic_hardware.crf",
+      "bytes": 323818,
+      "sha256": "ad45f1e2038a7c389f42e4a923a8469a902ea8133c0c9ded14dbb4c3e2a0906f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/iic_hardware.d",
+      "bytes": 1468,
+      "sha256": "a9567df2563ba4842dc50d47e4ab8920f128958f1f0af5099c35a1c02d0ce770"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/iic_hardware.o",
+      "bytes": 350068,
+      "sha256": "bbf9a63aa26f33a54d2fbbecee09c764ef187508a7cbfff66f4ffa68eab72070"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/iic_software.crf",
+      "bytes": 322770,
+      "sha256": "d8bca79f3a12d0d643e92bdb41a849b1dcb0ec45927bd513b5c5000918b189f6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/iic_software.d",
+      "bytes": 1134,
+      "sha256": "622b56bbe736b74c960e555dbe79d2886ed1de35fea2c584c8c6b2d167ceb2ac"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/iic_software.o",
+      "bytes": 361076,
+      "sha256": "12695666ac53ea3b13bca381307d0e9f85f2e1cf4f92461c90b89c47ecb0d349"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/imu.crf",
+      "bytes": 13844,
+      "sha256": "00c22744619113dc8d5e7cc9f4512bbad5171525ffc2ab5310ab617d0f1557b5"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/imu.d",
+      "bytes": 212,
+      "sha256": "916281faf0ed96d2a6067ded3b9528f87ffe761bc43e4b78a8d05bb34dd1f452"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/imu.o",
+      "bytes": 26112,
+      "sha256": "ea0bd806df7f621e04c67472d9adb8f7a1870a1675ec6081fddad2db7f41efad"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/IMU_AHRS.axf",
+      "bytes": 383800,
+      "sha256": "ce92c814e13fcb51fea91130b13725a6ea440313be97137d70ccdb18253cebc4"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/IMU_AHRS.hex",
+      "bytes": 72673,
+      "sha256": "badaa040ae5a6f521643707b20b2bdc47acbf70fb4c79567d3693f421db99e21"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/IMU_AHRS.htm",
+      "bytes": 110105,
+      "sha256": "876f18e87a4b9a303586ab7a99ef3c6b810802d284e844e0c503efd34920fab4"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/IMU_AHRS.lnp",
+      "bytes": 776,
+      "sha256": "cc856525e7754b1047b7c5f37169a3648ffa90b66b094bffc56453c72bf4891b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/IMU_AHRS.plg",
+      "bytes": 126429,
+      "sha256": "df5d19a2250b26a9778cf932294b2d78a4450317d50a3f71797251aa1c7a71df"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/IMU_AHRS.rar",
+      "bytes": 31122,
+      "sha256": "b681a1bfbebb703a1972ccdbce72803efeffeb38e69e1676d14830be685c8be9"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/IMU_AHRS.tra",
+      "bytes": 2438,
+      "sha256": "0ab716cc6067da3dbb1522f335325d4e57414bedaeac18ee71e2399918a3e060"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/init.crf",
+      "bytes": 336233,
+      "sha256": "b7d6bebb663519430d5a6c29b2024d0fb0a87ef8a0a54175adacf0b2996fb43c"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/init.d",
+      "bytes": 1754,
+      "sha256": "7d4b009657d613b2e669fe31d9698190b11dc27165a793909de99743549b9e9b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/init.o",
+      "bytes": 372496,
+      "sha256": "5c32fb593b7a09cbcdf94e95650e07b17cc3c231e965c09e477f0dccfe85d876"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/inv_mpu.crf",
+      "bytes": 362410,
+      "sha256": "b942629d998138a294661e2ec66a5e6b98072f8d29e91f3decb6670809c12bd8"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/inv_mpu.d",
+      "bytes": 1274,
+      "sha256": "34a40e6f66f34f04e8973a64e27c56df3f033a3045ae95fb9dfeef9a5ce14c37"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/inv_mpu.o",
+      "bytes": 435924,
+      "sha256": "b1f5207b9d2e7ddb43c8e1af69ac0f4db85e602e8636563d8a5644f99b55d310"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/inv_mpu_dmp_motion_driver.crf",
+      "bytes": 378251,
+      "sha256": "35cceaeec126aa37dd723e871820ef01af2ddcaa2b5fd8ead89f7b6ae96afbb9"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/inv_mpu_dmp_motion_driver.d",
+      "bytes": 1923,
+      "sha256": "5d07326e9de0d58a5a583905b60baf02592b72d313bdc3d809681546ef9fc12a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/inv_mpu_dmp_motion_driver.o",
+      "bytes": 425600,
+      "sha256": "40b1b9b418b26f918d449af23e562fc1e17558bffab7b8c47e901fed55a65a85"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/ioi2c.crf",
+      "bytes": 323667,
+      "sha256": "50ce7d1ecc4d7554e959cd63a244a043cfc0dd99dbeacce2720340a3b07ea72d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/ioi2c.d",
+      "bytes": 1253,
+      "sha256": "2fd03a7da27d6eb2d587c706e8119fc76acb57c6e1711af43c45d4c2101c3c68"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/ioi2c.o",
+      "bytes": 352648,
+      "sha256": "225822bffed74874b87caa7663b5983ee5386730d1fd714fbfa1637012f6d1f5"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/kalman.crf",
+      "bytes": 330967,
+      "sha256": "1bfa77d43e3a7bf4a54e944dcabe4f0d19e579176f9f49fb739bb81dc32e24b1"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/kalman.d",
+      "bytes": 1125,
+      "sha256": "fcc9a76c5245cc15cfeb0f31ebfe031cb070cbe90b89ebf2c19cce66615ccaa1"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/kalman.o",
+      "bytes": 368304,
+      "sha256": "42adfbfeebe7af0fcb3d3229c68506f675f8ad6665205c787b916529d44174e0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/led.crf",
+      "bytes": 322849,
+      "sha256": "991285422b3a2ec5e75b0cf4302ff965aa669b8c366b4b20d3963fa9c0abd085"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/led.d",
+      "bytes": 1061,
+      "sha256": "8e870d1d87c1345f83f97f63eb42c39455a5cbf7738facaba513763cedc3a002"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/led.o",
+      "bytes": 350620,
+      "sha256": "a1ff322abd0af8cac3c9368af0638d577b97f30850a3b88061b71cd0e0aeb7e2"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/main.crf",
+      "bytes": 335918,
+      "sha256": "9611456a585006856a78749554d1ad9b5410c60fef602dd0b75e07aa63f7155f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/main.d",
+      "bytes": 1754,
+      "sha256": "996d40ef96cf330aab1849ef075c011844c37ae2ff9f0962e6b1079bd7aa0151"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/main.o",
+      "bytes": 369852,
+      "sha256": "61b095cc927fd30792a828d02097035a8d40a61dacb4b186e6c908966918d0ea"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/mini.axf",
+      "bytes": 723056,
+      "sha256": "b16507bbbb08cf30d4d253e509a7282b7e0914d3607a691356f526a93fadbdb4"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/mini.build_log.htm",
+      "bytes": 1317,
+      "sha256": "973e721c1ad4d4355fd7e95372a0eb14d7810b4be75e365ec8c6eca4a7f89f34"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/mini.hex",
+      "bytes": 77631,
+      "sha256": "b49d2a05e10b318b4eb89fed34894f86a4e81e12b21fe5ce26cbb6f337b1dc8e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/mini.htm",
+      "bytes": 119064,
+      "sha256": "9c7d926f00b2ecb32ee3c105639f66950d5310ae8954bd994960e6f5b35d9910"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/mini.lnp",
+      "bytes": 1779,
+      "sha256": "36c5a4f146a9f46f5ebdd5b612de8e9974771a3fcb52934989555d817b4c8cf6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/mini.sct",
+      "bytes": 479,
+      "sha256": "a18239d2ef21b2772b33ab01d9a312bb3513b88fd18792ce64fadd6729d1818a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/mini_Target 1.dep",
+      "bytes": 103369,
+      "sha256": "a843422c57ea115b3f995cf522225b14f1edf2fc391935827ca2dad69af60be3"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/misc.crf",
+      "bytes": 317968,
+      "sha256": "84367ab04432353ca6613b46addc4dd8cda96bbe5a408b7ec42a402fa880f1dc"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/misc.d",
+      "bytes": 955,
+      "sha256": "8dda96e55cdb2b0e0dce26c65b757e5ad6ace416397eab9b8eccdfdd448d68e9"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/misc.o",
+      "bytes": 346212,
+      "sha256": "9d41f612cc781d803e1f03a09fff629703ba9cf2375fe39761b529f225e75129"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/motor.crf",
+      "bytes": 326891,
+      "sha256": "a62b0e01f1d99d2c9bf32a339fd6249e50473c7238c1827ee7f85dd9d80122aa"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/motor.d",
+      "bytes": 1329,
+      "sha256": "38fbbc0668f2f643146a7f014de6ba3d71a8fbc642aec253c05c5f153a3d7aa3"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/motor.o",
+      "bytes": 354428,
+      "sha256": "225284881fa9b171cbfe92145b8f95cf1d15889a77b31b767d510424eb6c857a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/motordriver.crf",
+      "bytes": 317967,
+      "sha256": "494030c3187e65075628ee3c121ef89c71127339e2879091a4a628970ea3513b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/motordriver.d",
+      "bytes": 1100,
+      "sha256": "b1ada4276d066f1b30fda77b49da9bbcf2b027fddd124368fd0693675e1fb35e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/motordriver.o",
+      "bytes": 343512,
+      "sha256": "f6334c2e64fc0e9e3c7b9bb54b2e481a2f6f1c2bd622d249e750e5bc33fd72a6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/mpu6050.crf",
+      "bytes": 342361,
+      "sha256": "f64b8ec698df51f6e5fb462062be45909c01e53da6fcd71795574bd5c06a434a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/mpu6050.d",
+      "bytes": 2078,
+      "sha256": "fd7242280ebbfb33f3650499ac1622d409a5a9b1f7b1848184636bda345223c9"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/mpu6050.o",
+      "bytes": 381236,
+      "sha256": "dcda630fe38fee30b5416a68bcbf2d23aba83cfedd14cd87ee140909a52c3e69"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/ms5611.crf",
+      "bytes": 329577,
+      "sha256": "29580fc613d51596b6ff2841a59d32da143bc3ae6a77e4e26e78cdc6cf67aab0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/ms5611.d",
+      "bytes": 1392,
+      "sha256": "48df9e4007ccdfd1df22c83bba756f23a7361e94d44b5e9cb59c0a35d55299c0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/mymath.crf",
+      "bytes": 328671,
+      "sha256": "e8c93cf20e0bb04106045fce5ec358456796f1786ef75b0d090d4eb8324626f6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/mymath.d",
+      "bytes": 1125,
+      "sha256": "f1efdc5dedef0e9be52714d920408ed7ff6a4e2ff2b7b6e7521cec4aa44dee2d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/mymath.o",
+      "bytes": 370196,
+      "sha256": "e1939797433ca7a0ed60cb64e594bd5fe38b1d95cc1e3194fa9b236c076c50bb"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/nrf24l01.crf",
+      "bytes": 323581,
+      "sha256": "79593209e7bcbd212f894537a8d67610391ad5f53c588819ae54d60d73ad4e17"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/nrf24l01.d",
+      "bytes": 1154,
+      "sha256": "4e171f65b58d275a44727077ca315952d74b62248f2a351db85d4883145930a9"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/nrf24l01.o",
+      "bytes": 359672,
+      "sha256": "b3f8bcb266815827c72ae572b3d15de88573cf40633e3ebf45ec6f52e1b4f880"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/pid.crf",
+      "bytes": 4167,
+      "sha256": "43b09f6cc837a137550496c1efd2d0307cc7d6073e0d9e63903ed8f3fcaf58e4"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/pid.d",
+      "bytes": 184,
+      "sha256": "74aca8347e2d5cd5ed3c89972cfe09c8fb36562d7b10203183f27ef642609e06"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/pid.o",
+      "bytes": 16156,
+      "sha256": "0954a57f1eeffdfd2d919063e1eb95b4ae26493b945e18c9f413ac52b625f29a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/pid_1.crf",
+      "bytes": 323575,
+      "sha256": "ca3121753cde9c24b32d0b74f6ddb80d1b18c3a054fb8d3308af5b859f675334"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/pid_1.d",
+      "bytes": 1206,
+      "sha256": "b14cc41d08545ad986e2dcc3284cb219ccfee9d1c96485407538285abdb3057d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/pid_1.o",
+      "bytes": 358716,
+      "sha256": "0dc6d8d799c226c12bae70a0df55c4833b3336d1ba3c343b359cc1ef5c47eeee"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/remote.crf",
+      "bytes": 339106,
+      "sha256": "b98c99b7f3eaf3892a177a7b77a08b9c550d3d26634648c5c7e2555075c4cf84"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/remote.d",
+      "bytes": 1553,
+      "sha256": "53ebea25db5361669e4872cf80cf2915b1d247a936ffffaea47a09ebb354ed3a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/remote.o",
+      "bytes": 371636,
+      "sha256": "454009084dc917f31e3bcff7274d251d0c93143c9affca3fe2e0e0e0fc6c91e5"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/scheduler.crf",
+      "bytes": 336795,
+      "sha256": "d9fe6785154085cd3f0459115b1111c953c0d2da49a4f7c14ba3201f97c6cea2"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/scheduler.d",
+      "bytes": 2060,
+      "sha256": "17f76a218e40732f0458f16f35e1970371d13b51a7fce69ad88271327c520ffe"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/scheduler.o",
+      "bytes": 371804,
+      "sha256": "34c1f697eda3c3c42aa52f07cbb7818983863108b01c27fea1aae6a4df311a16"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/sensor.__i",
+      "bytes": 361,
+      "sha256": "8a7c7461b3c084be198255b5ce1832e7f06567404e2b6f57100732dde731b000"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/sensor.crf",
+      "bytes": 348126,
+      "sha256": "3253d4eff1d721a1755ae5de6bb88389be0a2d3ca223a0873088cc7bf85fd62e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/sensor.d",
+      "bytes": 1266,
+      "sha256": "0cdc8c3f29cbb5c3ecdc9de199cd960ef7e88cfadf02340c22c81027ff1e7a5e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/sensor.o",
+      "bytes": 365040,
+      "sha256": "92e7c629de06e94ea374a2bb682ab89be876054363322d3009595089ae7db391"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/spi.crf",
+      "bytes": 317981,
+      "sha256": "252d5025309a0051de069f1b70be64b892bf6a20a19cdbcd5240cff5ca4b2a7d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/spi.d",
+      "bytes": 927,
+      "sha256": "0d92bf4db5649aa1b7901f1e90aca83ecef7f28d6f745f92b26dcef3a8a856f0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/spi.o",
+      "bytes": 343140,
+      "sha256": "ca3cb5ce3887cdb0f48f4fc00b970ffbdbce6e89a83972c8e6afd5cf6a9a56cc"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/startup_stm32f10x_md.d",
+      "bytes": 65,
+      "sha256": "ea1b3c78cd6cfbc03e0d9822af92492693c53e5d25ebbcbb89a73a6f543ef0e8"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/startup_stm32f10x_md.o",
+      "bytes": 5896,
+      "sha256": "67ec58d4c05933f04564bb9611d53d4b8b9b11338e5b8edf2f08ab5e5453fa82"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_adc.crf",
+      "bytes": 325126,
+      "sha256": "ff026ce32ca9966b2c1e41d7cff593da9489e2f9b03a57fcfbcb4371ed30ac61"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_adc.d",
+      "bytes": 1171,
+      "sha256": "e430d844a8b753d5da9755f894000cb0fb3921cb5ebe23b4b35750d22d6989ed"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_adc.o",
+      "bytes": 393860,
+      "sha256": "819d99e3ce2ab9409bef0ba8a0ed308d530139ca0ebb36e719b64a29685cd05a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_bkp.crf",
+      "bytes": 321423,
+      "sha256": "954655ac09a68f393bd6e045138bdff3824be7bf6eda24f026e99d4be52f3e14"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_bkp.d",
+      "bytes": 1171,
+      "sha256": "5584e7797876d917c0fd6fe670faecb278e6f458c47f76bc827ea311f96a8653"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_bkp.o",
+      "bytes": 360024,
+      "sha256": "512b5a08949f0f14a2060622dcd6d016591adfa2aa04df2ecb280726292060c1"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_can.crf",
+      "bytes": 326744,
+      "sha256": "ace7be3ce88bc3bd69e0927cc2d2d674b5c19df935af078d5398655d6f456129"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_can.d",
+      "bytes": 1171,
+      "sha256": "2bc9f860c5096db2e33ad4f56d451e4ef217b4e04ab3ae948fc7c8ed5d7d71c9"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_can.o",
+      "bytes": 378800,
+      "sha256": "cbb1ba359294648627a4d29fa8fca0ac6bc37e1b985c300a51081e8da960878d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_cec.crf",
+      "bytes": 321676,
+      "sha256": "ee01e717bf213fa65dbee991a5071166bd192336d0a3aaa28af0813007416a0b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_cec.d",
+      "bytes": 1171,
+      "sha256": "21360f224dc256f77996d4fa622e593148d9f2cb436096de3e077449fcf2735b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_cec.o",
+      "bytes": 361760,
+      "sha256": "25c77d3228a72c9203b1f19e44d970a4649aef66c146567a7442a620ef170675"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_crc.crf",
+      "bytes": 317936,
+      "sha256": "d95c21e64cf2e494e3cccc25ed15ebdaf36d4529045fad099d36aec327607489"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_crc.d",
+      "bytes": 1171,
+      "sha256": "5cc6ab086cc6a7e46d084b1568a1c53a86334088767a44fb2e03143c68225854"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_crc.o",
+      "bytes": 348200,
+      "sha256": "6e2896b8a3f3ddbf4023e47f286ffb09f4e0d758d0608172e82e86031844d2f4"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_dac.crf",
+      "bytes": 323484,
+      "sha256": "95efb80a23c2d0e017f39ee56424f54355338199f1b3b53b20143d525eb254c7"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_dac.d",
+      "bytes": 1171,
+      "sha256": "918a3ac49779e9bfe151b291c86d43f37de0613189cabb287c0aacf28fa6538f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_dac.o",
+      "bytes": 362232,
+      "sha256": "25cf82e93998b6ca850dc96aace79eea117e01d5456a06960c94c36eb955cbd5"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_dbgmcu.crf",
+      "bytes": 318559,
+      "sha256": "8fa79ab58d1e650aad87eb280b9891cc386039ee72b49fe3def214b48304be09"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_dbgmcu.d",
+      "bytes": 1243,
+      "sha256": "75ef8176edb199ee20f35eac30d6c100d97628b1fc760e5fac9e6cbaf6029a3d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_dbgmcu.o",
+      "bytes": 345436,
+      "sha256": "0589437526970353509caf8f357aff6b0e55c6dcedb53b786aeef47cdb7d8683"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_dma.crf",
+      "bytes": 321065,
+      "sha256": "2a778814f124ad20222baeda7694cdfeedecd9439689f732fa9dc242bd0bbc9e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_dma.d",
+      "bytes": 1171,
+      "sha256": "358a4ed5aa82d33f7ed372182da9cfc29bfa53562354b3c325e3b4f7d8b1f425"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_dma.o",
+      "bytes": 356300,
+      "sha256": "75edef54951c3d55257f698ae1fa4556dd09395054293663af1e2e0e662c36b2"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_exti.crf",
+      "bytes": 318521,
+      "sha256": "7ffa3d6cfeeff0a24e699d020fc22b4ece41132b8bca637cb18c7463dc00f8f3"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_exti.d",
+      "bytes": 1195,
+      "sha256": "c2a19dfb5519d3a007538a27ef957d47e2bcd250b4c8449807f42dd32230fb2e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_exti.o",
+      "bytes": 350376,
+      "sha256": "efee8e17eedc55a444b7fe484169a6f4d0ebd354ab40c87b0694ed4d8944d8b4"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_flash.crf",
+      "bytes": 324968,
+      "sha256": "844c63de42f482da5de2165f33f2b57f9b1e9df3390219b1dfa6c47bf1cd7c51"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_flash.d",
+      "bytes": 1219,
+      "sha256": "364468a71ce1941c9f5ff620cddde0bb3a1df9c57fa4263e8ec16bca4e78c34d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_flash.o",
+      "bytes": 382568,
+      "sha256": "7a4a479c5d31154c670478d8eaabbc3162d70d744df41acf5bfb8d8ed0e49adb"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_fsmc.crf",
+      "bytes": 331478,
+      "sha256": "a775aebe1687fc6dfaf00b22d6b235a03fd22acb40ba98d7dd04004d776d1dfb"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_fsmc.d",
+      "bytes": 1195,
+      "sha256": "ac6e4be7142c7a77cbae8e276aa11bce39b12045b1ccfd62a2381f84f5df4225"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_fsmc.o",
+      "bytes": 376792,
+      "sha256": "9acc3c53a8c79c02f56799edc86fd037659d2b5d7e446854e9872a2e09b7e7f5"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_gpio.crf",
+      "bytes": 321461,
+      "sha256": "560c9179d40a47e95b83df5858ce841613c3df55ab4e74c06a60aca480cd9310"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_gpio.d",
+      "bytes": 1195,
+      "sha256": "074044c6834c29baa3c3031a61299ec8bf12a8eec129b37e77537396f2dedc24"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_gpio.o",
+      "bytes": 366728,
+      "sha256": "8c3ac35a1bb72871341949b0b0c70a940aa33768c30db0a644401bded2d5fd55"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_i2c.crf",
+      "bytes": 323886,
+      "sha256": "9c4eb9fc799cc6b1ac92887012b8917c361659b2f14ed1fd425ba29edcde81a5"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_i2c.d",
+      "bytes": 1171,
+      "sha256": "6fed509c15cab5f79333476eaeeaab546fdbe63d5a49b1c59efe0e901b2e1f9f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_i2c.o",
+      "bytes": 387984,
+      "sha256": "44bbe861a24fa60b6040127cb1515597ee0469f0b741c465e1f5091195dd7f18"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_it.crf",
+      "bytes": 321125,
+      "sha256": "e5e029db23dd38e71cdafddacdabf7e50df1fdc0045f824cc2987a60300a19c0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_it.d",
+      "bytes": 1275,
+      "sha256": "5bb648eb8b825913b235bfd2747c2bc27af53f5bd6a7d9c0e014f64ac525e1ce"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_it.o",
+      "bytes": 356468,
+      "sha256": "1d304a8d5cdf2cb12907b14c25e95004868a5e81c4f0f49927e50053bdf83b29"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_iwdg.crf",
+      "bytes": 318621,
+      "sha256": "764bad3dc8382860f91e956d110c6b8b5c5cfb83569034bf2a818bbe8e81a977"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_iwdg.d",
+      "bytes": 1195,
+      "sha256": "81a1035aa3cf81f92f43f8566559e63f060fdff1491d1b7f2647aa8f2bcb0384"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_iwdg.o",
+      "bytes": 349136,
+      "sha256": "307d44de63252aad5b584237ddbe01376133aef408160643cced8b82bfb72766"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_pwr.crf",
+      "bytes": 320252,
+      "sha256": "5a6fc821d2cfe41a66fdc0dcde617808d6c21ab38253ca3ad9d36833a4c8de9f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_pwr.d",
+      "bytes": 1171,
+      "sha256": "cbc079fd7f0637c529c68c0e2dd6a70ac5b2ef974a60b50f281357cc333a9498"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_pwr.o",
+      "bytes": 354248,
+      "sha256": "78fc3cea9b67abebfe36d38381dd13127759d9fe2656fa34adbf1dcce3714c97"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_rcc.crf",
+      "bytes": 325036,
+      "sha256": "ef31da634f974060a4cd75b0441bc13a842b7be086e985ffe5d226960abaf757"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_rcc.d",
+      "bytes": 1171,
+      "sha256": "271949f71f036814a7e3d21398e574c6986ad9b7b1a5d32f72cd96b10c2dc60b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_rcc.o",
+      "bytes": 386776,
+      "sha256": "94eb19b67d68115ac69d62a37f5ab9306855d2af5970a51161cc8e203c50d340"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_rtc.crf",
+      "bytes": 318814,
+      "sha256": "44228d32e62c641cb1c69d7d5eca32990d28ca37f486262ac0deb3fd48dc1760"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_rtc.d",
+      "bytes": 1171,
+      "sha256": "172b5618cc747697c3fd59410cbab205b84afb65eb05f748e68e2f652be8399a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_rtc.o",
+      "bytes": 358404,
+      "sha256": "e8facfad78a2a5f5bfe4bbc246024fa357e0aba005a32a541b120ac980a75ce1"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_sdio.crf",
+      "bytes": 329963,
+      "sha256": "e961f0d6c9ddae9278b88703a87554aabc2953886a3fe4efe16baaa21d358869"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_sdio.d",
+      "bytes": 1195,
+      "sha256": "83e4d20d364bcdd36142aa65066492d50c23908223db067d691fff4329590819"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_sdio.o",
+      "bytes": 391588,
+      "sha256": "875276646f050ec94a5411a9d169cbd8760e38c6c649a3718c8d4f77da3b2d8a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_spi.crf",
+      "bytes": 321940,
+      "sha256": "58180f93fba3717bb4d2816c4b41d8be783effecda7d9e2b90d99ff7f679e804"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_spi.d",
+      "bytes": 1171,
+      "sha256": "9ac8923a16bd19ec23bb1e0b03c0a2165fb52659a069fdcfd38fca69eca4dc58"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_spi.o",
+      "bytes": 373316,
+      "sha256": "14ca1fa0ec7fd7e542ac2d27176685a9c5c19c73405081e7f58649ecd680b28d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_tim.crf",
+      "bytes": 340049,
+      "sha256": "cb4b4ef34a5f2972e9e050374b427efd48ac9f41e2fa74c1d9ce667592a32fd6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_tim.d",
+      "bytes": 1171,
+      "sha256": "88a2ec2403256c2a56bfead1e75dc2057a4c511bb250e42fae996c5452a180ab"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_tim.o",
+      "bytes": 473616,
+      "sha256": "6ba8c361d9abdab4630d9e2fe995f823ff2f26ac3146c10802ccae019cfe2ef3"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_usart.crf",
+      "bytes": 323579,
+      "sha256": "ffae14827d4e716b5f23f37a3c21916ec7f6d757f34711509239cb9f31f3a72c"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_usart.d",
+      "bytes": 1219,
+      "sha256": "571ce2b8d70bc2a683f1d5c456ca7bdb5de0cf831a098447ee8d31bff2cdbe35"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_usart.o",
+      "bytes": 382764,
+      "sha256": "1e820d850d6cb58a2920568188973dfc8cf1d8d729fb46c69e1518b0e459c515"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_wwdg.crf",
+      "bytes": 318073,
+      "sha256": "8c379b98be0ba54c00bd99134b138f2b753c0a78ffcb5c9c5cde97bcddb50ba3"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_wwdg.d",
+      "bytes": 1195,
+      "sha256": "d08951e52166e5abde4ec1ae8f8c2c663e833ec2b909cb2d7e6e6388e7b7c007"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/stm32f10x_wwdg.o",
+      "bytes": 350220,
+      "sha256": "2a3519935517e6c3f0b3c5b37d7d11389c2dbeff1821efe2bdaa1f14093417ea"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/sys.crf",
+      "bytes": 317869,
+      "sha256": "a32e125b29d510126e323c5a20b84ec55251b28c53bd0a98bf8e3d9a902a148e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/sys.d",
+      "bytes": 953,
+      "sha256": "32d9ae8b53fa909fe20caa95b4e4028bca5a80ab25108c273dcfa0d6db27d1da"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/sys.o",
+      "bytes": 341192,
+      "sha256": "b914dbe2d673ad924dcac464e5c7c89fad88b06271447083594807b98993adb7"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/system_stm32f10x.crf",
+      "bytes": 319145,
+      "sha256": "3e998265b30e3395a46aa32cc844720ee34d6970c83bab6d599dcbf0c9f20b8a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/system_stm32f10x.d",
+      "bytes": 1176,
+      "sha256": "49bffa72f3f91c26ba94e53fcb4debc0dbefd0c12f5a0423479def7982414c17"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/system_stm32f10x.o",
+      "bytes": 345580,
+      "sha256": "acd655bb2391fe1efe566f35240c8c701f05561caf5ece9ac7e43f9ff1d487cd"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/tim.crf",
+      "bytes": 319530,
+      "sha256": "4f59c4ceb263dcc7e192fa0ef13609a3ff263c68d9dd3050806e407899577982"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/tim.d",
+      "bytes": 989,
+      "sha256": "c3640304f955c6be9d0093433ccd8ffe6cb3f4d12d5f1f744d2911b45445b658"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/tim.o",
+      "bytes": 347788,
+      "sha256": "003e01afbeac953b22b8bc4160bf63e4828186bb8cc3433159abb5090079adc0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/time.crf",
+      "bytes": 341556,
+      "sha256": "dc2d5632771c618ad193b28ba33e9bb2f94e068876c101208d0f0181af453c34"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/time.d",
+      "bytes": 1297,
+      "sha256": "ac3fbf1d3c3a39f952338c06df4f76901451b77fae367abaa63462d019316765"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/time.o",
+      "bytes": 366816,
+      "sha256": "884db9f66fb8e23e9d9573fe6a2011d8546928ec42cc87fea4b44d0381af9851"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/time_init.crf",
+      "bytes": 320957,
+      "sha256": "97a7e9b95d63f5642049df404e14df132bcc1ddf27cfc00d0eddb39468e73b4d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/time_init.d",
+      "bytes": 1104,
+      "sha256": "236cd5c508261f51ad5deefc61a9875e7aa1cc0926d6ccd14d27891945539331"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/time_init.o",
+      "bytes": 340792,
+      "sha256": "1c9e04f938a5f4057058a8669a1f60a52b8bf539ac5668cf2656175fe74ebb65"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usart.crf",
+      "bytes": 323987,
+      "sha256": "ed45a289d6dba75e1e91b86bd02c0e63ed287a36da266f23cf3194c0f9ae6e52"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usart.d",
+      "bytes": 1071,
+      "sha256": "5fc96bf7d3aac65104ae53a1b3ff74c39819927bc6e6af75feed7e9077dbf730"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usart.o",
+      "bytes": 355220,
+      "sha256": "a12a6fec7f66c0207a1095c21f143d8005bf8131960aa09a45677cb5b0c0d8eb"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_config.crf",
+      "bytes": 336592,
+      "sha256": "8ecf4a0d01e976e4162ad9ab4c979141d2f02387c8c41935ff3a9f9c2fb46b62"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_config.d",
+      "bytes": 1663,
+      "sha256": "4219b1202bfe5c66aabf226f6580003f0021201d41170b2b33c4b141dcd26c5e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_config.o",
+      "bytes": 376756,
+      "sha256": "8e234b132f8d869b3772f8271ddf0d5fce10ac1f08544b007da94f6ed8040c91"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_core.crf",
+      "bytes": 341006,
+      "sha256": "b1132077e610ed057c504f4f4a0eb8ce3dc264541d4199455cc9f5c5a118c43e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_core.d",
+      "bytes": 1455,
+      "sha256": "0eb0ed0b520599586f5caabc9ab4f4590825647ff7cbdeceac99b3334a1c5c62"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_core.o",
+      "bytes": 394900,
+      "sha256": "12b639916c00424ec5ecbff1ecb799365731b99df7e06943d1db488de68f2c9f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_desc.crf",
+      "bytes": 334151,
+      "sha256": "cd3613ba65d0f6f0a5e9291f54083ea7ff2db958903642d4d5d34a818702c48b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_desc.d",
+      "bytes": 1510,
+      "sha256": "24ff38073cc02bbe9b6a4d8e98d5559047b55203094f6d114a724a0e15603f02"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_desc.o",
+      "bytes": 362636,
+      "sha256": "31c9092c146a2b891f2445b7fbee4ad861ae4c41ecff52e878b77d0087466150"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_endp.crf",
+      "bytes": 333800,
+      "sha256": "11390a8ad3872cc43407de04d412fd931ff3bdf7cf73c861cc00ffd86784427d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_endp.d",
+      "bytes": 1551,
+      "sha256": "2301b7620930bda08277fd50b61ae6a3a16cc5843a9ed3bf3ffb135b487b1c76"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_endp.o",
+      "bytes": 365236,
+      "sha256": "555e2aedc7365846529d5f17cdbbc3bac45a747e6ccf4f9ab9c3667147c0f2dd"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_hid.crf",
+      "bytes": 353096,
+      "sha256": "d9071771e0a3bb0ac73422dec350d9e9453f0dc1e876aca1a5579abc553a47cc"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_hid.d",
+      "bytes": 2429,
+      "sha256": "819e9b9a8f9352a15f3780c553719257102194f53f3274ab6e9d0174c8971474"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_hid.o",
+      "bytes": 398868,
+      "sha256": "4cba87d14ddf861927fe8df45d200ed4943808ddd8f0e5135d6f34c0ef3ad590"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_init.crf",
+      "bytes": 332826,
+      "sha256": "c238fed0a641401b79771ec68ceda6a1682c58ed457ab5890555fc0d2908d3e8"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_init.d",
+      "bytes": 1455,
+      "sha256": "f2620d744867c8f52a0d5fda586119b86220fe9db303d26be7bdfe4b7eda9698"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_init.o",
+      "bytes": 361748,
+      "sha256": "4a41d37402e81ee0c5bc1bdc927187ce97b8882aa090644dc61ba91172c8cdfd"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_int.crf",
+      "bytes": 335612,
+      "sha256": "b1e877671b7fb06f02688a7e12d33e853486599aec87e7de532e3e9b3719005f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_int.d",
+      "bytes": 1423,
+      "sha256": "f96c733cdb2b2f16a85b5d6b22d45900ebb11df234972aa118d028d407185cc7"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_int.o",
+      "bytes": 365628,
+      "sha256": "ec91aecba78a3f94ad19ddb2598254ba69e3334eb522c1000ff790b8184b0fbb"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_istr.crf",
+      "bytes": 336807,
+      "sha256": "e6ad1eb06b40d651edba0022c3714e4017bbf6582fa4cb641e7e374f2719c320"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_istr.d",
+      "bytes": 1591,
+      "sha256": "c2c05146a8b4685e2391e0aaa9cc227666013ab6afcd272a42d3bf790cdf2362"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_istr.o",
+      "bytes": 366168,
+      "sha256": "e49fe5d90cb5cedf87777b80f0584a04e96721473d1953b93fa1e408043ff5a5"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_mem.crf",
+      "bytes": 333306,
+      "sha256": "1af183bba2ee6421cff339d2d38824f5c6f6a23456690a08f618bdf512d9ce14"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_mem.d",
+      "bytes": 1423,
+      "sha256": "07903663bf54fe88034336655e2adf51ac6deb65c73b59346a584e1141b95d06"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_mem.o",
+      "bytes": 362804,
+      "sha256": "6e48e3c0b40ace828893e30b8c0f786f8a5061e433ff26011d7e67b3c129c50b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_prop.crf",
+      "bytes": 339190,
+      "sha256": "08bf11491498f27c16ad7a3989f22da22f48b7c8516037eda975babca3199fb0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_prop.d",
+      "bytes": 1634,
+      "sha256": "e26d128d9f74bbd843ec36bb96a14cf6c8fea3e93a4e21f8f0913c7be1734c77"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_prop.o",
+      "bytes": 392460,
+      "sha256": "20a0460ec3e6868986ddea60780c6b2cc826528ad683cefb717bcc082ac9b145"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_pwr.crf",
+      "bytes": 335374,
+      "sha256": "d5bc5af5b7d444c3397735fb8b653148a021489a5841b8c24bcf77f2ab9a90de"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_pwr.d",
+      "bytes": 1518,
+      "sha256": "9b0a106495eedd0861b55c0b20c6965d0c66286606c74dd40e21c8a42f1282e4"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_pwr.o",
+      "bytes": 370464,
+      "sha256": "328a2e26daab112e78a63d2d13ace82f41cb50dff06d25737412152e815ee1ea"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_regs.crf",
+      "bytes": 341303,
+      "sha256": "1a6a671eb4c2b6cf7053283da2d11ee6e481fb28dd1c3dad88d9b96140a6fb27"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_regs.d",
+      "bytes": 1455,
+      "sha256": "bcf5ddb2d83ef929fd242f9fff239a3dd9fdc859bcacece249bd66a4dff19418"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Output/usb_regs.o",
+      "bytes": 443124,
+      "sha256": "361283dcd7d9ed68fd34a15823c9b357a93006549715e656fc19e2886133da5c"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/AppIncludes.h",
+      "bytes": 1016,
+      "sha256": "607a475fa2f1b595fbc4c1406f4475ece11a5fa25d6a6b19548ded3bfe1872b1"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/core_cm3.c",
+      "bytes": 17273,
+      "sha256": "e93a7e36349e7810f328276a3fed56701e10536779f7527a8ccd140618a556b0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/core_cm3.h",
+      "bytes": 85714,
+      "sha256": "de4668aa9d314d05769dfb29f028e205b50577c6b2150fc6bccb34bd34179bbb"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/core_cm3.h~RF109a1e4.TMP",
+      "bytes": 85714,
+      "sha256": "de4668aa9d314d05769dfb29f028e205b50577c6b2150fc6bccb34bd34179bbb"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/startup_stm32f10x_md.s",
+      "bytes": 12765,
+      "sha256": "edd2852319f295d6b36670e7d8b21a55c41370ae846a8065588711bb3485d3aa"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/stm32f10x.h",
+      "bytes": 633992,
+      "sha256": "117012dd526ea2c3036cef236940068db08ce145c2c37cb61743f0ee4077b1ab"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/stm32f10x.h~RF20138c.TMP",
+      "bytes": 633937,
+      "sha256": "442b514827497b06c5082fe5227f842bc63ad0f83087abd291df003999ab1104"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/stm32f10x.h~RF28c783.TMP",
+      "bytes": 633988,
+      "sha256": "eed2ef4554481039e6306cd8db22c3c1bc81ecc2a322e38d971ecea7c66f32b9"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/stm32f10x.h~RF299a25.TMP",
+      "bytes": 633988,
+      "sha256": "ec7d70ec33bbc24cb8a12d0131633cd53ea9f4f5dc6d6c324daf6ca56bf97a4a"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/stm32f10x_conf.h",
+      "bytes": 3254,
+      "sha256": "9c2f090829b7c1a67082a42ea7cdb5eac5b26cd41708ebc0e40c2a5bb774b7e3"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/stm32f10x_it.c",
+      "bytes": 4836,
+      "sha256": "81512aa707cb4fd17354847828cab851a9bf6360896a69f5df449d2fcda5583f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/stm32f10x_it.h",
+      "bytes": 1989,
+      "sha256": "b3bacd248efd2b91c1e4006139c649a97aa46b7e65c2ca1db828b851e5bea27f"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/system_stm32f10x.c",
+      "bytes": 36557,
+      "sha256": "45f52950f5fc6509920fb26d1362e8457907c2d62fa455cbe3c6ce6daa974a76"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/StartUp/system_stm32f10x.h",
+      "bytes": 2085,
+      "sha256": "919dc1f5c6bbba74cb712e8ec7cf73f1988eafa9438c706526fb401a2ab4672d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/Target 1.BAT",
+      "bytes": 4761,
+      "sha256": "683ece391d95cfd828998c3dc9090c43648e98f617ffc87dac3cb02813eff859"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_hid/usb_conf.h",
+      "bytes": 3950,
+      "sha256": "831d40540fa2bd23ce84936b138ea2203383334da18df6a11249342e703c3e73"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_hid/usb_config.c",
+      "bytes": 8719,
+      "sha256": "fd4ac12eaf0a53bb7e7dca80b10eb3db32a35026647029084be61ef8cd6e90e6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_hid/usb_config.h",
+      "bytes": 2070,
+      "sha256": "9fa5ffe90b83cb8cf437061e6903812c497537595fdba14ccabcf5f69428d477"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_hid/usb_desc.c",
+      "bytes": 9767,
+      "sha256": "2c80fbae9994dd97e9ad0bd85b74b24b6e360348b72b92201c5593f426a982f8"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_hid/usb_desc.h",
+      "bytes": 3009,
+      "sha256": "376f0d27f44be29a52d6177651ea5286e4dd84ce3a36ad902611c5a06efc7eb7"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_hid/usb_endp.c",
+      "bytes": 2527,
+      "sha256": "6644b7d2335ad99fd59b7605016ae80d8a3addcfb71e5aa065ed72112d6ec7f7"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_hid/usb_istr.c",
+      "bytes": 5429,
+      "sha256": "a59e57c44e7ab3a8ca141b90ebdc11ededfcfecb544eca0b2d52590e4059292b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_hid/usb_istr.h",
+      "bytes": 2538,
+      "sha256": "d3b97383a73c1566d189ec0f8499f7b302424f47663fa60c07eef684ff7f2435"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_hid/usb_prop.c",
+      "bytes": 14017,
+      "sha256": "d1d60131940b580c8c94ceecd9c1899ea88cab11a54b29412208114093cca525"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_hid/usb_prop.h",
+      "bytes": 2996,
+      "sha256": "e990e27bcc6c05d250b412070cc827106fc701d4aab797239ebf8f0faed0e0ae"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_hid/usb_pwr.c",
+      "bytes": 7105,
+      "sha256": "c656132266fda0901161f87efe12b7511dc938f07fbd1e06aa3656054060b6a1"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_hid/usb_pwr.h",
+      "bytes": 2203,
+      "sha256": "4a0630a2fa442efd25c141c67c2e258ee228a836f36aea6315773a18d400c5f2"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_library/usb_core.c",
+      "bytes": 30770,
+      "sha256": "a1da3a1e472088dc32df3c99df9ca9105d2cb37404b93dd5de8e8fb0b5a30eff"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_library/usb_core.h",
+      "bytes": 8772,
+      "sha256": "44af2fb20a47ed63649a0423aa819eca29c7021d3d419d6673ea53f9d3aeb2b0"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_library/usb_def.h",
+      "bytes": 2755,
+      "sha256": "7ad7a734461f9e24cf11c62825b94beba309784a8d5f2b015e1f87383d6e9b57"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_library/usb_init.c",
+      "bytes": 3101,
+      "sha256": "ba9a758113f0835d25c0b5d9b96bdddb7ea1d5b3046a4fd41765b337ca6673cb"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_library/usb_init.h",
+      "bytes": 2560,
+      "sha256": "a59baf397ddcc4c2f6f530a2870f857ed8733bc90edacdd581da150f87691e67"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_library/usb_int.c",
+      "bytes": 6281,
+      "sha256": "15eb586cd736a803c6cb041afd0608eb638c61251233099a36346600c001f398"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_library/usb_int.h",
+      "bytes": 1710,
+      "sha256": "e4c9ae0f0f33e971d0c1683a6c0975234850877a15b52c661afec2032d17a48b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_library/usb_lib.h",
+      "bytes": 1780,
+      "sha256": "e7afb281b0dab736205566a7c5d00014c18da0d40b63ee2de047f88c8c727fba"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_library/usb_mem.c",
+      "bytes": 3404,
+      "sha256": "e455f60f57ee9460708142a847085a5f050fff2062896f22697e77aed471fc81"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_library/usb_mem.h",
+      "bytes": 1774,
+      "sha256": "ec4537e59ce48f28a8ce5fde0eb121399b66c49f7e1c51fb5bf73251c97b75f6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_library/usb_regs.c",
+      "bytes": 27894,
+      "sha256": "1aef56c1ccb1519e43419c054d75376c154b6591940253b06cd3e72107cb5c34"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_library/usb_regs.h",
+      "bytes": 27711,
+      "sha256": "5ceaadc478418875e36eb663ceeaee4e6b9ad1a32c72de3afb76caf2be0017ae"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USB_library/usb_type.h",
+      "bytes": 2843,
+      "sha256": "c9be1b18c6432a07ec77dd413fd060fb57e01bcf12c10519c0f2870820a21271"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USER/ALL_DATA.h",
+      "bytes": 2168,
+      "sha256": "31542a367615ee663f6d7a9b44ce4467746dd6f8a5e0d03b6a97aff73606990e"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USER/ALL_DEFINE.h",
+      "bytes": 486,
+      "sha256": "20d35f2d7f89c3838d0bc64740729b401c8b7e55c8a7ad7cc16f837e65059da6"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USER/delay.c",
+      "bytes": 1438,
+      "sha256": "d7657cd015462dc3bd61b58be12dc319b53fa3f762b5c00630d5baa11c60220d"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USER/delay.h",
+      "bytes": 463,
+      "sha256": "b8e20f46990d56ec885a4ad215208228dcee8f644b1d5fabb5dcf473e9134c43"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USER/INIT.c",
+      "bytes": 2539,
+      "sha256": "3902e131ec7c689a7002a14c1d6c445166c8815ce2175e9216dd8be1ea780ddc"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USER/INIT.h",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USER/main.c",
+      "bytes": 1315,
+      "sha256": "c61827702f7091612736b37c56403ccae83f3abe92ecac645202fee6b711e32b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USER/scheduler.c",
+      "bytes": 959,
+      "sha256": "cd58e6e5201c99675fa63ddc1828b70a47312e0383e6fca3552e7323e703480b"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USER/scheduler.h",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USER/sys.c",
+      "bytes": 1251,
+      "sha256": "6acc8b031734cf801852816042cb1b3162f54d92263abeb8f142c2c9cd4c1f80"
+    },
+    {
+      "path": "源码原件/主控程序(keil MDK打开)+外扩激光+光流20261001/USER/sys.h",
+      "bytes": 308,
+      "sha256": "3125ddbb739a7bef6ae22e5b6fa97eb06c0db3e180432ed1de9468b36c7c0e3d"
+    },
+    {
+      "path": "聊天梳理与当前任务.md",
+      "bytes": 6875,
+      "sha256": "4778f99b762f5cee3e691b78802f9c45d4b3a26c919aaf08cc13db95af1df278"
+    },
+    {
+      "path": "资料目录与来源.md",
+      "bytes": 2770,
+      "sha256": "02064d9efffdc70b151d6330db9b1f396b7b7313a5adede27d87b87f91b7a90c"
+    },
+    {
+      "path": "资料精简版/01说明文档/0.飞行控制说明书（必看）-外扩激光光流.pdf",
+      "bytes": 638703,
+      "sha256": "a22b34c6cb73c3c8321ba406942b73b19cb84cfbc03b0dc5f14345277eba3de0"
+    },
+    {
+      "path": "资料精简版/01说明文档/13.激光光流模块的安装方法.pdf",
+      "bytes": 114389,
+      "sha256": "710a8b523f78f1aff19719d1cd5580d3a75b3305bf16726744728a1244b0c575"
+    },
+    {
+      "path": "资料精简版/01说明文档/14.关于激光定高的实现.pdf",
+      "bytes": 226827,
+      "sha256": "b720c8610ddbf5c229a655082b4b8201c8295634dcfee25085df9dfeae98eec6"
+    },
+    {
+      "path": "资料精简版/01说明文档/15.关于光流定点的实现.pdf",
+      "bytes": 257114,
+      "sha256": "ae43afb923e5adcf58fd50efdc513adab33d0b2d37e1a21066676d29ae41a9e5"
+    },
+    {
+      "path": "资料精简版/01说明文档/回购加装激光光流模块的请更新本代码.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "资料精简版/01说明文档/外扩模块I2C通信协议.png",
+      "bytes": 71993,
+      "sha256": "5e76aa4709ef428b0c2910cb0017eb5df3dbde1de8955bc1cb9b14884a41cad8"
+    },
+    {
+      "path": "资料精简版/01说明文档/店家特别吩咐注意事项（必看）(1).txt",
+      "bytes": 456,
+      "sha256": "c7b6f16baf2c20694cc542c5175d724b41129c71a107cb37b820123b793c390e"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/ADC.c",
+      "bytes": 2883,
+      "sha256": "d2fcfd76561a46d22badb46cbdfc6bb82a43d2f7172afc8ab3c8fbabe6410272"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/ADC.h",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/adc_dma.h",
+      "bytes": 250,
+      "sha256": "956bb2d3f5320c555f49624b8920d61bc72615339b0c8b72d5ec31bc7040a5c9"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/FLASH.c",
+      "bytes": 1649,
+      "sha256": "99e513d1b8ba32e80224ed0ff467fb673fc22b489dce7c44643cb3c98ff12993"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/FLASH.h",
+      "bytes": 417,
+      "sha256": "7b8ce5b7fa47dde354dd6242139eaad8d043bd050cbef1dfbbef859a8da1ce1f"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/GPIO.c",
+      "bytes": 65,
+      "sha256": "d256e1d64adce9741fd8467aa864e50d4c87aec35cce32bbbb22e70caecf40ea"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/GPIO.h",
+      "bytes": 1552,
+      "sha256": "54e7b269b12795752eae1570d8af8f812140dd051beee4329cc4830f392d8c97"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/I2C.h",
+      "bytes": 2213,
+      "sha256": "e14786b30ea98558c87e7cf3e7d1e91f221aa24f92102c4425ce9ca51ba11124"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/IIC_SOFTWARE.c",
+      "bytes": 7868,
+      "sha256": "3d1637ab9ceb284b375b5c8a5af9f0e30e6a027b8d0b160a387db9c95a201a0b"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/Spi.c",
+      "bytes": 2083,
+      "sha256": "98a7d0ba1367944c5585e161f6779c8870435b6f8d99b1cd43917be2409ce4cc"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/Spi.h",
+      "bytes": 116,
+      "sha256": "31bdda565f896dff90fb0fd507a66784e12688f8b1c04f0d71551883b209f2bd"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/TIM.c",
+      "bytes": 5437,
+      "sha256": "c4a273191931be6bfaac397468ce00c56e99ca0b20073b93c5daf4205ab34bf9"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/TIM.h",
+      "bytes": 164,
+      "sha256": "38819b778ca190e2b73c1117a6fd3ba107eb4a11beb4aea5ce725e3e120cc0f3"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/USART.c",
+      "bytes": 6708,
+      "sha256": "192a74187ac2bab2c25e7907e7fa8ccd0725ccc51ea67b8add1a40be5dbf4886"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/USART.h",
+      "bytes": 278,
+      "sha256": "9f5dc2eead22e9d7f1e5e6c57cbe44b6b4f0b0ab80f8902e9bbfa8f44daf9871"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/USB_HID.c",
+      "bytes": 4204,
+      "sha256": "285c471a192f8799944ce04ffd045ed9d99a55ed8b59e3be90bb4dd6d9261380"
+    },
+    {
+      "path": "资料精简版/02主控源码/CONFIG/USB_HID.h",
+      "bytes": 479,
+      "sha256": "b8a60f89d8e6149db25620baf491f15d407083195973077427c3d42d3ae7d8a0"
+    },
+    {
+      "path": "资料精简版/02主控源码/HAL/ANO_DT.c",
+      "bytes": 11212,
+      "sha256": "c756511c8f3a0e0fcc9daef610b8e8925aee3ea0b1e3b3ae7a96b85c045a88bf"
+    },
+    {
+      "path": "资料精简版/02主控源码/HAL/ANO_DT.h",
+      "bytes": 804,
+      "sha256": "3dce00b4187ef9db9bb3431f5f48da9f3dddd09f39993f6d01d73d000f0a713d"
+    },
+    {
+      "path": "资料精简版/02主控源码/HAL/control.c",
+      "bytes": 12981,
+      "sha256": "49e5a1d08218b70df8523143fa618c06cd439e8508df0b66ac455c1e6da536d2"
+    },
+    {
+      "path": "资料精简版/02主控源码/HAL/control.h",
+      "bytes": 2083,
+      "sha256": "523747fa069f4ff548ac4215578a491b469d4f266c7aeb2f6bfb59f614eec9be"
+    },
+    {
+      "path": "资料精简版/02主控源码/HAL/remote.c",
+      "bytes": 6329,
+      "sha256": "e1950cf7605e80a41029c16d2076dbaac1b4a86f70e01ca1f074b80011ba86dd"
+    },
+    {
+      "path": "资料精简版/02主控源码/HAL/remote.h",
+      "bytes": 81,
+      "sha256": "939471950a36aff9f4445815f7943ffbfab295d0e5ef1b204d27b9f149f939b0"
+    },
+    {
+      "path": "资料精简版/02主控源码/HARDWARE/flow.c",
+      "bytes": 3072,
+      "sha256": "8117f011a0869619b1a00e55d20911d48d149bc51a9ca24332680528c00d7b8d"
+    },
+    {
+      "path": "资料精简版/02主控源码/HARDWARE/flow.h",
+      "bytes": 1100,
+      "sha256": "3a911f25f310a01355a902c0bb1cdd5a474e1f01530c3413f5d2d66b872ac164"
+    },
+    {
+      "path": "资料精简版/02主控源码/HARDWARE/LED.c",
+      "bytes": 2842,
+      "sha256": "642366a00e2f6d1c7ac74c2b0f58109286ce4b00e1a43319b2de35ab2e0b6017"
+    },
+    {
+      "path": "资料精简版/02主控源码/HARDWARE/LED.h",
+      "bytes": 1795,
+      "sha256": "228e394926ef21fac0e99a99a57ca9e3460bddac0711415a59aaad5751c4acaa"
+    },
+    {
+      "path": "资料精简版/02主控源码/HARDWARE/mpu6050.c",
+      "bytes": 6274,
+      "sha256": "46e28afb1eb0402a30f0bc044fc41c92dfb654ee104be4b1291e3602db98ade5"
+    },
+    {
+      "path": "资料精简版/02主控源码/HARDWARE/mpu6050.h",
+      "bytes": 271,
+      "sha256": "8f3e9676c51d17322f38633eaffd16eefb34855232b6889a09bb9a9dc687b636"
+    },
+    {
+      "path": "资料精简版/02主控源码/HARDWARE/nrf24l01.c",
+      "bytes": 8095,
+      "sha256": "42b719f9f5e96679cdb2132459cebfd39c10d6471fa56bdfc63d7843bbd3eab9"
+    },
+    {
+      "path": "资料精简版/02主控源码/HARDWARE/nrf24l01.h",
+      "bytes": 4792,
+      "sha256": "538997e932de5ec61201d617709c4cd245ec5bb3debf71b2c2c1c6a2a4a2f796"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/misc.h",
+      "bytes": 8982,
+      "sha256": "40c918f726035dfa67a7bfadefac8e922196d7918f915a7f2db1e652625c7e41"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_adc.h",
+      "bytes": 21690,
+      "sha256": "005a122259e9657bd6b3171dd0e478c143c2a70f8e364b505b84f3fd0a8b1b9f"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_bkp.h",
+      "bytes": 7555,
+      "sha256": "bd3ae6fe6a6e617216d60a11a7437be97dca2ea02f3ad78afe889850473fdb16"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_can.h",
+      "bytes": 27559,
+      "sha256": "df4e1602f2b208b335fa22890908ff518de18c6e27ffb94b92cd498e8212b248"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_cec.h",
+      "bytes": 6573,
+      "sha256": "620485eb06b33c96a5a8de3fb1116db876162a44da15441883f0cc675e890059"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_crc.h",
+      "bytes": 2162,
+      "sha256": "98e5537eb5e8837de2170472b774d9f9559f14b60dfcb09d9f839611bc18cb66"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_dac.h",
+      "bytes": 15233,
+      "sha256": "446107ab9e933ccc284be0cd8f0c32edc3e96ba6f990dea8bd1f1cf080d35ef6"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_dbgmcu.h",
+      "bytes": 3818,
+      "sha256": "998751256df8a0423dc73be45e489fc04cb2b124a6f04a6ad65e4d53e59f45ba"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_dma.h",
+      "bytes": 20754,
+      "sha256": "2ba038050d07735a42645f2508e62078c217dc750878097f7f113660e0d58ffb"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_exti.h",
+      "bytes": 6824,
+      "sha256": "661b039483459137a58bfdea7522528b9b6e923d61966d4c7c8a5035bd375f5f"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_flash.h",
+      "bytes": 25445,
+      "sha256": "952ca72ee4d01e49d392d55af2b146bd9f15763230660334e78ac2cad8cb8982"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_fsmc.h",
+      "bytes": 27016,
+      "sha256": "b2e640d05f6dd11e1fe70bfa0db8aa53cb0a918eef412d6a35630b1357dc5ff6"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_gpio.h",
+      "bytes": 20175,
+      "sha256": "ef945fe7b2e4a8f3bf8fa22d44274085444dec80424f91606a1467ea4e69626f"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_i2c.h",
+      "bytes": 30029,
+      "sha256": "08b14d416090815765a02e6fecf78cbdd3de4ad330d3bc04b2133f8f4f3f2daa"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_iwdg.h",
+      "bytes": 3828,
+      "sha256": "4a0e65ceebeb69dee10923ab5478938ec7af1357849fbf862d45d19dbb01091a"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_pwr.h",
+      "bytes": 4383,
+      "sha256": "b7b31d2bfb3d56e763d70e9db4eecfc996664619916ac4bee9d9928430ffac79"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_rcc.h",
+      "bytes": 30452,
+      "sha256": "894e140a70b0cdc94e4e96c5011def9dca5a103752783c3bb7cab538fc426f9e"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_rtc.h",
+      "bytes": 3857,
+      "sha256": "4a0ef73054c3f7f7ad325c6ef0268edb3c5e8987978bdac8a695dc548e13b94c"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_sdio.h",
+      "bytes": 21863,
+      "sha256": "35f5d75421ab3c76d1d76e2c26d0910864161966cc16b74f8327c173ae123deb"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_spi.h",
+      "bytes": 17725,
+      "sha256": "e5dce165ef95fd872a8802cc4f9205b389e4ecdd28a0d74f8aa6c9c3d1ea4225"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_tim.h",
+      "bytes": 52427,
+      "sha256": "dddf89f9b7134a2f15ed9cc2521589ee9a2e18c0553a6017c71b5d5b394524e5"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_usart.h",
+      "bytes": 16548,
+      "sha256": "9d4c2067e54defd64b000076e6561726d758c872d354bed6eea66a6767c08bce"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/inc/stm32f10x_wwdg.h",
+      "bytes": 2966,
+      "sha256": "eb1a01bbaa33babc416d8ecdb40b5a97a21522eb5c7952ba1bec09924580790e"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/misc.c",
+      "bytes": 7046,
+      "sha256": "152c632e56151b2564121c56ff359d0f041621f0da6ed101d7fd376a139a5c75"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_adc.c",
+      "bytes": 47201,
+      "sha256": "d269b826f617c7b1426155cdfc8a220d05aee74580b80b92f86bf33ea9d8be98"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_bkp.c",
+      "bytes": 8463,
+      "sha256": "f78d5077029cfec54da52ea4f9d8796dabdf1da5dc6cc29e3395e0f6923645a0"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_can.c",
+      "bytes": 45103,
+      "sha256": "bf9d3bec0785b8f28d9eb046bc67181071586e10014d4f595ba0e582257f31ad"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_cec.c",
+      "bytes": 11656,
+      "sha256": "5cf689d7a2ecc3244b18099ae254dc6b0bff023406c898a82dbbd42a29b86e7c"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_crc.c",
+      "bytes": 3347,
+      "sha256": "962aa1381467118ee7e9bea68ad01b3ca3f9fbbd749242211e2d340bf896d0d4"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_dac.c",
+      "bytes": 19087,
+      "sha256": "789a92c1dbb0dc74688fff8e415a93da816956a7a44882488d25af7ac055cbc7"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_dbgmcu.c",
+      "bytes": 5149,
+      "sha256": "9bfb6f964cd3b06a04c67772e52f31814e5a3d39a951a27bf9f2ef352237e23d"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_dma.c",
+      "bytes": 29607,
+      "sha256": "b0ac759af150deaa84d8a337a8873a2fbc03e36b1db6623175ab2443efa45d6f"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_exti.c",
+      "bytes": 6959,
+      "sha256": "5783d10d46275d8baee9f2861cf434b5c12a4bc8f42ed4af9e503c1818941ebe"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_flash.c",
+      "bytes": 62551,
+      "sha256": "a04fcf26499252a6b02de1cefd33c26b8802d5ff1f9bef920bbddeefdd602f43"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_fsmc.c",
+      "bytes": 35484,
+      "sha256": "1b623840bba04095a150fcf051fd2a3df4838799b96ae2e36f28675e92c23e44"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_gpio.c",
+      "bytes": 23221,
+      "sha256": "8255650b583b2bab2c320e0974309a6ccf26f661e7ad1b54282c0f0e2b9a1acf"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_i2c.c",
+      "bytes": 45785,
+      "sha256": "67523617c4f5fb60aab36eb37b6cb348ffb0b148ac2144821614c30a8196bcd4"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_iwdg.c",
+      "bytes": 4916,
+      "sha256": "bdae6086ce189dac8d464d10bb2ab58a957bbd8f89834e1cc7716faf3e34c9ce"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_pwr.c",
+      "bytes": 8759,
+      "sha256": "3f8c77033caad162a69fe9780d7be2ab973f02be0e736e37c2e633f4a4e2bd28"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_rcc.c",
+      "bytes": 51271,
+      "sha256": "f23bbc9b83e44e69f5dc34f072867f0087a3eb0452034ab09c363088d2354cd9"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_rtc.c",
+      "bytes": 8598,
+      "sha256": "59bc07137d60efbbf69703b88e72bb2153c2e97beee16a1d262a7050686fb00b"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_sdio.c",
+      "bytes": 28933,
+      "sha256": "d042b43fbfd5431719a7310ebe2d38c861a663d07e0c0735e466785e07fc1d97"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_spi.c",
+      "bytes": 30224,
+      "sha256": "0214f213058353f2fd9d3a4036ccabbea0b73b60aae0652acf36df539adbb9c6"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_tim.c",
+      "bytes": 109159,
+      "sha256": "bd12bf18b03b8585ac2ba6bd0e80ec39d8fd0c89307eb54f5a7be38a46894d03"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_usart.c",
+      "bytes": 38308,
+      "sha256": "6d7af47017b01eb260fb7699f5c483e0a8576b4c780069a99975b7c6443030dd"
+    },
+    {
+      "path": "资料精简版/02主控源码/Lib/src/stm32f10x_wwdg.c",
+      "bytes": 5735,
+      "sha256": "1d51fbbe3da7731b2303408f00693b51dbf62226590b1264cbbf35be01aa90ea"
+    },
+    {
+      "path": "资料精简版/02主控源码/MATH/filter.c",
+      "bytes": 13401,
+      "sha256": "94b36254598a14c8bdd46b690de353bcb348625113a681c1cc6f591022eb0a46"
+    },
+    {
+      "path": "资料精简版/02主控源码/MATH/filter.h",
+      "bytes": 1281,
+      "sha256": "c9b2ca6c2ec5577e727c83582d64e2769ea52f4b30e270ebd91798c02238ef56"
+    },
+    {
+      "path": "资料精简版/02主控源码/MATH/imu.c",
+      "bytes": 4648,
+      "sha256": "81b36ae0d6df5ee597a564611445276f22ba1d4dbcbb2fab320310c6ac6443e7"
+    },
+    {
+      "path": "资料精简版/02主控源码/MATH/imu.h",
+      "bytes": 205,
+      "sha256": "bb5cdba65748c74d8ba9aa220cb4987d9adda16771115854b39445a456afb284"
+    },
+    {
+      "path": "资料精简版/02主控源码/MATH/kalman.c",
+      "bytes": 15523,
+      "sha256": "2fcfe1b3eb5c1de557f25f3beb3ee8d53537ba7051b0064d285b0225109c34ec"
+    },
+    {
+      "path": "资料精简版/02主控源码/MATH/kalman.h",
+      "bytes": 303,
+      "sha256": "395210326e80d8771c9b2ae5d1c6b019163a5de75266e473b5b156c72d8a8a0e"
+    },
+    {
+      "path": "资料精简版/02主控源码/MATH/myMath.c",
+      "bytes": 8470,
+      "sha256": "54d30d4c8931f7233946e2f6695bff6dcf9897b094ad7bd3fca96d60c4778011"
+    },
+    {
+      "path": "资料精简版/02主控源码/MATH/myMath.h",
+      "bytes": 857,
+      "sha256": "4782ad85db8a99ad73c4ae5d923356d9656f4242493e85f4ef9bcfefd621eb53"
+    },
+    {
+      "path": "资料精简版/02主控源码/MATH/pid.c",
+      "bytes": 2393,
+      "sha256": "549480a18fa9093f96c3089ffc868e3c2d780f504dae9547d34b792e35b4f5d1"
+    },
+    {
+      "path": "资料精简版/02主控源码/MATH/pid.h",
+      "bytes": 691,
+      "sha256": "1f738990bcb835c646dc28967b8724df587465730ae43ffd66bede05c0c39c5e"
+    },
+    {
+      "path": "资料精简版/02主控源码/mini.uvprojx",
+      "bytes": 27716,
+      "sha256": "31c7730dfeb647952c2343371bddf73cbdf70a5622124a7209f0ff955b7952b3"
+    },
+    {
+      "path": "资料精简版/02主控源码/StartUp/AppIncludes.h",
+      "bytes": 1016,
+      "sha256": "607a475fa2f1b595fbc4c1406f4475ece11a5fa25d6a6b19548ded3bfe1872b1"
+    },
+    {
+      "path": "资料精简版/02主控源码/StartUp/core_cm3.c",
+      "bytes": 17273,
+      "sha256": "e93a7e36349e7810f328276a3fed56701e10536779f7527a8ccd140618a556b0"
+    },
+    {
+      "path": "资料精简版/02主控源码/StartUp/core_cm3.h",
+      "bytes": 85714,
+      "sha256": "de4668aa9d314d05769dfb29f028e205b50577c6b2150fc6bccb34bd34179bbb"
+    },
+    {
+      "path": "资料精简版/02主控源码/StartUp/startup_stm32f10x_md.s",
+      "bytes": 12765,
+      "sha256": "edd2852319f295d6b36670e7d8b21a55c41370ae846a8065588711bb3485d3aa"
+    },
+    {
+      "path": "资料精简版/02主控源码/StartUp/stm32f10x.h",
+      "bytes": 633992,
+      "sha256": "117012dd526ea2c3036cef236940068db08ce145c2c37cb61743f0ee4077b1ab"
+    },
+    {
+      "path": "资料精简版/02主控源码/StartUp/stm32f10x_conf.h",
+      "bytes": 3254,
+      "sha256": "9c2f090829b7c1a67082a42ea7cdb5eac5b26cd41708ebc0e40c2a5bb774b7e3"
+    },
+    {
+      "path": "资料精简版/02主控源码/StartUp/stm32f10x_it.c",
+      "bytes": 4836,
+      "sha256": "81512aa707cb4fd17354847828cab851a9bf6360896a69f5df449d2fcda5583f"
+    },
+    {
+      "path": "资料精简版/02主控源码/StartUp/stm32f10x_it.h",
+      "bytes": 1989,
+      "sha256": "b3bacd248efd2b91c1e4006139c649a97aa46b7e65c2ca1db828b851e5bea27f"
+    },
+    {
+      "path": "资料精简版/02主控源码/StartUp/system_stm32f10x.c",
+      "bytes": 36557,
+      "sha256": "45f52950f5fc6509920fb26d1362e8457907c2d62fa455cbe3c6ce6daa974a76"
+    },
+    {
+      "path": "资料精简版/02主控源码/StartUp/system_stm32f10x.h",
+      "bytes": 2085,
+      "sha256": "919dc1f5c6bbba74cb712e8ec7cf73f1988eafa9438c706526fb401a2ab4672d"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_hid/usb_conf.h",
+      "bytes": 3950,
+      "sha256": "831d40540fa2bd23ce84936b138ea2203383334da18df6a11249342e703c3e73"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_hid/usb_config.c",
+      "bytes": 8719,
+      "sha256": "fd4ac12eaf0a53bb7e7dca80b10eb3db32a35026647029084be61ef8cd6e90e6"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_hid/usb_config.h",
+      "bytes": 2070,
+      "sha256": "9fa5ffe90b83cb8cf437061e6903812c497537595fdba14ccabcf5f69428d477"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_hid/usb_desc.c",
+      "bytes": 9767,
+      "sha256": "2c80fbae9994dd97e9ad0bd85b74b24b6e360348b72b92201c5593f426a982f8"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_hid/usb_desc.h",
+      "bytes": 3009,
+      "sha256": "376f0d27f44be29a52d6177651ea5286e4dd84ce3a36ad902611c5a06efc7eb7"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_hid/usb_endp.c",
+      "bytes": 2527,
+      "sha256": "6644b7d2335ad99fd59b7605016ae80d8a3addcfb71e5aa065ed72112d6ec7f7"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_hid/usb_istr.c",
+      "bytes": 5429,
+      "sha256": "a59e57c44e7ab3a8ca141b90ebdc11ededfcfecb544eca0b2d52590e4059292b"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_hid/usb_istr.h",
+      "bytes": 2538,
+      "sha256": "d3b97383a73c1566d189ec0f8499f7b302424f47663fa60c07eef684ff7f2435"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_hid/usb_prop.c",
+      "bytes": 14017,
+      "sha256": "d1d60131940b580c8c94ceecd9c1899ea88cab11a54b29412208114093cca525"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_hid/usb_prop.h",
+      "bytes": 2996,
+      "sha256": "e990e27bcc6c05d250b412070cc827106fc701d4aab797239ebf8f0faed0e0ae"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_hid/usb_pwr.c",
+      "bytes": 7105,
+      "sha256": "c656132266fda0901161f87efe12b7511dc938f07fbd1e06aa3656054060b6a1"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_hid/usb_pwr.h",
+      "bytes": 2203,
+      "sha256": "4a0630a2fa442efd25c141c67c2e258ee228a836f36aea6315773a18d400c5f2"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_library/usb_core.c",
+      "bytes": 30770,
+      "sha256": "a1da3a1e472088dc32df3c99df9ca9105d2cb37404b93dd5de8e8fb0b5a30eff"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_library/usb_core.h",
+      "bytes": 8772,
+      "sha256": "44af2fb20a47ed63649a0423aa819eca29c7021d3d419d6673ea53f9d3aeb2b0"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_library/usb_def.h",
+      "bytes": 2755,
+      "sha256": "7ad7a734461f9e24cf11c62825b94beba309784a8d5f2b015e1f87383d6e9b57"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_library/usb_init.c",
+      "bytes": 3101,
+      "sha256": "ba9a758113f0835d25c0b5d9b96bdddb7ea1d5b3046a4fd41765b337ca6673cb"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_library/usb_init.h",
+      "bytes": 2560,
+      "sha256": "a59baf397ddcc4c2f6f530a2870f857ed8733bc90edacdd581da150f87691e67"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_library/usb_int.c",
+      "bytes": 6281,
+      "sha256": "15eb586cd736a803c6cb041afd0608eb638c61251233099a36346600c001f398"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_library/usb_int.h",
+      "bytes": 1710,
+      "sha256": "e4c9ae0f0f33e971d0c1683a6c0975234850877a15b52c661afec2032d17a48b"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_library/usb_lib.h",
+      "bytes": 1780,
+      "sha256": "e7afb281b0dab736205566a7c5d00014c18da0d40b63ee2de047f88c8c727fba"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_library/usb_mem.c",
+      "bytes": 3404,
+      "sha256": "e455f60f57ee9460708142a847085a5f050fff2062896f22697e77aed471fc81"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_library/usb_mem.h",
+      "bytes": 1774,
+      "sha256": "ec4537e59ce48f28a8ce5fde0eb121399b66c49f7e1c51fb5bf73251c97b75f6"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_library/usb_regs.c",
+      "bytes": 27894,
+      "sha256": "1aef56c1ccb1519e43419c054d75376c154b6591940253b06cd3e72107cb5c34"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_library/usb_regs.h",
+      "bytes": 27711,
+      "sha256": "5ceaadc478418875e36eb663ceeaee4e6b9ad1a32c72de3afb76caf2be0017ae"
+    },
+    {
+      "path": "资料精简版/02主控源码/USB_library/usb_type.h",
+      "bytes": 2843,
+      "sha256": "c9be1b18c6432a07ec77dd413fd060fb57e01bcf12c10519c0f2870820a21271"
+    },
+    {
+      "path": "资料精简版/02主控源码/USER/ALL_DATA.h",
+      "bytes": 2168,
+      "sha256": "31542a367615ee663f6d7a9b44ce4467746dd6f8a5e0d03b6a97aff73606990e"
+    },
+    {
+      "path": "资料精简版/02主控源码/USER/ALL_DEFINE.h",
+      "bytes": 486,
+      "sha256": "20d35f2d7f89c3838d0bc64740729b401c8b7e55c8a7ad7cc16f837e65059da6"
+    },
+    {
+      "path": "资料精简版/02主控源码/USER/delay.c",
+      "bytes": 1438,
+      "sha256": "d7657cd015462dc3bd61b58be12dc319b53fa3f762b5c00630d5baa11c60220d"
+    },
+    {
+      "path": "资料精简版/02主控源码/USER/delay.h",
+      "bytes": 463,
+      "sha256": "b8e20f46990d56ec885a4ad215208228dcee8f644b1d5fabb5dcf473e9134c43"
+    },
+    {
+      "path": "资料精简版/02主控源码/USER/INIT.c",
+      "bytes": 2539,
+      "sha256": "3902e131ec7c689a7002a14c1d6c445166c8815ce2175e9216dd8be1ea780ddc"
+    },
+    {
+      "path": "资料精简版/02主控源码/USER/INIT.h",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "资料精简版/02主控源码/USER/main.c",
+      "bytes": 1315,
+      "sha256": "c61827702f7091612736b37c56403ccae83f3abe92ecac645202fee6b711e32b"
+    },
+    {
+      "path": "资料精简版/02主控源码/USER/scheduler.c",
+      "bytes": 959,
+      "sha256": "cd58e6e5201c99675fa63ddc1828b70a47312e0383e6fca3552e7323e703480b"
+    },
+    {
+      "path": "资料精简版/02主控源码/USER/scheduler.h",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "资料精简版/02主控源码/USER/sys.c",
+      "bytes": 1251,
+      "sha256": "6acc8b031734cf801852816042cb1b3162f54d92263abeb8f142c2c9cd4c1f80"
+    },
+    {
+      "path": "资料精简版/02主控源码/USER/sys.h",
+      "bytes": 308,
+      "sha256": "3125ddbb739a7bef6ae22e5b6fa97eb06c0db3e180432ed1de9468b36c7c0e3d"
+    },
+    {
+      "path": "资料精简版/README.md",
+      "bytes": 3016,
+      "sha256": "1c79ecd7df7421224065c5ad3156b7fb687b4b8f760e19282a9ba86c52c243f1"
+    }
+  ],
+  "active_manifest": [
+    {
+      "path": "00_先读_资料总览.md",
+      "bytes": 2780,
+      "sha256": "505683756bae834938c3d457a1b266b520640c89b8122516bdd8d6fdf8455b36"
+    },
+    {
+      "path": "01_赛题与验收/2026年电子电赛试题.docx",
+      "bytes": 1907910,
+      "sha256": "65d47622485287f858b3f43da768a9a3f456b2b188d486db69600f93dc5050b1"
+    },
+    {
+      "path": "01_赛题与验收/J题基本要求实施与验收清单.md",
+      "bytes": 8553,
+      "sha256": "2a95d97ddd24be2a18dceee0149b377d1ab98c28ea6e1374ba7c0a349e6f54f2"
+    },
+    {
+      "path": "01_赛题与验收/地面测距与功能记录模板.md",
+      "bytes": 2215,
+      "sha256": "fb0fc528fc2160c9aab13d9604d65bcfd4b2b20de4e8d77221e8c298fd657563"
+    },
+    {
+      "path": "02_飞控源码与说明/01说明文档/0.飞行控制说明书（必看）-外扩激光光流.pdf",
+      "bytes": 638703,
+      "sha256": "a22b34c6cb73c3c8321ba406942b73b19cb84cfbc03b0dc5f14345277eba3de0"
+    },
+    {
+      "path": "02_飞控源码与说明/01说明文档/13.激光光流模块的安装方法.pdf",
+      "bytes": 114389,
+      "sha256": "710a8b523f78f1aff19719d1cd5580d3a75b3305bf16726744728a1244b0c575"
+    },
+    {
+      "path": "02_飞控源码与说明/01说明文档/14.关于激光定高的实现.pdf",
+      "bytes": 226827,
+      "sha256": "b720c8610ddbf5c229a655082b4b8201c8295634dcfee25085df9dfeae98eec6"
+    },
+    {
+      "path": "02_飞控源码与说明/01说明文档/15.关于光流定点的实现.pdf",
+      "bytes": 257114,
+      "sha256": "ae43afb923e5adcf58fd50efdc513adab33d0b2d37e1a21066676d29ae41a9e5"
+    },
+    {
+      "path": "02_飞控源码与说明/01说明文档/外扩模块I2C通信协议.png",
+      "bytes": 71993,
+      "sha256": "5e76aa4709ef428b0c2910cb0017eb5df3dbde1de8955bc1cb9b14884a41cad8"
+    },
+    {
+      "path": "02_飞控源码与说明/01说明文档/店家特别吩咐注意事项（必看）(1).txt",
+      "bytes": 456,
+      "sha256": "c7b6f16baf2c20694cc542c5175d724b41129c71a107cb37b820123b793c390e"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/ADC.c",
+      "bytes": 2883,
+      "sha256": "d2fcfd76561a46d22badb46cbdfc6bb82a43d2f7172afc8ab3c8fbabe6410272"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/ADC.h",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/adc_dma.h",
+      "bytes": 250,
+      "sha256": "956bb2d3f5320c555f49624b8920d61bc72615339b0c8b72d5ec31bc7040a5c9"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/FLASH.c",
+      "bytes": 1649,
+      "sha256": "99e513d1b8ba32e80224ed0ff467fb673fc22b489dce7c44643cb3c98ff12993"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/FLASH.h",
+      "bytes": 417,
+      "sha256": "7b8ce5b7fa47dde354dd6242139eaad8d043bd050cbef1dfbbef859a8da1ce1f"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/GPIO.c",
+      "bytes": 65,
+      "sha256": "d256e1d64adce9741fd8467aa864e50d4c87aec35cce32bbbb22e70caecf40ea"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/GPIO.h",
+      "bytes": 1552,
+      "sha256": "54e7b269b12795752eae1570d8af8f812140dd051beee4329cc4830f392d8c97"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/I2C.h",
+      "bytes": 2213,
+      "sha256": "e14786b30ea98558c87e7cf3e7d1e91f221aa24f92102c4425ce9ca51ba11124"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/IIC_SOFTWARE.c",
+      "bytes": 7868,
+      "sha256": "3d1637ab9ceb284b375b5c8a5af9f0e30e6a027b8d0b160a387db9c95a201a0b"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/Spi.c",
+      "bytes": 2083,
+      "sha256": "98a7d0ba1367944c5585e161f6779c8870435b6f8d99b1cd43917be2409ce4cc"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/Spi.h",
+      "bytes": 116,
+      "sha256": "31bdda565f896dff90fb0fd507a66784e12688f8b1c04f0d71551883b209f2bd"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/TIM.c",
+      "bytes": 5437,
+      "sha256": "c4a273191931be6bfaac397468ce00c56e99ca0b20073b93c5daf4205ab34bf9"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/TIM.h",
+      "bytes": 164,
+      "sha256": "38819b778ca190e2b73c1117a6fd3ba107eb4a11beb4aea5ce725e3e120cc0f3"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/USART.c",
+      "bytes": 6708,
+      "sha256": "192a74187ac2bab2c25e7907e7fa8ccd0725ccc51ea67b8add1a40be5dbf4886"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/USART.h",
+      "bytes": 278,
+      "sha256": "9f5dc2eead22e9d7f1e5e6c57cbe44b6b4f0b0ab80f8902e9bbfa8f44daf9871"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/USB_HID.c",
+      "bytes": 4204,
+      "sha256": "285c471a192f8799944ce04ffd045ed9d99a55ed8b59e3be90bb4dd6d9261380"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/CONFIG/USB_HID.h",
+      "bytes": 479,
+      "sha256": "b8a60f89d8e6149db25620baf491f15d407083195973077427c3d42d3ae7d8a0"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HAL/ANO_DT.c",
+      "bytes": 11212,
+      "sha256": "c756511c8f3a0e0fcc9daef610b8e8925aee3ea0b1e3b3ae7a96b85c045a88bf"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HAL/ANO_DT.h",
+      "bytes": 804,
+      "sha256": "3dce00b4187ef9db9bb3431f5f48da9f3dddd09f39993f6d01d73d000f0a713d"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HAL/control.c",
+      "bytes": 12981,
+      "sha256": "49e5a1d08218b70df8523143fa618c06cd439e8508df0b66ac455c1e6da536d2"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HAL/control.h",
+      "bytes": 2083,
+      "sha256": "523747fa069f4ff548ac4215578a491b469d4f266c7aeb2f6bfb59f614eec9be"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HAL/remote.c",
+      "bytes": 6329,
+      "sha256": "e1950cf7605e80a41029c16d2076dbaac1b4a86f70e01ca1f074b80011ba86dd"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HAL/remote.h",
+      "bytes": 81,
+      "sha256": "939471950a36aff9f4445815f7943ffbfab295d0e5ef1b204d27b9f149f939b0"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HARDWARE/flow.c",
+      "bytes": 3072,
+      "sha256": "8117f011a0869619b1a00e55d20911d48d149bc51a9ca24332680528c00d7b8d"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HARDWARE/flow.h",
+      "bytes": 1100,
+      "sha256": "3a911f25f310a01355a902c0bb1cdd5a474e1f01530c3413f5d2d66b872ac164"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HARDWARE/LED.c",
+      "bytes": 2842,
+      "sha256": "642366a00e2f6d1c7ac74c2b0f58109286ce4b00e1a43319b2de35ab2e0b6017"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HARDWARE/LED.h",
+      "bytes": 1795,
+      "sha256": "228e394926ef21fac0e99a99a57ca9e3460bddac0711415a59aaad5751c4acaa"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HARDWARE/mpu6050.c",
+      "bytes": 6274,
+      "sha256": "46e28afb1eb0402a30f0bc044fc41c92dfb654ee104be4b1291e3602db98ade5"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HARDWARE/mpu6050.h",
+      "bytes": 271,
+      "sha256": "8f3e9676c51d17322f38633eaffd16eefb34855232b6889a09bb9a9dc687b636"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HARDWARE/nrf24l01.c",
+      "bytes": 8095,
+      "sha256": "42b719f9f5e96679cdb2132459cebfd39c10d6471fa56bdfc63d7843bbd3eab9"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/HARDWARE/nrf24l01.h",
+      "bytes": 4792,
+      "sha256": "538997e932de5ec61201d617709c4cd245ec5bb3debf71b2c2c1c6a2a4a2f796"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/misc.h",
+      "bytes": 8982,
+      "sha256": "40c918f726035dfa67a7bfadefac8e922196d7918f915a7f2db1e652625c7e41"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_adc.h",
+      "bytes": 21690,
+      "sha256": "005a122259e9657bd6b3171dd0e478c143c2a70f8e364b505b84f3fd0a8b1b9f"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_bkp.h",
+      "bytes": 7555,
+      "sha256": "bd3ae6fe6a6e617216d60a11a7437be97dca2ea02f3ad78afe889850473fdb16"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_can.h",
+      "bytes": 27559,
+      "sha256": "df4e1602f2b208b335fa22890908ff518de18c6e27ffb94b92cd498e8212b248"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_cec.h",
+      "bytes": 6573,
+      "sha256": "620485eb06b33c96a5a8de3fb1116db876162a44da15441883f0cc675e890059"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_crc.h",
+      "bytes": 2162,
+      "sha256": "98e5537eb5e8837de2170472b774d9f9559f14b60dfcb09d9f839611bc18cb66"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_dac.h",
+      "bytes": 15233,
+      "sha256": "446107ab9e933ccc284be0cd8f0c32edc3e96ba6f990dea8bd1f1cf080d35ef6"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_dbgmcu.h",
+      "bytes": 3818,
+      "sha256": "998751256df8a0423dc73be45e489fc04cb2b124a6f04a6ad65e4d53e59f45ba"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_dma.h",
+      "bytes": 20754,
+      "sha256": "2ba038050d07735a42645f2508e62078c217dc750878097f7f113660e0d58ffb"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_exti.h",
+      "bytes": 6824,
+      "sha256": "661b039483459137a58bfdea7522528b9b6e923d61966d4c7c8a5035bd375f5f"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_flash.h",
+      "bytes": 25445,
+      "sha256": "952ca72ee4d01e49d392d55af2b146bd9f15763230660334e78ac2cad8cb8982"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_fsmc.h",
+      "bytes": 27016,
+      "sha256": "b2e640d05f6dd11e1fe70bfa0db8aa53cb0a918eef412d6a35630b1357dc5ff6"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_gpio.h",
+      "bytes": 20175,
+      "sha256": "ef945fe7b2e4a8f3bf8fa22d44274085444dec80424f91606a1467ea4e69626f"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_i2c.h",
+      "bytes": 30029,
+      "sha256": "08b14d416090815765a02e6fecf78cbdd3de4ad330d3bc04b2133f8f4f3f2daa"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_iwdg.h",
+      "bytes": 3828,
+      "sha256": "4a0e65ceebeb69dee10923ab5478938ec7af1357849fbf862d45d19dbb01091a"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_pwr.h",
+      "bytes": 4383,
+      "sha256": "b7b31d2bfb3d56e763d70e9db4eecfc996664619916ac4bee9d9928430ffac79"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_rcc.h",
+      "bytes": 30452,
+      "sha256": "894e140a70b0cdc94e4e96c5011def9dca5a103752783c3bb7cab538fc426f9e"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_rtc.h",
+      "bytes": 3857,
+      "sha256": "4a0ef73054c3f7f7ad325c6ef0268edb3c5e8987978bdac8a695dc548e13b94c"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_sdio.h",
+      "bytes": 21863,
+      "sha256": "35f5d75421ab3c76d1d76e2c26d0910864161966cc16b74f8327c173ae123deb"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_spi.h",
+      "bytes": 17725,
+      "sha256": "e5dce165ef95fd872a8802cc4f9205b389e4ecdd28a0d74f8aa6c9c3d1ea4225"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_tim.h",
+      "bytes": 52427,
+      "sha256": "dddf89f9b7134a2f15ed9cc2521589ee9a2e18c0553a6017c71b5d5b394524e5"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_usart.h",
+      "bytes": 16548,
+      "sha256": "9d4c2067e54defd64b000076e6561726d758c872d354bed6eea66a6767c08bce"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/inc/stm32f10x_wwdg.h",
+      "bytes": 2966,
+      "sha256": "eb1a01bbaa33babc416d8ecdb40b5a97a21522eb5c7952ba1bec09924580790e"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/misc.c",
+      "bytes": 7046,
+      "sha256": "152c632e56151b2564121c56ff359d0f041621f0da6ed101d7fd376a139a5c75"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_adc.c",
+      "bytes": 47201,
+      "sha256": "d269b826f617c7b1426155cdfc8a220d05aee74580b80b92f86bf33ea9d8be98"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_bkp.c",
+      "bytes": 8463,
+      "sha256": "f78d5077029cfec54da52ea4f9d8796dabdf1da5dc6cc29e3395e0f6923645a0"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_can.c",
+      "bytes": 45103,
+      "sha256": "bf9d3bec0785b8f28d9eb046bc67181071586e10014d4f595ba0e582257f31ad"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_cec.c",
+      "bytes": 11656,
+      "sha256": "5cf689d7a2ecc3244b18099ae254dc6b0bff023406c898a82dbbd42a29b86e7c"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_crc.c",
+      "bytes": 3347,
+      "sha256": "962aa1381467118ee7e9bea68ad01b3ca3f9fbbd749242211e2d340bf896d0d4"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_dac.c",
+      "bytes": 19087,
+      "sha256": "789a92c1dbb0dc74688fff8e415a93da816956a7a44882488d25af7ac055cbc7"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_dbgmcu.c",
+      "bytes": 5149,
+      "sha256": "9bfb6f964cd3b06a04c67772e52f31814e5a3d39a951a27bf9f2ef352237e23d"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_dma.c",
+      "bytes": 29607,
+      "sha256": "b0ac759af150deaa84d8a337a8873a2fbc03e36b1db6623175ab2443efa45d6f"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_exti.c",
+      "bytes": 6959,
+      "sha256": "5783d10d46275d8baee9f2861cf434b5c12a4bc8f42ed4af9e503c1818941ebe"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_flash.c",
+      "bytes": 62551,
+      "sha256": "a04fcf26499252a6b02de1cefd33c26b8802d5ff1f9bef920bbddeefdd602f43"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_fsmc.c",
+      "bytes": 35484,
+      "sha256": "1b623840bba04095a150fcf051fd2a3df4838799b96ae2e36f28675e92c23e44"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_gpio.c",
+      "bytes": 23221,
+      "sha256": "8255650b583b2bab2c320e0974309a6ccf26f661e7ad1b54282c0f0e2b9a1acf"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_i2c.c",
+      "bytes": 45785,
+      "sha256": "67523617c4f5fb60aab36eb37b6cb348ffb0b148ac2144821614c30a8196bcd4"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_iwdg.c",
+      "bytes": 4916,
+      "sha256": "bdae6086ce189dac8d464d10bb2ab58a957bbd8f89834e1cc7716faf3e34c9ce"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_pwr.c",
+      "bytes": 8759,
+      "sha256": "3f8c77033caad162a69fe9780d7be2ab973f02be0e736e37c2e633f4a4e2bd28"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_rcc.c",
+      "bytes": 51271,
+      "sha256": "f23bbc9b83e44e69f5dc34f072867f0087a3eb0452034ab09c363088d2354cd9"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_rtc.c",
+      "bytes": 8598,
+      "sha256": "59bc07137d60efbbf69703b88e72bb2153c2e97beee16a1d262a7050686fb00b"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_sdio.c",
+      "bytes": 28933,
+      "sha256": "d042b43fbfd5431719a7310ebe2d38c861a663d07e0c0735e466785e07fc1d97"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_spi.c",
+      "bytes": 30224,
+      "sha256": "0214f213058353f2fd9d3a4036ccabbea0b73b60aae0652acf36df539adbb9c6"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_tim.c",
+      "bytes": 109159,
+      "sha256": "bd12bf18b03b8585ac2ba6bd0e80ec39d8fd0c89307eb54f5a7be38a46894d03"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_usart.c",
+      "bytes": 38308,
+      "sha256": "6d7af47017b01eb260fb7699f5c483e0a8576b4c780069a99975b7c6443030dd"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/Lib/src/stm32f10x_wwdg.c",
+      "bytes": 5735,
+      "sha256": "1d51fbbe3da7731b2303408f00693b51dbf62226590b1264cbbf35be01aa90ea"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/MATH/filter.c",
+      "bytes": 13401,
+      "sha256": "94b36254598a14c8bdd46b690de353bcb348625113a681c1cc6f591022eb0a46"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/MATH/filter.h",
+      "bytes": 1281,
+      "sha256": "c9b2ca6c2ec5577e727c83582d64e2769ea52f4b30e270ebd91798c02238ef56"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/MATH/imu.c",
+      "bytes": 4648,
+      "sha256": "81b36ae0d6df5ee597a564611445276f22ba1d4dbcbb2fab320310c6ac6443e7"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/MATH/imu.h",
+      "bytes": 205,
+      "sha256": "bb5cdba65748c74d8ba9aa220cb4987d9adda16771115854b39445a456afb284"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/MATH/kalman.c",
+      "bytes": 15523,
+      "sha256": "2fcfe1b3eb5c1de557f25f3beb3ee8d53537ba7051b0064d285b0225109c34ec"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/MATH/kalman.h",
+      "bytes": 303,
+      "sha256": "395210326e80d8771c9b2ae5d1c6b019163a5de75266e473b5b156c72d8a8a0e"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/MATH/myMath.c",
+      "bytes": 8470,
+      "sha256": "54d30d4c8931f7233946e2f6695bff6dcf9897b094ad7bd3fca96d60c4778011"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/MATH/myMath.h",
+      "bytes": 857,
+      "sha256": "4782ad85db8a99ad73c4ae5d923356d9656f4242493e85f4ef9bcfefd621eb53"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/MATH/pid.c",
+      "bytes": 2393,
+      "sha256": "549480a18fa9093f96c3089ffc868e3c2d780f504dae9547d34b792e35b4f5d1"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/MATH/pid.h",
+      "bytes": 691,
+      "sha256": "1f738990bcb835c646dc28967b8724df587465730ae43ffd66bede05c0c39c5e"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/mini.uvprojx",
+      "bytes": 27716,
+      "sha256": "31c7730dfeb647952c2343371bddf73cbdf70a5622124a7209f0ff955b7952b3"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/StartUp/AppIncludes.h",
+      "bytes": 1016,
+      "sha256": "607a475fa2f1b595fbc4c1406f4475ece11a5fa25d6a6b19548ded3bfe1872b1"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/StartUp/core_cm3.c",
+      "bytes": 17273,
+      "sha256": "e93a7e36349e7810f328276a3fed56701e10536779f7527a8ccd140618a556b0"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/StartUp/core_cm3.h",
+      "bytes": 85714,
+      "sha256": "de4668aa9d314d05769dfb29f028e205b50577c6b2150fc6bccb34bd34179bbb"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/StartUp/startup_stm32f10x_md.s",
+      "bytes": 12765,
+      "sha256": "edd2852319f295d6b36670e7d8b21a55c41370ae846a8065588711bb3485d3aa"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/StartUp/stm32f10x.h",
+      "bytes": 633992,
+      "sha256": "117012dd526ea2c3036cef236940068db08ce145c2c37cb61743f0ee4077b1ab"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/StartUp/stm32f10x_conf.h",
+      "bytes": 3254,
+      "sha256": "9c2f090829b7c1a67082a42ea7cdb5eac5b26cd41708ebc0e40c2a5bb774b7e3"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/StartUp/stm32f10x_it.c",
+      "bytes": 4836,
+      "sha256": "81512aa707cb4fd17354847828cab851a9bf6360896a69f5df449d2fcda5583f"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/StartUp/stm32f10x_it.h",
+      "bytes": 1989,
+      "sha256": "b3bacd248efd2b91c1e4006139c649a97aa46b7e65c2ca1db828b851e5bea27f"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/StartUp/system_stm32f10x.c",
+      "bytes": 36557,
+      "sha256": "45f52950f5fc6509920fb26d1362e8457907c2d62fa455cbe3c6ce6daa974a76"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/StartUp/system_stm32f10x.h",
+      "bytes": 2085,
+      "sha256": "919dc1f5c6bbba74cb712e8ec7cf73f1988eafa9438c706526fb401a2ab4672d"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_hid/usb_conf.h",
+      "bytes": 3950,
+      "sha256": "831d40540fa2bd23ce84936b138ea2203383334da18df6a11249342e703c3e73"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_hid/usb_config.c",
+      "bytes": 8719,
+      "sha256": "fd4ac12eaf0a53bb7e7dca80b10eb3db32a35026647029084be61ef8cd6e90e6"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_hid/usb_config.h",
+      "bytes": 2070,
+      "sha256": "9fa5ffe90b83cb8cf437061e6903812c497537595fdba14ccabcf5f69428d477"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_hid/usb_desc.c",
+      "bytes": 9767,
+      "sha256": "2c80fbae9994dd97e9ad0bd85b74b24b6e360348b72b92201c5593f426a982f8"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_hid/usb_desc.h",
+      "bytes": 3009,
+      "sha256": "376f0d27f44be29a52d6177651ea5286e4dd84ce3a36ad902611c5a06efc7eb7"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_hid/usb_endp.c",
+      "bytes": 2527,
+      "sha256": "6644b7d2335ad99fd59b7605016ae80d8a3addcfb71e5aa065ed72112d6ec7f7"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_hid/usb_istr.c",
+      "bytes": 5429,
+      "sha256": "a59e57c44e7ab3a8ca141b90ebdc11ededfcfecb544eca0b2d52590e4059292b"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_hid/usb_istr.h",
+      "bytes": 2538,
+      "sha256": "d3b97383a73c1566d189ec0f8499f7b302424f47663fa60c07eef684ff7f2435"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_hid/usb_prop.c",
+      "bytes": 14017,
+      "sha256": "d1d60131940b580c8c94ceecd9c1899ea88cab11a54b29412208114093cca525"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_hid/usb_prop.h",
+      "bytes": 2996,
+      "sha256": "e990e27bcc6c05d250b412070cc827106fc701d4aab797239ebf8f0faed0e0ae"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_hid/usb_pwr.c",
+      "bytes": 7105,
+      "sha256": "c656132266fda0901161f87efe12b7511dc938f07fbd1e06aa3656054060b6a1"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_hid/usb_pwr.h",
+      "bytes": 2203,
+      "sha256": "4a0630a2fa442efd25c141c67c2e258ee228a836f36aea6315773a18d400c5f2"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_library/usb_core.c",
+      "bytes": 30770,
+      "sha256": "a1da3a1e472088dc32df3c99df9ca9105d2cb37404b93dd5de8e8fb0b5a30eff"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_library/usb_core.h",
+      "bytes": 8772,
+      "sha256": "44af2fb20a47ed63649a0423aa819eca29c7021d3d419d6673ea53f9d3aeb2b0"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_library/usb_def.h",
+      "bytes": 2755,
+      "sha256": "7ad7a734461f9e24cf11c62825b94beba309784a8d5f2b015e1f87383d6e9b57"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_library/usb_init.c",
+      "bytes": 3101,
+      "sha256": "ba9a758113f0835d25c0b5d9b96bdddb7ea1d5b3046a4fd41765b337ca6673cb"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_library/usb_init.h",
+      "bytes": 2560,
+      "sha256": "a59baf397ddcc4c2f6f530a2870f857ed8733bc90edacdd581da150f87691e67"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_library/usb_int.c",
+      "bytes": 6281,
+      "sha256": "15eb586cd736a803c6cb041afd0608eb638c61251233099a36346600c001f398"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_library/usb_int.h",
+      "bytes": 1710,
+      "sha256": "e4c9ae0f0f33e971d0c1683a6c0975234850877a15b52c661afec2032d17a48b"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_library/usb_lib.h",
+      "bytes": 1780,
+      "sha256": "e7afb281b0dab736205566a7c5d00014c18da0d40b63ee2de047f88c8c727fba"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_library/usb_mem.c",
+      "bytes": 3404,
+      "sha256": "e455f60f57ee9460708142a847085a5f050fff2062896f22697e77aed471fc81"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_library/usb_mem.h",
+      "bytes": 1774,
+      "sha256": "ec4537e59ce48f28a8ce5fde0eb121399b66c49f7e1c51fb5bf73251c97b75f6"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_library/usb_regs.c",
+      "bytes": 27894,
+      "sha256": "1aef56c1ccb1519e43419c054d75376c154b6591940253b06cd3e72107cb5c34"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_library/usb_regs.h",
+      "bytes": 27711,
+      "sha256": "5ceaadc478418875e36eb663ceeaee4e6b9ad1a32c72de3afb76caf2be0017ae"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USB_library/usb_type.h",
+      "bytes": 2843,
+      "sha256": "c9be1b18c6432a07ec77dd413fd060fb57e01bcf12c10519c0f2870820a21271"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USER/ALL_DATA.h",
+      "bytes": 2168,
+      "sha256": "31542a367615ee663f6d7a9b44ce4467746dd6f8a5e0d03b6a97aff73606990e"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USER/ALL_DEFINE.h",
+      "bytes": 486,
+      "sha256": "20d35f2d7f89c3838d0bc64740729b401c8b7e55c8a7ad7cc16f837e65059da6"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USER/delay.c",
+      "bytes": 1438,
+      "sha256": "d7657cd015462dc3bd61b58be12dc319b53fa3f762b5c00630d5baa11c60220d"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USER/delay.h",
+      "bytes": 463,
+      "sha256": "b8e20f46990d56ec885a4ad215208228dcee8f644b1d5fabb5dcf473e9134c43"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USER/INIT.c",
+      "bytes": 2539,
+      "sha256": "3902e131ec7c689a7002a14c1d6c445166c8815ce2175e9216dd8be1ea780ddc"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USER/INIT.h",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USER/main.c",
+      "bytes": 1315,
+      "sha256": "c61827702f7091612736b37c56403ccae83f3abe92ecac645202fee6b711e32b"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USER/scheduler.c",
+      "bytes": 959,
+      "sha256": "cd58e6e5201c99675fa63ddc1828b70a47312e0383e6fca3552e7323e703480b"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USER/scheduler.h",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USER/sys.c",
+      "bytes": 1251,
+      "sha256": "6acc8b031734cf801852816042cb1b3162f54d92263abeb8f142c2c9cd4c1f80"
+    },
+    {
+      "path": "02_飞控源码与说明/02主控源码/USER/sys.h",
+      "bytes": 308,
+      "sha256": "3125ddbb739a7bef6ae22e5b6fa97eb06c0db3e180432ed1de9468b36c7c0e3d"
+    },
+    {
+      "path": "02_飞控源码与说明/README.md",
+      "bytes": 1530,
+      "sha256": "9500f268c748105f3862cf93fb2452349b45a2c533e184fd7c7dc050cbd1daf4"
+    },
+    {
+      "path": "03_源码分析/J题源码修改定位报告.md",
+      "bytes": 11902,
+      "sha256": "5fa5b871a220a01aad3e86d2b69f3b9701b383d7c00367fa7dfdf9ebb2f045c9"
+    },
+    {
+      "path": "03_源码分析/飞控代码阅读摘要.md",
+      "bytes": 3632,
+      "sha256": "d942c7aecf4075ae7b0ba7b767c04a94e70717ebd5dfd6c67c8cd66fd9c01f82"
+    },
+    {
+      "path": "04_编译与验证/Keil安装记录_20261023.json",
+      "bytes": 1118,
+      "sha256": "97c12660ca70eac9c7fdbd378c6dcdbfb36eeb35be3ef42e497021f587a50b92"
+    },
+    {
+      "path": "04_编译与验证/Keil安装验证_20261023/compiler_smoke.c",
+      "bytes": 54,
+      "sha256": "4ce4f49efa9350e60532efb677be8bba19691a15ce564a51901d9e18e3b00046"
+    },
+    {
+      "path": "04_编译与验证/README.md",
+      "bytes": 1664,
+      "sha256": "3173ddd38a675be897c4f78434510d75b98863a4f5460df2ffee43cc8b8ee129"
+    },
+    {
+      "path": "04_编译与验证/verify_flow_reader.py",
+      "bytes": 6010,
+      "sha256": "e656579590500456e54e03cf0ec8a439b6c83223b25987f4429db0ebe6393463"
+    },
+    {
+      "path": "04_编译与验证/verify_organized_files.py",
+      "bytes": 4144,
+      "sha256": "d84a930a82204db1f3ed0a67501d4b7a842c1701908dc05b23170d119fdfa7da"
+    },
+    {
+      "path": "04_编译与验证/历史验证记录/flow_reader_host_test.c",
+      "bytes": 3322,
+      "sha256": "c20acbc972b3a0b20c227418f0d38d5a83a28f9a730bb9555aa073e14bd9622e"
+    },
+    {
+      "path": "04_编译与验证/历史验证记录/flow_reader_host_test_result.json",
+      "bytes": 838,
+      "sha256": "0448c09fa51c813a38c09b78f2df9a81c887996fd583dcd2a0be8394439fc64d"
+    },
+    {
+      "path": "04_编译与验证/历史验证记录/资料完整性核对.json",
+      "bytes": 32501,
+      "sha256": "5cebb62931c5792d8b3700c7cb9bd0082cd23474c977fb67d259855c3cc907c8"
+    },
+    {
+      "path": "04_编译与验证/更新说明与编译环境.md",
+      "bytes": 4462,
+      "sha256": "1c2acc9b99eaf42ff1fd59bacf28616a1ba167cfd7c39455a673a95719c4990f"
+    },
+    {
+      "path": "05_任务与交接/当前任务清单.md",
+      "bytes": 1616,
+      "sha256": "c8599f5055f255944ff704fd15c7f7ca2bb6be6ca94950f53e3cd937250797b5"
+    },
+    {
+      "path": "05_任务与交接/报名与提交材料清单.md",
+      "bytes": 1876,
+      "sha256": "6b0045bd6389008e45817c5fb96a81c311363af88ec4717be9bd41be528b5798"
+    },
+    {
+      "path": "05_任务与交接/资料目录与来源.md",
+      "bytes": 2821,
+      "sha256": "d79203f7a5f4c29b3d28dca96fb6e5f5fef07c054f0eda12860c97c9b6ed7d63"
+    },
+    {
+      "path": "06_原始附件备份/README.md",
+      "bytes": 546,
+      "sha256": "2b70c1dd322d2419f9a66ced0f534431a99b285b5a24cb02cbcb021b471b1e93"
+    },
+    {
+      "path": "06_原始附件备份/主控程序(keil MDK打开)+外扩激光+光流20261001.rar",
+      "bytes": 11870171,
+      "sha256": "1554e510c14f5f0789f9898200f68bc9b17d1d351847e7ba9f222fb4eb4f257f"
+    },
+    {
+      "path": "06_原始附件备份/大概是全部.bin",
+      "bytes": 131072,
+      "sha256": "24e457561f4e54c769ba82bb9a3674be684083c68514267a5c3717a6c725bb09"
+    }
+  ],
+  "verification_status": "passed",
+  "verification_script": "04_编译与验证/verify_organized_files.py"
+}
